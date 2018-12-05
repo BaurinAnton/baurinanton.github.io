@@ -186,7 +186,7 @@ p1  {
     width: 100%;
 }
 .img1 {
-    width: 90%;
+    width: 55%;
     display: block;
     margin: 2%;
 }
@@ -194,10 +194,10 @@ p1  {
 .img2 {
     display: block;
     margin: auto;
-    width: 75%;
+    width: 35%;
 }
 .img3 {
-    width: 85%; 
+    width: 35%; 
     display: block;
     margin: auto;
 }
