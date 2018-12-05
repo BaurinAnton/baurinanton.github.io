@@ -200,9 +200,9 @@ p1  {
     width: 85%; 
     display: block;
     margin: auto;
-} 
+}
 .modal{
-    position: fixed; top: 35%; left: 167px;
+    position: fixed; top: 35%; left: 168px;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
