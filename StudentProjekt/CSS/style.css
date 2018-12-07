@@ -1,6 +1,6 @@
 body {
     font-size: 19px;
-    background-image: url('123.jpg');
+    background-image: url('../Images/123.jpg');
     background-size: 100%;
     margin: 0px;
     padding: 0%;
@@ -106,6 +106,8 @@ p1  {
     margin: auto;
     background-color: rgba(106,119,121,0.95);
     border-radius: 20px 20px;
+    position: relative;
+    text-align: center;
 }
 .div12 {
     border: 9px solid black;
@@ -122,6 +124,7 @@ p1  {
     margin: auto;
     background-color: rgba(106,119,121,0.95);
     border-radius: 20px 20px;
+    padding: 3px;
 }
 .div14 {
     border: 9px solid black;
@@ -159,6 +162,22 @@ p1  {
     padding-right: 3px;
     border-radius: 50px 20px;
     border: 4px solid rgb(39, 39, 39);
+}
+.div19 {
+    text-align: center;
+}
+.div20 {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 20px 20px;
+    padding: 15px 20px 50px 20px;
+}
+.div21 {
+    display: inline-block;
+    border-radius: 5px 5px;
+    background-color: #D17E72;
+
 }
 .table1 {
     width: 100%;
@@ -209,7 +228,8 @@ p1  {
     transform: translate(-50%, -50%);
 }
 .table3 {
-    border
+    border: 1px;
+    width: 70%;
 }
 #post {
     vertical-align: 100%;
@@ -263,9 +283,17 @@ p1  {
     font-size: 27px;
     color: whitesmoke;
 }
+#p5 {
+    text-align: center;
+}
 #select1 {
     background-color: rgb(216, 181, 181);
 }
+#p6 {
+    text-align: center;
+}
+
+
               
 
               
