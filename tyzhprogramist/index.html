@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>#ТЫЖПРОГРАММИСТ</title>
+  <link rel="stylesheet" href="./Fonts/PT Root UI_Regular.css" type="text/css" charset="utf-8">
+  <meta name="description" content="Описание страницы" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>#Тыжпрограммист</title>
-  <meta name="description" content="Описание страницы" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -17,98 +20,729 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="js/swiper.min.js"></script>
+  <script>new WOW().init();</script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navcontent">
-      <a class="navbar-brand logo text-white" href="index.html">#ТЫЖПРОГРАММИСТ
-      </a>
-      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
-        data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon">
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="nav navbar-nav aaa">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Почему мы?
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Цены
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Отзывы
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"> Контакты
-            </a>
-          </li>
-        </ul>
-    <br/>
-        <div class="container d-lg-none d-block smartphone">
-          <a href="tel:89103529528" id="numbersmartphone">8(910)352-95-28
-          </a>
-          <br/>
-          <img src="img/imgsmartphone/whatsapp.png" class="imgsmartphone">
-          <img src="img/imgsmartphone/telegram.png" class="imgsmartphone"> 
-          <img src="img/imgsmartphone/viber.png" class="imgsmartphone">
-           <img src="img/imgsmartphone/vk.png" class="imgsmartphone">
-           <img src="img/imgsmartphone/skype.png" class="imgsmartphone">
-         </div>
-      </div>
-      <div class="d-none d-lg-block ml-auto">
-        <ul class="nav navbar-nav">
-          <li>
-            <div class="container">
-              <div class="row">
-                <div class="col-12 time">
-                  Без выходных
-                  <div class="row">
-                    <div class="col-12 alarm">
-                      <img src="img/imglaptop/icons8-часы-26.png">
-                      9:00-22:00
+    <div class="bd-example">
+      <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark navcontent fixed-top">
+        <a class="navbar-brand logo text-white" href="#">#ТЫЖПРОГРАММИСТ
+        </a>
+        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="mobilepanel">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#my">Почему я?
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prices">Цены
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Отзывы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#examplesofworks"> Примеры работ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"> Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-none d-block navfooter">
+            <div class="numbersmartphone1">
+              <a href="tel:89103529528" id="numbersmartphone">8(910)352-95-28
+              </a>
+            </div>
+            <div class="imgmobile">
+              <img src="img/imgsmartphone/whatsapp.png" class="img2">
+              <img src="img/imgsmartphone/telegram.png" class="img2">
+              <img src="img/imgsmartphone/viber.png" class="img2">
+              <img src="img/imgsmartphone/vk.png" class="img2">
+              <img src="img/imgsmartphone/skype.png" class="img2">
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block ml-auto">
+          <ul class="nav navbar-nav">
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 time">
+                    Без выходных
+                    <div class="row">
+                      <div class="col-12 alarm">
+                        <img src="img/imglaptop/icons8-часы-26.png">
+                        9:00-22:00
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="li1">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 time">
-                  <a href="tel:89103529528" id="mobile">
-                    8-910-352-95-28
-                  </a>
-                  <div class="row">
-                    <div class="col-12" id="img">
-                      <img class="imgsoc" src="img/imglaptop/whatsapp1.png">
-                      <img class="imgsoc" src="img/imglaptop/telegram1.png">
-                      <img class="imgsoc" src="img/imglaptop/viber1.png">
-                      <img class="imgsoc" src="img/imglaptop/vk1.png">
-                      <img class="imgsoc" src="img/imglaptop/skype1.png">
+            </li>
+            <li class="li1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 time">
+                    <a href="tel:89103529528" id="mobile">
+                      8-910-352-95-28
+                    </a>
+                    <div class="row">
+                      <div class="col-12" id="img">
+                        <img class="imgsoc" src="img/imglaptop/whatsapp1.png">
+                        <img class="imgsoc" src="img/imglaptop/telegram1.png">
+                        <img class="imgsoc" src="img/imglaptop/viber1.png">
+                        <img class="imgsoc" src="img/imglaptop/vk1.png">
+                        <img class="imgsoc" src="img/imglaptop/skype1.png">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="text-dark">
     <section>
-      Привет, земляне!
+      <div class="container-fluid remont">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-xl-9">
+            <h1 class="image1">
+              РЕМОНТ
+              <br/>КОМПЬЮТЕРОВ
+            </h1>
+            <h2 class="image2">
+              <hr style="height: 1px;"/>
+              И НЕ ТОЛЬКО</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="my" class="wrap">
+        <div class="container-fluid fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.5s">
+          <div class="row justify-content-md-center text-center" style="margin-bottom: 12px;">
+            <div class="col-12">
+              <h2 class="h2"><b>Почему я?</b>
+              </h2>
+            </div>
+          </div>
+          <div class="container-fluid fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="1.2s">
+            <div class="row justify-content-md-center">
+              <div class="col-12 col-md-6 text">
+                Здравствуйте! Меня зовут Антон, студент университета по специальности:
+                «Компьютерная
+                безопасность».
+                Ваш
+                компьютер, ноутбук, смартфон поломался, начал «тормозить»? Ваш гаджет забился пылью? Вам
+                нужно установить специфические программы, драйвера?
+              </div>
+              <div class="col-12 col-md-6 text">
+                Тогда Вы по адресу! Почему я?
+                Потому
+                что я занимаюсь этим на протяжении 10-ти лет, живу недалеко от вас, подойду в любое удобное для вас
+                время.
+                Делаю всю работу на месте, качественно, дёшево (с душой, потому что для меня это – хобби😊).
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/mytext.js">
+        </script>
+        <div class="container-fluid fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.5s">
+          <div class="container-fluid">
+            <div class="row justify-content-md-center text-center">
+              <div class="col-12">
+                <h3 class="h3">Чем я отличаюсь от других мастеров?
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-around">
+              <div class="card border-info col-12 col-md-4 col-lg-2 mx-1 mb-3 bg-light fadeInDown wow"
+                data-wow-duration="0.7s" data-wow-delay="1.90s">
+                <div class="card-body">
+                  <p class="card-text text-info ">Бесплатная диагностика, которая производится на месте.</p>
+                </div>
+              </div>
+              <div class="card border-info col-12 col-md-4 col-lg-2 mx-1 mb-3 fadeInDown wow" data-wow-duration="0.7s"
+                data-wow-delay="2.8s">
+                <div class="card-body">
+                  <p class="card-text text-info ">Объявляю до работы список того, что нужно сделать с устройством.</p>
+                </div>
+              </div>
+              <div class="card border-info col-12 col-md-4 col-lg-2 mx-1 mb-3 bg-light fadeInDown wow"
+                data-wow-duration="0.7s" data-wow-delay="3.6s">
+                <div class="card-body">
+                  <p class="card-text text-info ">Объявляю цену работы сразу, до самой работы.</p>
+                </div>
+              </div>
+              <div class="card border-info col-12 col-md-4 col-lg-2 mx-1 mb-3 fadeInDown wow" data-wow-duration="0.7s"
+                data-wow-delay="4.4s">
+                <div class="card-body">
+                  <p class="card-text text-info">Не делаю лишнюю работу, за которую нужно будет переплачивать.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-info col-12 col-md-4 col-lg-2 mx-1 mb-3 fadeInDown wow"
+                data-wow-duration="0.7s" data-wow-delay="5.2s">
+                <div class="card-body">
+                  <p class="card-text">Делаю качественно, как для себя, потому что мне важны Ваши отзывы.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <div id="prices" class="wrap bgprices">
+        <div class="container-fluid fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.3s">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-xl-12">
+              <h2 class="h2">
+                <b>Цены</b>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="row justify-content-center text-center">
+            <button class="btn btn-outline-info buttoncollapse" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ПК, ноутбук</button>
+            <button class="btn btn-outline-info buttoncollapse" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Смартфон,
+              планшет</button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card card-body collaspecard">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="trhead">
+                          <th scope="col">#</th>
+                          <th scope="col">Наименование работы</th>
+                          <th scope="col">Цена работы</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="trbody">
+                          <th scope="row">1</th>
+                          <td>Установка, восстановление операционной системы</td>
+                          <td>400 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">2</th>
+                          <td>Восстановление удаленных файлов</td>
+                          <td>от 600 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">3</th>
+                          <td>Установка операционной системы с сохранением данных</td>
+                          <td> 700 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">4</th>
+                          <td>Установка драйверов</td>
+                          <td> 200 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">5</th>
+                          <td>Установка программ (софт)</td>
+                          <td> 100 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">6</th>
+                          <td>Настройка сети и подключения к интернет</td>
+                          <td> 400 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">7</th>
+                          <td>Удаление вирусов</td>
+                          <td> 300 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">8</th>
+                          <td>Удаление баннера, смс-вирусов</td>
+                          <td> 700 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">9</th>
+                          <td>Устранение замедленной работы Windows</td>
+                          <td> 700 руб за шт.</td>
+                        <tr class="trbody">
+                          <th scope="row">10</th>
+                          <td>Чистка ПК, ноутбука от пыли</td>
+                          <td>500 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">11</th>
+                          <td>Замена материнской платы</td>
+                          <td> 1000 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">12</th>
+                          <td>Замена внутренних модулей (ОЗУ (оперативная память),<br />
+                            DVD (дисковод), видеокарта, HDD (жесткий диск),<br />
+                            SSD ( твердотельный накопитель) и т.д.</td>
+                          <td> от 500 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">13</th>
+                          <td>Перепрошивка BIOS</td>
+                          <td> 600 руб.</td>
+                        </tr>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card card-body collaspecard">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="trhead">
+                          <th scope="col">#</th>
+                          <th scope="col">Наименование работы</th>
+                          <th scope="col">Цена работы</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="trbody">
+                          <th scope="row">1</th>
+                          <td>Сброс до заводских настроек с очисткой данных</td>
+                          <td>300 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">2</th>
+                          <td>Сброс до заводских настроек с сохранением данных</td>
+                          <td> 500 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">3</th>
+                          <td>Перепрошивка</td>
+                          <td> 200 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">4</th>
+                          <td>Устранение замедленной работы Android, чистка</td>
+                          <td> 400 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">5</th>
+                          <td>Настройка сети и подключения к интернет</td>
+                          <td> 400 руб за шт.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">6</th>
+                          <td>Удаление вирусов</td>
+                          <td> 300 руб.</td>
+                        <tr class="trbody">
+                          <th scope="row">7</th>
+                          <td>Замена дисплея</td>
+                          <td>700 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">8</th>
+                          <td>Замена динамика</td>
+                          <td> 400 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">9</th>
+                          <td>Замена микрофона</td>
+                          <td> от 400 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">10</th>
+                          <td>замена задней крышки (корпуса)</td>
+                          <td> 400 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">11</th>
+                          <td>Замена аккумулятора</td>
+                          <td> 500 руб.</td>
+                        </tr>
+                        <tr class="trbody">
+                          <th scope="row">12</th>
+                          <td>Замена камеры</td>
+                          <td> 500 руб.</td>
+                        </tr>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="reviews" class="wrap reviews">
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col">
+              <h2 class="h2"><b>Отзывы</b></h2>
+            </div>
+          </div>
+        </div>
+        <!-- Свайпер -->
+        <div class="container-fluid" style="height:auto; width: 98%;">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiperwork1">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 swiperreviewscol">
+                          <img src="img/Reviews/1.jpg" class="imgswiper">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                  <div class="swiper-slide swiperwork1">
+                    <img src="img/Reviews/1.jpg" class="imgswiper">
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/swiperreviews.js"></script>
+    </section>
+    <section>
+      <div id="examplesofworks" class="wrap swiperwork">
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col">
+              <h2 class="h2 "><b>Примеры работ</b></h2>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container work">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/1.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Чистка ноутбука</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-10 swipercol">
+                    <img src="img/Work/3.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Установка Windows 7</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/2.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Восстановление Windows 10</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/4.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Диагностика Macbook Air (2015)</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-12 swipercol">
+                    <img src="img/Work/5.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b> Установка Windows XP</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-12 swipercol">
+                    <img src="img/Work/6.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Обновление BIOS (UEFI)</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/7.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Установка Windows 7</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/8.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Установка Parrot OS (Linux)</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/9.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Чистка ноутбука</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/10.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Перепрошивка смартфона</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/11.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Установка Kali linux</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/12.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Замена ОЗУ</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/13.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Чистка ноутбука</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiperwork">
+              <div class="container">
+                <div class="row justify-content-center swiperwork">
+                  <div class="col-11 swipercol">
+                    <img src="img/Work/15.jpg" class="swiperimg" />
+                    <div class="swipertext">
+                      <b>Замена дисплея Meizu MX6</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next work"></div>
+          <div class="swiper-button-prev work"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="../package/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="js/swiperwork.js"></script>
+      </div>
     </section>
   </main>
-  <footer>
-  </footer>
+  <footer class="footer">
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+    <!--headin5_amrc-->
+    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+    <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+    
+    
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Image Rectoucing</a></li>
+    <li><a href="http://webenlance.com">Clipping Path</a></li>
+    <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+    <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+    <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+    <li><a href="http://webenlance.com">Image Cropping</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Remove Background</a></li>
+    <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+    <li><a href="http://webenlance.com">Logo Design</a></li>
+    <li><a href="http://webenlance.com">Vectorization</a></li>
+    <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+    <li><a href="http://webenlance.com">Image Cropping</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+    <!--headin5_amrc ends here-->
+    
+    <ul class="footer_ul2_amrc">
+    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+    </ul>
+    <!--footer_ul2_amrc ends here-->
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="http://webenlance.com">Home</a></li>
+    <li><a href="http://webenlance.com">About</a></li>
+    <li><a href="http://webenlance.com">Services</a></li>
+    <li><a href="http://webenlance.com">Pricing</a></li>
+    <li><a href="http://webenlance.com">Blog</a></li>
+    <li><a href="http://webenlance.com">Contact</a></li>
+    </ul>
+    <!--foote_bottom_ul_amrc ends here-->
+    <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+    
+    <ul class="social_footer_ul">
+    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <!--social_footer_ul ends here-->
+    </div>
+    
+    </footer>
+
+
 </body>
 
 </html>
