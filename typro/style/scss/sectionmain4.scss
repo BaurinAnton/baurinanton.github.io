@@ -32,11 +32,11 @@ main {
                 background-attachment: fixed;
             }
             .row:nth-child(1) {
-                background-image: url(../../img/main/4.png);
-                height: 130px;
                 @media (min-width: 992px) {
                     background-size: cover;
                     background-attachment: fixed;
+                    background-image: url(../../img/main/4.png);
+                height: 130px;
                 }
             }
             .row:nth-child(2) {

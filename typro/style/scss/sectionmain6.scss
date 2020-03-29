@@ -21,10 +21,13 @@ main {
         font-size: 50px;
       }
       .row:nth-child(1) {
-        background-image: url(../../img/main/4.png);
+        @media (max-width: 991px) {
+          background-color: #1c181a;
+        }
         @media (min-width: 992px) {
           background-attachment: fixed;
           background-size: cover;
+          background-image: url(../../img/main/4.png);
         }
         height: 1em;
       }
