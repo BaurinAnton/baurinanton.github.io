@@ -4,20 +4,20 @@ main {
     section:nth-child(1) {
     font-size: 100px;
     background-image: url(../../img/main/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 11.2em;
+    background-attachment: fixed;
+    height: 13.2em;
     @media (min-width: 2000px) {
         height: 15em;
     }
     margin-top: -0.6em;
     @media (max-width: 1440px) {
-        height: 9em;
-        margin-top: -0.2em;
+        height: 12em;
+        background-image: url(../../img/main/1.1.jpg);
     }
     @media (max-width: 992px) {
         height: 7em;
-        margin-top: -0.2em;
+        background-image: url(../../img/main/1.jpg);
+        background-attachment: scroll;
     }
     @media (max-width: 767px) {
         height: 6em;
@@ -26,9 +26,9 @@ main {
     width: 100%;
     div:nth-child(1) {
         position: relative;
-        padding: 6em 0em 0em 2.79em;
+        padding: 6.2em 0em 0em 2.79em;
         @media (max-width: 1440px) {
-            padding: 5.05em 0em 0em 2.3em;
+            padding: 5.4em 0em 0em 1em;
         }
         @media (max-width: 992px) {
             padding: 4.1em 0em 0em 1.6em;

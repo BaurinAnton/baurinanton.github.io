@@ -5,6 +5,7 @@ main {
   section:nth-child(3) {
     font-size: 30px;
     background-image: url(../../img/main/4.png);
+    background-attachment: fixed;
     .row:nth-child(1) {
       padding: 2.72em 0 2.33em 0;
       .card {

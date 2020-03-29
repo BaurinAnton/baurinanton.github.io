@@ -30,7 +30,11 @@ main {
                     height: 5.725em;
                     background-color: $colcolor;
                     border: 0.125em solid $bordercolor;
+                    transition: border-width 0.2s linear;
                     border-radius: 1.05em;
+                    &:hover {
+                        border-width: 15px;
+                    }
                     button {
                         font-size: 40px;
                         color: white;
