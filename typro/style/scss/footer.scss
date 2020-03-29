@@ -1,0 +1,38 @@
+footer {
+  .container-fluid {
+    background-color: #1c181a;
+    .row:nth-child(1) {
+      font-size: 100px;
+      @media (min-width: 2100px) {
+          font-size: 120px;
+      }
+      @media (max-width: 1800px) {
+        font-size: 80px;
+    }
+    @media (max-width: 1450px) {
+        font-size: 60px;
+    }
+    @media (max-width: 1140px) {
+        font-size: 39px;
+    }
+    @media (max-width: 767px) {
+        font-size: 55px;
+        text-align: center;
+    }
+    @media (max-width: 425px) {
+        font-size: 40px;
+    }
+      height: 4.7em;
+      color: white;
+      .phone {
+        color: white;
+      }
+      .col-md-3 {
+        font-size: 0.25em;
+        i {
+            color: white;
+        }
+      }
+    }
+  }
+}
