@@ -1,0 +1,108 @@
+$navcolor: #001c29;
+$colorlink: rgba(255, 255, 255, 0.6);
+$colorlink_hover: rgba(0, 255, 212, 0.6);
+$colorwhite: #ffffff;
+.navpanel {
+  background-color: $navcolor;
+  color: $colorwhite;
+  .phone {
+    color: white;
+  }
+  padding: 0px;
+  div:nth-child(2) {
+    div:nth-child(2) {
+      div:nth-child(1) {
+        
+        margin-top: 0px;
+      }
+      div:nth-child(2) {
+        margin-top: 3px; 
+      }
+      
+    }
+    img {
+      width: 1.8em;
+    }
+    i {
+      font-size: 1.25em;
+      color: $colorwhite;
+      &:before {
+        margin-right: -3px;
+      }
+    }
+    #clock {
+      font-size: 1.5em;
+      margin-right: 5px;
+    }
+    
+  }
+  nav {
+    div:nth-child(1) {
+      @media (max-width: 992px) {
+        padding-left: 0px;
+      }
+      #logo {
+        color: $colorwhite;
+        font-size: 1.75em;
+        @media (max-width: 991px) {
+          font-size: 2.5em;
+        }
+        @media (max-width: 768px) {
+          font-size: 1.75em;
+        }
+        text-decoration: none;
+      }
+    }
+    div:nth-child(3) {
+      @media (max-width: 991px) {
+        padding: 1.5em 0em 0em 1em;
+      }
+      div:nth-child(1) {
+        margin: 1.3em 0em 0em -0.2em;
+        font-size: 28px;
+      }
+      div:nth-child(2) {
+        margin: 0.4em 0em 0em -0.2em;
+        font-size: 1.5em;
+      }
+        i {
+          margin-right: 26px;
+          @media (max-width: 768px) {
+            font-size: 1em;
+            margin-right: 11px;
+          }
+        }
+      li{
+        padding-left: 0.825em;
+        .nav-link {
+          font-size: 1em;
+          color: $colorlink;
+          @media (max-width: 991px) {
+            font-size: 1.5em;
+            padding-top: 1em;
+          }
+          &:hover {
+            color: $colorlink_hover;
+            transition: 0.2s;
+            margin-top: -3px;
+            border-bottom: 3px solid $colorlink_hover;
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 0px) {
+    font-size: 12.2px;
+  }
+  @media (min-width: 992px) {
+    font-size: 13.2px;
+    height: 68px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    height: 98px;
+  }
+}
