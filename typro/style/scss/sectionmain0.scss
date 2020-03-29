@@ -1,0 +1,83 @@
+$colorh1: white;
+$colorh2: #BAF9F9;
+main {
+    section:nth-child(1) {
+    font-size: 100px;
+    background-image: url(../../img/main/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 11.2em;
+    @media (min-width: 2000px) {
+        height: 15em;
+    }
+    margin-top: -0.6em;
+    @media (max-width: 1440px) {
+        height: 9em;
+        margin-top: -0.2em;
+    }
+    @media (max-width: 992px) {
+        height: 7em;
+        margin-top: -0.2em;
+    }
+    @media (max-width: 767px) {
+        height: 6em;
+        margin-top: -0.2em;
+    }
+    width: 100%;
+    div:nth-child(1) {
+        position: relative;
+        padding: 6em 0em 0em 2.79em;
+        @media (max-width: 1440px) {
+            padding: 5.05em 0em 0em 2.3em;
+        }
+        @media (max-width: 992px) {
+            padding: 4.1em 0em 0em 1.6em;
+        }
+        @media (max-width: 767px) {
+            padding: 3.6em 0em 0em 0.2em;
+        }
+        @media (min-width: 2000px) {
+            padding: 7.9em 0em 0em 3.6em;
+        }
+        h1 {
+            font-size: 1.2em;
+            @media (max-width: 1440px) {
+                font-size: 0.9em;
+            }
+            @media (max-width: 992px) {
+                font-size: 0.6em;
+            }
+            @media (max-width: 767px) {
+                font-size: 0.5em;
+            }
+            @media (max-width: 424px) {
+                font-size: 0.38em;
+            }
+            @media (min-width: 2000px) {
+                font-size: 1.7em;
+            }
+            color: $colorh1;
+        }
+        h2 {
+            margin-top: -0.4em;
+            font-size: 0.9em;
+            @media (max-width: 1440px) {
+                font-size: 0.6em;
+            }
+            @media (max-width: 992px) {
+                font-size: 0.5em;
+            }
+            @media (max-width: 767px) {
+                font-size: 0.44em;
+            }
+            @media (max-width: 424px) {
+                font-size: 0.32em;
+            }
+            @media (min-width: 2000px) {
+                font-size: 1.3em;
+            }
+            color: $colorh2;
+            }
+        }
+    }
+}
