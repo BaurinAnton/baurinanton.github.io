@@ -22,8 +22,10 @@ main {
       }
       .row:nth-child(1) {
         background-image: url(../../img/main/4.png);
-        background-attachment: fixed;
-        background-size: cover;
+        @media (min-width: 992px) {
+          background-attachment: fixed;
+          background-size: cover;
+        }
         height: 1em;
       }
       .row:nth-child(2) {
