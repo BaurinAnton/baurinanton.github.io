@@ -1,18 +1,18 @@
 main {
   section:nth-child(7) {
     .container-fluid {
-      font-size: 316px;
+      font-size: 265px;
       @media (max-width: 1700px) {
-        font-size: 250px;
+        font-size: 220px;
       }
       @media (max-width: 1440px) {
-        font-size: 180px;
+        font-size: 150px;
       }
       @media (max-width: 992px) {
-        font-size: 120px;
+        font-size: 110px;
       }
       @media (max-width: 768px) {
-        font-size: 80px;
+        font-size: 83px;
       }
       @media (max-width: 500px) {
         font-size: 60px;
@@ -32,18 +32,27 @@ main {
         height: 1em;
       }
       .row:nth-child(2) {
+        padding: 5px 0 5px 0;
         background-color: #547c7a;
-        height: 1.32em;
+        @media (min-width: 576px) {
+          height: 1.32em;
+        }
         color: white;
         .phone {
           color: white;
         }
-        .col-7 {
+        .col-sm-7 {
           h2 {
             font-size: 0.443em;
+            @media (max-width: 575px) {
+              font-size: 0.5em;
+            }
           }
         }
-        .col-5 {
+        .col-sm-5 {
+          @media (max-width: 575px) {
+            font-size: 0.4em;
+          }
           font-size: 0.253em;
           i {
             color: white;

@@ -38,10 +38,41 @@ main {
       @media (max-width: 1200px) {
         font-size: 10px;
       }
+      #swiperphone {
+        padding: 50px 0 50px 0;
+      }
+      #swiperphone > div > div.swiper-pagination.swiper-pagination-progressbar > span {
+        background-color: $backcolor;
+        height: 6px;
+      }
       .col-11,
       .col-md-5 {
+        font-size: 500px;
+        .workphone {
+          width: 1.2em;
+          height: 0.9em;
+          @media (max-width: 650px) {
+            font-size: 380px;
+          }
+          @media (max-width: 500px) {
+            font-size: 330px;
+          }
+          @media (max-width: 425px) {
+            font-size: 287px;
+          }
+          @media (max-width: 370px) {
+            font-size: 270px;
+          }
+          @media (max-width: 350px) {
+            font-size: 240px;
+          }
+          .swiper-button-next:after, .swiper-button-prev:after {
+            color: $backcolor;
+          }
+          
+        }
         .work1,
-        .work2 {
+        .work2, {
           font-size: 70px;
           width: 9.3em;
           height: 13.5em;
@@ -72,16 +103,6 @@ main {
           @media (max-width: 400px) {
             font-size: 29px;
           }
-        }
-      }
-      .col-md-5:nth-child(1) {
-        @media (max-width: 767px) {
-          padding: 1em 0 4em 0;
-        }
-      }
-      .col-md-5:nth-child(2) {
-        @media (max-width: 767px) {
-          padding: 0 0 1em 0;
         }
       }
     }
