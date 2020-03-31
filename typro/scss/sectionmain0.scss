@@ -6,7 +6,6 @@ main {
     background-image: url(../img/main/1.jpg);
     background-size: cover;
     height: 10.5em;
-    
     @media (min-width: 2000px) {
         height: 15em;
     }
@@ -16,6 +15,10 @@ main {
     }
     @media (max-width: 1601px) {
         height: 9em;
+        margin-top: -0.3em;
+    }
+    @media (max-width: 1599px) {
+        margin-top: -0.6em;
     }
     @media (max-width: 1440px) {
         height: 9em;
