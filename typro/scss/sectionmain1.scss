@@ -34,6 +34,9 @@ main {
       }
       .row {
         margin-right: 0px;
+        .col-12 {
+          padding: 0 20px 0 20px;
+        }
       }
       @media (min-width: 768px) {
         .row {
@@ -42,11 +45,13 @@ main {
       }
       h2 {
         font-size: 2.3em;
+        padding-left: 3px;
       }
       .line1 {
         width: 15.13em;
         height: 3.87em;
-        margin: -2em 0 0 -1.87em;
+        margin: -2em 0 0 -2em;
+        opacity: 0.59;
       }
     }
   }

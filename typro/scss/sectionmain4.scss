@@ -15,7 +15,7 @@ main {
         @media (max-width: 992px) {
             font-size: 40px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             font-size: 34px;
         }
         @media (max-width: 575px) {
@@ -49,11 +49,12 @@ main {
                 .col-sm-6 {
                     padding-left: 2.2em;
                     @media (max-width: 992px) {
-                        padding-left: 0.5em;
+                        padding-left: 0.5em
                     }
                     // Swiper
                     .swiper-container {
-                        @media (max-width: 1440px) {
+                        @media (max-width: 2000px) {
+                            padding: 15px 15px 0 0;
                         }
                         @media (max-width: 1200px) {
                             font-size: 52px;
@@ -62,13 +63,14 @@ main {
                             font-size: 48px;
                         }
                         @media (max-width: 992px) {
-                            font-size: 46px;
+                            font-size: 44px;
                         }
-                        @media (max-width: 768px) {
-                            font-size: 36px;
+                        @media (max-width: 767px) {
+                            font-size: 34px;
                         }
                         @media (max-width: 575px) {
                             font-size: 50px;
+                            padding: 15px 0 0 0;
                         }
                         @media (max-width: 425px) {
                             font-size: 44px;
@@ -100,6 +102,7 @@ main {
                     img {
                         width: 6em;
                         margin: -1.6429em 0 0 -0.7714em;
+                        opacity: 0.59;
                         @media (max-width: 768px) {
                             margin: -2.1em 0 0 -0.7714em;
                         }

@@ -4,6 +4,7 @@ main {
   section:nth-child(6) {
     .row:nth-child(1) {
       font-size: 70px;
+      padding-left: 0px;
       @media (max-width: 1700px) {
         font-size: 55px;
       }
@@ -22,6 +23,9 @@ main {
         padding: 1em 0 0 0;
       }
       .col {
+        @media (mIN-width: 992px) {
+          padding-left: 9px;
+        }
         h2 {
           color: white;
           font-size: 1em;
@@ -29,6 +33,7 @@ main {
         img {
           width: 6em;
           margin: -1.6em 0 0 -0.77em;
+          opacity: 0.59;
         }
       }
     }
