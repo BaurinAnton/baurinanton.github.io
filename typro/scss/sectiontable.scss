@@ -1,0 +1,68 @@
+// tablecolor
+$table_back_color:#1C181A;
+$table_font_color:#ffffff;
+$table_color:#547C7A;
+.card {
+    border: 0px;
+    padding: 0px;
+    background-color: $table_back_color;
+}
+.table {
+    color: $table_font_color;
+    background-color: $table_back_color;
+    font-size: 30px;
+    border-collapse: separate; 
+    border-spacing: 0.9em 0em;
+    border: 0px;
+    @media (max-width: 425px) {
+        font-size: 16px;
+        border-spacing: 0.4em 0em;
+    }
+    @media (min-width: 426px) {
+        border-spacing: 0.4em 0em;
+        font-size: 20px;
+    }
+    @media (min-width: 992px) {
+        font-size: 26px;
+    }
+    @media (min-width: 1700px) {
+        font-size: 30px;
+        border-spacing: 0.7em 0em;
+    }
+    .trhead {
+        height: 4em;
+        background-color: $table_back_color;
+        th {
+            border: 0px;
+            @media (max-width: 425px) {
+                font-size: 1.2em;
+            }
+            @media (min-width: 426px) {
+                font-size: 1.3em;
+            }
+            @media (min-width: 1700px) {
+                font-size: 1.67em;
+            }
+            vertical-align: middle;
+        }
+    }
+    tbody {
+        th, td:nth-child(odd) {
+            text-align: center;
+            border: 0px;
+        }
+        td:nth-child(even) {
+            padding-left: 1em;
+            border: 0px;
+        }
+        tr {
+         background-color: $table_color;
+         &:hover {
+               background-color: rgb(42, 209, 131);
+            }
+        }
+        th {
+                vertical-align: middle;
+        }
+    }
+}

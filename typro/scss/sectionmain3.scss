@@ -1,0 +1,108 @@
+$containerbackcolor: #547C7A;
+$colcolor: #333333;
+$bordercolor: #E8FDFF;
+$colordiv: #00B0B5;
+main {
+    section:nth-child(4) {
+        font-size: 40px;
+        .contaiter-fluid {
+            background-color: $containerbackcolor;
+            padding-bottom: 0.8em;
+            .row:nth-child(1) {
+                margin: 0px;
+                h2 {
+                    font-size:  3.75em;
+                    @media (max-width: 1510px) {
+                        font-size: 120px;
+                    }
+                    @media (max-width: 1110px) {
+                        font-size: 90px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 60px;
+                    }
+                    color: white;
+                }
+            }
+            .row:nth-child(2) {
+                margin: 0px;
+                .colborder {
+                    height: 5.725em;
+                    background-color: $colcolor;
+                    border: 0.125em solid $bordercolor;
+                    transition: border-width 0.2s linear;
+                    border-radius: 1.05em;
+                    &:hover {
+                        border-width: 15px;
+                    }
+                    button {
+                        font-size: 40px;
+                        color: white;
+                        @media (max-width: 1510px) {
+                            font-size: 30px;
+                        }
+                        @media (max-width: 1110px) {
+                            font-size: 22px;
+                        }
+                        @media (max-width: 500px) {
+                            font-size: 15px;
+                        }
+                    }
+                    @media (max-width: 1510px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 1110px) {
+                        font-size: 22px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 15px;
+                    }
+                    .col-10 {
+                        border: 0px;
+                        background-color: none;
+                    }
+                    #green, #lumen {
+                        background-color: $colordiv;
+                        width: 0.645em;
+                        height: 2em;
+                        border: 0px;
+                        border-radius: 1.05em;
+                        @media (max-width: 1510px) {
+                            font-size: 30px;
+                        }
+                        @media (max-width: 1110px) {
+                            font-size: 22px;
+                            padding: 8px;
+                        }
+                        @media (max-width: 500px) {
+                            font-size: 15px;
+                        }
+                    }
+                    #lumen {
+                        box-shadow: 0 0 0.375em 0.375em rgba(127, 176, 176, 0.6);
+                    }
+                }
+                div:nth-child(3) {
+                    padding: 0px;
+                    img {
+                        @media (max-width: 1510px) {
+                            font-size: 30px;
+                        }
+                        @media (max-width: 1110px) {
+                            font-size: 22px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 18px;
+                        }
+                        @media (max-width: 500px) {
+                            font-size: 12px;
+                        }
+                        width: 2.7em;
+                        height: 3em;
+                        margin: 0px -10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
