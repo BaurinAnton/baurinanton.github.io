@@ -6,11 +6,9 @@ main {
   section:nth-child(3) {
     font-size: 30px;
     background-image: url(../img/main/4.png);
+    background-size: cover;
     @media (min-width: 992px) {
       background-attachment: fixed;
-    }
-    @media (max-width: 991px) {
-      background-size: cover;
     }
     .row:nth-child(1) {
       padding: 2.72em 0 2.33em 0;
@@ -65,6 +63,10 @@ main {
         .card-text {
           position: relative;
           color: white;
+          @media (min-width: 3500px) {
+            font-size: 50px;
+            line-height: 1.5;
+          }
           @media (max-width: 1750px) {
             font-size: 24px;
           }
@@ -90,7 +92,7 @@ main {
             margin-top: 0px;
           }
           font-size: 1em;
-          font-weight: 400;
+          font-weight: 350;
         }
       }
     }
@@ -99,7 +101,7 @@ main {
     height: 127px;
     width: 84%;
     margin: -135px 0 0 -15px;
-    opacity: 0.79;
+    opacity: 0.5;
     @media (max-width: 1300px) {
       margin-left: 0px;
     }

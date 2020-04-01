@@ -4,7 +4,9 @@ main {
   section:nth-child(6) {
     .row:nth-child(1) {
       font-size: 70px;
-      padding-left: 0px;
+      @media (min-width: 3500px) {
+        font-size: 120px;
+      }
       @media (max-width: 1700px) {
         font-size: 55px;
       }
@@ -18,14 +20,14 @@ main {
         font-size: 35px;
       }
       background-color: $backcolor;
-      padding: 1em 0 0 2.15em;
-      @media (max-width: 992px) {
-        padding: 1em 0 0 0;
+      padding-top: 1em;
+      @media (max-width: 991px) {
+        justify-content: space-between;
       }
-      .col {
-        @media (min-width: 992px) {
-          padding-left: 9px;
-        }
+      @media (min-width: 992px) {
+        justify-content: space-around;
+      }
+      .col-11 {
         h2 {
           color: white;
           font-size: 1em;
@@ -33,7 +35,7 @@ main {
         img {
           width: 6em;
           margin: -1.7em 0 0 -0.72em;
-          opacity: 0.59;
+          opacity: 0.4;
         }
       }
     }

@@ -1,6 +1,12 @@
 $colortext: #ffffff;
 main {
   section:nth-child(2) {
+    color: $colortext;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-width: 3500px) {
+      font-size: 50px;
+    }
     font-size: 30px;
     @media (max-width: 1600px) {
       font-size: 26px;
@@ -11,17 +17,15 @@ main {
     @media (max-width: 992px) {
       font-size: 15px;
     }
-
-    font-weight: 400;
-    color: $colortext;
     @media (max-width: 767px) {
       background-image: url(../img/main/3mobile.png);
     }
     @media (min-width: 768px) {
       background-image: url(../img/main/3.png);
+      @media (min-width: 3500px) {
+        height: 50em;
+      }
     }
-    background-size: cover;
-    background-repeat: no-repeat;
     .container-fluid {
       @media (max-width: 767px) {
         padding: 6em 0 6em 1.2em;
@@ -33,7 +37,6 @@ main {
         padding: 8.83em 0 10em 0;
       }
       .row {
-        margin-right: 0px;
         .col-12 {
           padding: 0 25px 0 20px;
           div {
@@ -48,13 +51,12 @@ main {
       }
       h2 {
         font-size: 2.3em;
-        padding-left: 3px;
       }
       .line1 {
         width: 15.13em;
         height: 3.87em;
         margin: -1.7em 0 0 -2em;
-        opacity: 0.59;
+        opacity: 0.4;
       }
     }
   }

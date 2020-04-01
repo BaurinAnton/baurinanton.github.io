@@ -3,6 +3,9 @@ $bordershadow: rgba(127, 176, 176, 0.6);
 main {
     section:nth-child(5) {
         font-size: 70px;
+        @media (min-width: 3500px) {
+            font-size: 120px;
+        }
         @media (max-width: 1700px) {
             font-size: 60px;
         }
@@ -95,9 +98,6 @@ main {
                     .swiper-button-next:after,
                     .swiper-container-rtl .swiper-button-prev:after {
                         color: #001c29;
-                    }
-                    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-                        background-color: #001c29;
                     }
                     .swiper-slide {
                         background-position: center;

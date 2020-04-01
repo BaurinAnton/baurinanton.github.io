@@ -9,6 +9,10 @@ main {
     @media (min-width: 2000px) {
         height: 15em;
     }
+    @media (min-width: 3500px) {
+        height: 20em;
+        margin-top: -1em;
+    }
     margin-top: -0.6em;
     @media (max-width: 1780px) {
         height: 10em;
@@ -30,6 +34,7 @@ main {
         height: 7em;
         background-image: url(../img/main/1.jpg);
         background-attachment: scroll;
+        background-size: cover;
     }
     @media (max-width: 767px) {
         height: 6em;
@@ -77,6 +82,9 @@ main {
         }
         @media (min-width: 2000px) {
             padding: 7.9em 0em 0em 3.6em;
+        }
+        @media (min-width: 3500px) {
+            padding: 12.2em 0em 0em 3.6em;
         }
         h1 {
             font-size: 1.2em;

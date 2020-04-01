@@ -5,6 +5,9 @@ $colordiv: #00B0B5;
 main {
     section:nth-child(4) {
         font-size: 40px;
+        @media (min-width: 3500px) {
+            font-size: 60px;
+        }
         .contaiter-fluid {
             background-color: $containerbackcolor;
             padding-bottom: 0.8em;
@@ -36,7 +39,7 @@ main {
                         border-width: 15px;
                     }
                     button {
-                        font-size: 40px;
+                        font-size: 1em;
                         color: white;
                         @media (max-width: 1510px) {
                             font-size: 30px;
