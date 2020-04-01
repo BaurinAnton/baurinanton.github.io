@@ -35,7 +35,10 @@ main {
       .row {
         margin-right: 0px;
         .col-12 {
-          padding: 0 20px 0 20px;
+          padding: 0 25px 0 20px;
+          div {
+            margin-top: -10px;
+          }
         }
       }
       @media (min-width: 768px) {
@@ -50,7 +53,7 @@ main {
       .line1 {
         width: 15.13em;
         height: 3.87em;
-        margin: -2em 0 0 -2em;
+        margin: -1.7em 0 0 -2em;
         opacity: 0.59;
       }
     }

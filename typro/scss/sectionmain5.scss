@@ -23,7 +23,7 @@ main {
         padding: 1em 0 0 0;
       }
       .col {
-        @media (mIN-width: 992px) {
+        @media (min-width: 992px) {
           padding-left: 9px;
         }
         h2 {
@@ -32,7 +32,7 @@ main {
         }
         img {
           width: 6em;
-          margin: -1.6em 0 0 -0.77em;
+          margin: -1.7em 0 0 -0.72em;
           opacity: 0.59;
         }
       }
@@ -40,11 +40,20 @@ main {
     .row:nth-child(2) {
       background-color: $caruselcolor;
       margin-top: -2.5em;
+      @media (min-width: 992px) {
+        justify-content: space-around;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        justify-content: space-between;
+      }
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
       @media (max-width: 1200px) {
         font-size: 10px;
       }
       #swiperphone {
-        padding: 30px 0 30px 0;
+        padding: 20px 0 20px 0;
       }
       #swiperphone > div > div.swiper-pagination.swiper-pagination-progressbar > span {
         background-color: $backcolor;
@@ -76,8 +85,14 @@ main {
           }
           
         }
+        .work1 {
+          margin-left: 0px;
+        }
+        .work2 {
+          margin-right: 0px;
+        }
         .work1,
-        .work2, {
+        .work2 {
           font-size: 70px;
           width: 9.3em;
           height: 13.5em;

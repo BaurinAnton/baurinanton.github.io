@@ -1,24 +1,24 @@
 main {
   section:nth-child(7) {
     .container-fluid {
-      font-size: 265px;
+      font-size: 252px;
       @media (max-width: 1700px) {
-        font-size: 220px;
+        font-size: 213px;
       }
       @media (max-width: 1440px) {
-        font-size: 150px;
+        font-size: 144px;
       }
       @media (max-width: 992px) {
-        font-size: 110px;
+        font-size: 109px;
       }
       @media (max-width: 768px) {
-        font-size: 83px;
+        font-size: 79px;
       }
-      @media (max-width: 500px) {
+      @media (max-width: 575px) {
+        font-size: 80px;
+      }
+      @media (max-width: 450px) {
         font-size: 60px;
-      }
-      @media (max-width: 400px) {
-        font-size: 50px;
       }
       .row:nth-child(1) {
         @media (max-width: 991px) {
@@ -32,7 +32,15 @@ main {
         height: 1em;
       }
       .row:nth-child(2) {
-        padding: 5px 0 5px 0;
+        @media (min-width: 992px) {
+          justify-content: space-around;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          justify-content: space-between;
+        }
+        @media (max-width: 767px) {
+          justify-content: space-between;
+        }
         background-color: #547c7a;
         @media (min-width: 576px) {
           height: 1.32em;
@@ -41,6 +49,7 @@ main {
         .phone {
           color: white;
         }
+        
         .col-sm-7 {
           h2 {
             font-size: 0.443em;
@@ -49,14 +58,32 @@ main {
             }
           }
         }
-        .col-sm-5 {
+        .col-sm-3 {
+          text-align: end;
+          @media (min-width: 576px) {
+            padding-left: 0px;
+          }
           @media (max-width: 575px) {
             font-size: 0.4em;
           }
-          font-size: 0.253em;
+          font-size: 0.2em;
           i {
             color: white;
           }
+          .phone {
+            font-size: 1.04em;
+          }
+        }
+        .col-12 {
+          @media (max-width: 575px) {
+            text-align: center;
+            &:nth-child(1) {
+              padding-top: 20px;
+            }
+            &:nth-child(2) {
+              padding-bottom: 20px;
+            }
+          } 
         }
       }
     }
