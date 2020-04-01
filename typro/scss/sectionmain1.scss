@@ -37,6 +37,7 @@ main {
         padding: 8.83em 0 10em 0;
       }
       .row {
+        margin-right: 0px;
         .col-12 {
           padding: 0 25px 0 20px;
           div {
@@ -47,7 +48,6 @@ main {
       @media (min-width: 768px) {
         .row {
           margin-left: 45%;
-          margin-right: 0px;
         }
       }
       h2 {
