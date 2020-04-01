@@ -11,7 +11,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
