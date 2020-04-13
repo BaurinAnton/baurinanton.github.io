@@ -14,15 +14,10 @@ main {
                 padding: 0.25em 0 1em 0;
             }
             @media (max-width: 575px) {
-                padding: 0 0.125em 0.65em 0.125em;
+                padding: 0 0.125em 0.62em 0.125em;
             }
             .row:nth-child(1) {
                 margin: 0px;
-                @media (max-width: 575px) {
-                    .col {
-                        padding-top: 5px;
-                    }
-                }
                 h2 {
                     font-size: 3.75em;
                     @media (max-width: 1510px) {

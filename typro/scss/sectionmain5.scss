@@ -1,5 +1,5 @@
 $backcolor: #1c181a;
-$caruselcolor: #669a97;
+$caruselcolor: #547c7a;
 main {
   section:nth-child(6) {
     .row:nth-child(1) {
@@ -56,9 +56,7 @@ main {
       }
       @media (max-width: 767px) {
         justify-content: center;
-      }
-      @media (max-width: 576px) {
-        padding: 3em 0;
+        padding: 2.5em 0;
       }
       @media (max-width: 1200px) {
         font-size: 10px;

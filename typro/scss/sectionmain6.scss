@@ -50,10 +50,6 @@ main {
           justify-content: space-between;
           height: 1.35em;
         }
-        @media (max-width: 767px) {
-          height: 4em;
-          align-content: space-evenly;
-        }
         background-color: #547c7a;
         color: white;
         .phone {

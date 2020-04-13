@@ -52,7 +52,7 @@ main {
                 }
                 @media (max-width: 575px) {
                     justify-content: center;
-                    padding: 0.42em 0em 0.7em 0;
+                    padding: 0.3em 0em 0.62em 0;
                 }
                 .col-lg-5 {
                     &:nth-child(2) {
@@ -63,7 +63,7 @@ main {
                             align-self: center;
                         }
                         @media (max-width: 575px) {
-                            padding-top: 20px;
+                            padding-top: 25px;
                         }
                     }
                     // Swiper

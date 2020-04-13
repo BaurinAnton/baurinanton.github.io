@@ -12,11 +12,11 @@ main {
     }
     .row:nth-child(1) {
       padding: 2.72em 0 2.33em 0;
-      @media (max-width: 575px) {
-        padding: 0;
-      }
       @media (max-width: 767px) {
         padding: 0.75em 0 1.6em 0;
+      }
+      @media (max-width: 575px) {
+        padding: 0;
       }
       @media (min-width: 768px) and (max-width: 1199px) {
         padding: 0.67em 0 2.5em 0;
