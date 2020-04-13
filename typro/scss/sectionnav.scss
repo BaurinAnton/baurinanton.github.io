@@ -28,11 +28,14 @@ $colorwhite: #ffffff;
       color: $colorwhite;
       &:before {
         margin-right: -3px;
+        @media (min-width: 992px) and (max-width: 1440px) {
+          margin-right: -2px;
+        }
       }
     }
     #clock {
       font-size: 1.5em;
-      margin-right: 5px;
+      margin-right: 4px;
     }
     
   }
@@ -59,10 +62,10 @@ $colorwhite: #ffffff;
       }
       div:nth-child(1) {
         margin: 1.3em 0em 0em -0.2em;
-        font-size: 28px;
+        font-size: 29px;
       }
       div:nth-child(2) {
-        margin: 0.4em 0em 0em -0.2em;
+        margin: 0.4em 0em 0em -0.46em;
         font-size: 1.5em;
       }
         i {

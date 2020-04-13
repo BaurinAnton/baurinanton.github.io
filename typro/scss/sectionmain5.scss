@@ -17,15 +17,21 @@ main {
         font-size: 40px;
       }
       @media (max-width: 768px) {
-        font-size: 35px;
+        font-size: 34px;
       }
       background-color: $backcolor;
-      padding-top: 1em;
       @media (max-width: 991px) {
         justify-content: space-between;
       }
       @media (min-width: 992px) {
         justify-content: space-around;
+        padding: 0.52em 0 0 0;
+      }
+      @media (max-width: 991px) {
+        padding-top: 40px;
+      }
+      @media (max-width: 575px) {
+        padding-top: 0.43em;
       }
       .col-11 {
         h2 {
@@ -41,25 +47,28 @@ main {
     }
     .row:nth-child(2) {
       background-color: $caruselcolor;
-      margin-top: -2.5em;
+      margin-top: -3.8em;
       @media (min-width: 992px) {
         justify-content: space-around;
       }
       @media (min-width: 768px) and (max-width: 991px) {
         justify-content: space-between;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         justify-content: center;
+      }
+      @media (max-width: 576px) {
+        padding: 3em 0;
       }
       @media (max-width: 1200px) {
         font-size: 10px;
       }
-      #swiperphone {
-        padding: 20px 0 20px 0;
-      }
       #swiperphone > div > div.swiper-pagination.swiper-pagination-progressbar > span {
         background-color: $backcolor;
         height: 7px;
+      }
+      #swiperphone {
+        padding: 0px;
       }
       .col-11,
       .col-md-5 {
@@ -82,10 +91,10 @@ main {
           @media (max-width: 350px) {
             font-size: 240px;
           }
-          .swiper-button-next:after, .swiper-button-prev:after {
+          .swiper-button-next:after,
+          .swiper-button-prev:after {
             color: $backcolor;
           }
-          
         }
         .work1 {
           margin-left: 0px;

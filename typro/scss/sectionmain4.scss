@@ -39,16 +39,20 @@ main {
                     background-size: cover;
                     background-attachment: fixed;
                     background-image: url(../img/main/4.png);
-                    height: 130px;
+                    height: 2.4em;
                 }
             }
             .row:nth-child(2) {
-                padding: 2.72em 0 2.72em 0;
+                padding: 2.36em 0 2.36em 0;
                 @media (min-width: 576px) {
                     justify-content: space-around;
                 }
+                @media (max-width: 991px) {
+                    padding: 1.9em 0 1.9em 0;
+                }
                 @media (max-width: 575px) {
                     justify-content: center;
+                    padding: 0.42em 0em 0.7em 0;
                 }
                 .col-lg-5 {
                     &:nth-child(2) {

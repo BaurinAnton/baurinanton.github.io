@@ -12,6 +12,15 @@ main {
     }
     .row:nth-child(1) {
       padding: 2.72em 0 2.33em 0;
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+      @media (max-width: 767px) {
+        padding: 0.75em 0 1.6em 0;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 0.67em 0 2.5em 0;
+      }
       .card {
         @media (max-width: 992px) {
           padding: 0px;
@@ -51,13 +60,14 @@ main {
           font-weight: 300;
           line-height: 30px;
         }
+        #cardpadding {
+          @media (max-width: 575px) {
+            padding-top: 0px;
+          }
+        }
         .card-body {
           @media (min-width: 1630px) {
             padding: 37px;
-          }
-          @media (max-width: 767px) {
-            border: 9px inset rgba(102, 154, 151, 0.9);
-            border-radius: 9px;
           }
         }
         .card-text {
@@ -84,6 +94,7 @@ main {
           }
           @media (max-width: 1199px) {
             text-align: center;
+            margin-top: 35px;
           }
           @media (max-width: 425px) {
             font-size: 16px;
