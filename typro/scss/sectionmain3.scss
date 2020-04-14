@@ -36,6 +36,11 @@ main {
                 }
             }
             .row:nth-child(2) {
+                button {
+                    &:focus {
+                        outline: 0px;
+                    }
+                }
                 font-size: 100px;
                 @media (max-width: 1700px) {
                     font-size: 70px;
