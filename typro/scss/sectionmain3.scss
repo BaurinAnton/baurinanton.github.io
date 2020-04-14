@@ -10,11 +10,14 @@ main {
         }
         .contaiter-fluid {
             background-color: $containerbackcolor;
+            @media (min-width: 991px) {
+                padding: 0 0 1em 0;
+            }
             @media (max-width: 991px) {
                 padding: 0.25em 0 1em 0;
             }
             @media (max-width: 575px) {
-                padding: 0 0.125em 0.62em 0.125em;
+                padding: 0.15em 0.1em 0.62em 0.125em;
             }
             .row:nth-child(1) {
                 margin: 0px;
@@ -33,85 +36,112 @@ main {
                 }
             }
             .row:nth-child(2) {
+                font-size: 100px;
+                @media (max-width: 1700px) {
+                    font-size: 70px;
+                }
+                @media (max-width: 1200px) {
+                    font-size: 60px;
+                }
+                @media (max-width: 992px) {
+                    font-size: 50px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 40px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 34px;
+                }
                 margin: 0px;
-                @media (min-width: 992px) {
-                    padding-bottom: 0.8em;
-                    @media (min-width: 1511px) {
-                        padding-bottom: 1.2em;
-                    }
-                }
-                .colborder {
-                    height: 5.725em;
-                    background-color: $colcolor;
-                    border: 0.125em solid $bordercolor;
-                    transition: border-width 0.2s linear;
-                    border-radius: 1.05em;
-                    &:hover {
-                        border-width: 15px;
-                    }
-                    button {
-                        font-size: 1em;
-                        color: white;
-                        @media (max-width: 1510px) {
-                            font-size: 30px;
-                        }
-                        @media (max-width: 1110px) {
-                            font-size: 22px;
-                        }
-                        @media (max-width: 500px) {
-                            font-size: 15px;
-                        }
-                    }
-                    @media (max-width: 1510px) {
-                        font-size: 30px;
-                    }
-                    @media (max-width: 1110px) {
-                        font-size: 22px;
-                    }
-                    @media (max-width: 500px) {
-                        font-size: 15px;
-                    }
-                    .col-10 {
-                        border: 0px;
-                        background-color: none;
-                    }
-                    #green,
-                    #lumen {
-                        background-color: $colordiv;
-                        width: 0.645em;
-                        height: 2em;
-                        border: 0px;
-                        border-radius: 1.05em;
-                        @media (max-width: 1510px) {
-                            font-size: 30px;
-                        }
-                        @media (max-width: 1110px) {
-                            font-size: 22px;
-                            padding: 8px;
-                        }
-                        @media (max-width: 500px) {
-                            font-size: 15px;
+                .col-5 {
+                    z-index: 1;
+                    .container-fluid {
+                        padding: 0px;
+                        .row {
+                            justify-content: flex-end;
+                            .col-lg-2 {
+                                @media (max-width: 576px) {
+                                    padding: 10px;
+                                }
+                                background-color: $colcolor;
+                                border: 0.03125em solid $bordercolor;
+                                border-radius: 0.42em;
+                                #green1 {
+                                    padding: 0px;
+                                    background-color: $colordiv;
+                                    border: 0px;
+                                    border-radius: 1.05em;
+                                    height: 0.66em;
+                                    width: 0.3em;
+                                }
+                            }
+                            .col-lg-4 {
+                                background-color: $colcolor;
+                                border: 0.03125em solid $bordercolor;
+                                border-radius: 0.42em;
+                                @media (max-width: 425px) {
+                                    padding: 0 7px 0 7px;
+                                }
+                                .container-fluid {
+                                    padding: 0px;
+                                    .row {
+                                        padding: 0px;
+                                        align-items: center;
+                                        height: 2em;
+                                        .col {
+                                            padding: 0px;
+                                            font-size: 0.38em;
+                                            text-align: center;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-                div:nth-child(3) {
+                .col-7 {
                     padding: 0px;
-                    img {
-                        @media (max-width: 1510px) {
-                            font-size: 30px;
+                    .container-fluid {
+                        padding: 0px;
+                        .row {
+                            justify-content: start;
+                            .col-auto {
+                                padding: 0;
+                                img {
+                                    width: 0.8em;
+                                    height: 1em;
+                                }
+                            }
+                            .col-lg-7 {
+                                background-color: $colcolor;
+                                border: 0.03125em solid $bordercolor;
+                                border-radius: 0.42em;
+                                .container-fluid {
+                                    padding: 0px;
+                                    .row {
+                                        padding: 0px;
+                                        align-items: center;
+                                        height: 2em;
+                                        .col-10 {
+                                            padding: 0px;
+                                            font-size: 0.38em;
+                                            text-align: center;
+                                            color: white;
+                                        }
+
+                                        #green2 {
+                                            padding: 0px;
+                                            background-color: $colordiv;
+                                            border: 0px;
+                                            border-radius: 1.05em;
+                                            width: 0.3em;
+                                            height: 0.66em;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        @media (max-width: 1110px) {
-                            font-size: 22px;
-                        }
-                        @media (max-width: 767px) {
-                            font-size: 18px;
-                        }
-                        @media (max-width: 500px) {
-                            font-size: 12px;
-                        }
-                        width: 2.7em;
-                        height: 3em;
-                        margin: 0px -10px 0 0;
                     }
                 }
             }

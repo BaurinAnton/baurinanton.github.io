@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/swiperworkphone.css" />
     <link rel="stylesheet" type="text/css" href="css/animationcube.css" />
+    <link rel="stylesheet" type="text/css" href="css/flash.css" />
     <link rel="icon" href="./img/Logo/logoheader.png">
     <title>#ТЫЖПРОГРАММИCТ</title>
 </head>
@@ -183,22 +184,67 @@
                         </h2>
                     </div>
                 </div>
-                <div class="row justify-content-center fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
-                    <div class="colborder col-1 col-lg-1 d-flex justify-content-center align-items-center leftflash">
+                <div class="row fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
+                    <div class="col-5">
+                        <div id="click1" class="container-fluid">
+                            <div class="row">
+                                <div class="col-auto col-lg-2 d-flex justify-content-center align-items-center">
+                                    <div id="green1"></div>
+                                </div>
+                                <button class="col-8 col-lg-4 borderled" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col">
+                                                ПК, ноутбук
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div id="click2" class="container-fluid">
+                            <div class="row">
+                                <div class="col-auto d-flex justify-content-center align-items-center">
+                                    <img src="./img/main/флешка.png" alt="flash">
+                                </div>
+                                <button class="col-10 col-lg-7 borderled" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="container-fluid">
+                                        <div class="row justify-content-around">
+                                            <div class="col-10">
+                                                Смартфон, планшет
+                                            </div>
+                                            <div class="col-auto">
+                                                <div id="green2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-5">
+                    <div class="colborder justify-content-center align-items-center">
                         <div id="green"></div>
                     </div>
-                    <div class="colborder col-3 col-lg-2 d-flex justify-content-center align-items-center text-center leftflash">
+                    <div class="colborder justify-content-center align-items-center text-center">
                         <button class="btn buttoncollapse" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ПК,
-                            ноутбук</button></div>
-                    <div class="col-1 col-lg-1 d-flex justify-content-end align-items-center rightflash"><img
+                            ноутбук</button></div></div>
+                            <div class="col-5">
+                    <div class="justify-content-end align-items-center"><img
                             src="./img/main/флешка.png" alt="flash"></div>
                     <div class="colborder col-6 col-lg-4 d-flex justify-content-center align-items-center text-center">
-                        <div class="col-11 rightflash"><button class="btn buttoncollapse" type="button" data-toggle="collapse"
+                        <div class= "rightflash"><button class="btn buttoncollapse" type="button" data-toggle="collapse"
                                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Смартфон,
                                 планшет</button></div>
                         <div id="lumen"></div>
                     </div>
+                    </div> -->
                 </div>
             </div>
             <div class="accordion" id="accordionExample">
@@ -370,11 +416,12 @@
                         <h2>Отзывы</h2>
                         <img src="./img/main/неон.png" alt="line">
                         <p class="fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
-                            «При выключении ноутбука появилась «ошибка». Было предложено переустановить систему Windows. Результатом довольна. Рекомендую.» <br/>
-«С мастером договориться легко обо всём: о времени, дате и цене.
-Цена достойная. Выполнено все быстро.» <br/>
-«Качество без навязывания дополнительных ненужных услуг.» <br/>
-«Компьютер после ремонта теперь "летает".»<br/>
+                            «При выключении ноутбука появилась «ошибка». Было предложено переустановить систему Windows.
+                            Результатом довольна. Рекомендую.» <br />
+                            «С мастером договориться легко обо всём: о времени, дате и цене.
+                            Цена достойная. Выполнено все быстро.» <br />
+                            «Качество без навязывания дополнительных ненужных услуг.» <br />
+                            «Компьютер после ремонта теперь "летает".»<br />
 
 
                         </p>
@@ -523,8 +570,7 @@
     </main>
     <footer>
         <div class="container-fluid">
-            <div class="row align-items-center fadeInDown wow" data-wow-duration="0.5s"
-                data-wow-delay="0.1s">
+            <div class="row align-items-center fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
                 <div class="col-md-3">© «#ТЫЖПРОГРАММИСТ», 2020 <br />
                     Ремонт компьютеров и не только. <br />
                     Телефон для связи: <a href="tel:8-905-682-02-37" class="phone">8-905-682-02-37</a> <br />
@@ -543,6 +589,7 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/wow.js"></script>
+    <script src="./js/flash.js"></script>
 </body>
 
 </html>

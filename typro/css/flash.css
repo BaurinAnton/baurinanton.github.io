@@ -1,0 +1,410 @@
+@media (min-width: 1701px) {
+  @-webkit-keyframes clickflash {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(70px);
+      }
+      100% {
+        transform: translateX(0.95em);
+      };
+    }
+    @-webkit-keyframes clickflash1 {
+      0% {
+          transform: translateX(0.95em);
+        };
+        50% {
+          transform: translateX(70px);
+        }
+        100% {
+          transform: translateX(0px);
+        };
+  }
+  @-webkit-keyframes clickflash2 {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(-70px);
+      }
+      100% {
+        transform: translateX(-0.95em);
+      };
+    }
+      @-webkit-keyframes clickflash2 {
+        0% {
+            transform: translateX(0px);
+          };
+          50% {
+            transform: translateX(-70px);
+          }
+          100% {
+            transform: translateX(-0.95em);
+          };
+        }
+          @-webkit-keyframes clickflash2 {
+            0% {
+                transform: translateX(0px);
+              };
+              50% {
+                transform: translateX(-70px);
+              }
+              100% {
+                transform: translateX(-0.95em);
+              };
+        }
+        @-webkit-keyframes clickflash3 {
+          0% {
+              transform: translateX(-0.95em);
+            };
+            50% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            };
+      }
+}
+@media (max-width: 1700px) {
+  @-webkit-keyframes clickflash {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(70px);
+      }
+      100% {
+        transform: translateX(1em);
+      };
+    }
+    @-webkit-keyframes clickflash1 {
+      0% {
+          transform: translateX(1em);
+        };
+        50% {
+          transform: translateX(70px);
+        }
+        100% {
+          transform: translateX(0px);
+        };
+  }
+  @-webkit-keyframes clickflash2 {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(-70px);
+      }
+      100% {
+        transform: translateX(-1em);
+      };
+    }
+      @-webkit-keyframes clickflash2 {
+        0% {
+            transform: translateX(0px);
+          };
+          50% {
+            transform: translateX(-70px);
+          }
+          100% {
+            transform: translateX(-1em);
+          };
+        }
+          @-webkit-keyframes clickflash2 {
+            0% {
+                transform: translateX(0px);
+              };
+              50% {
+                transform: translateX(-70px);
+              }
+              100% {
+                transform: translateX(-1em);
+              };
+        }
+        @-webkit-keyframes clickflash3 {
+          0% {
+              transform: translateX(-1em);
+            };
+            50% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            };
+      }
+}
+@media (max-width: 1200px) {
+  @-webkit-keyframes clickflash {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(70px);
+      }
+      100% {
+        transform: translateX(1.05em);
+      };
+    }
+    @-webkit-keyframes clickflash1 {
+      0% {
+          transform: translateX(1.05em);
+        };
+        50% {
+          transform: translateX(70px);
+        }
+        100% {
+          transform: translateX(0px);
+        };
+  }
+  @-webkit-keyframes clickflash2 {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(-70px);
+      }
+      100% {
+        transform: translateX(-1.05em);
+      };
+    }
+      @-webkit-keyframes clickflash2 {
+        0% {
+            transform: translateX(0px);
+          };
+          50% {
+            transform: translateX(-70px);
+          }
+          100% {
+            transform: translateX(-1.05em);
+          };
+        }
+          @-webkit-keyframes clickflash2 {
+            0% {
+                transform: translateX(0px);
+              };
+              50% {
+                transform: translateX(-70px);
+              }
+              100% {
+                transform: translateX(-1.05em);
+              };
+        }
+        @-webkit-keyframes clickflash3 {
+          0% {
+              transform: translateX(-1.05em);
+            };
+            50% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            };
+      }
+}
+@media (max-width: 992px) {
+  @-webkit-keyframes clickflash {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(70px);
+      }
+      100% {
+        transform: translateX(1.1em);
+      };
+    }
+    @-webkit-keyframes clickflash1 {
+      0% {
+          transform: translateX(1.1em);
+        };
+        50% {
+          transform: translateX(70px);
+        }
+        100% {
+          transform: translateX(0px);
+        };
+  }
+  @-webkit-keyframes clickflash2 {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(-70px);
+      }
+      100% {
+        transform: translateX(-1.1em);
+      };
+    }
+      @-webkit-keyframes clickflash2 {
+        0% {
+            transform: translateX(0px);
+          };
+          50% {
+            transform: translateX(-70px);
+          }
+          100% {
+            transform: translateX(-1.1em);
+          };
+        }
+          @-webkit-keyframes clickflash2 {
+            0% {
+                transform: translateX(0px);
+              };
+              50% {
+                transform: translateX(-70px);
+              }
+              100% {
+                transform: translateX(-1.1em);
+              };
+        }
+        @-webkit-keyframes clickflash3 {
+          0% {
+              transform: translateX(-1.1em);
+            };
+            50% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            };
+      }
+}
+@media (max-width: 576px) {
+  @-webkit-keyframes clickflash {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(70px);
+      }
+      100% {
+        transform: translateX(1.22em);
+      };
+    }
+    @-webkit-keyframes clickflash1 {
+      0% {
+          transform: translateX(1.22em);
+        };
+        50% {
+          transform: translateX(70px);
+        }
+        100% {
+          transform: translateX(0px);
+        };
+  }
+  @-webkit-keyframes clickflash2 {
+    0% {
+        transform: translateX(0px);
+      };
+      50% {
+        transform: translateX(-70px);
+      }
+      100% {
+        transform: translateX(-1.22em);
+      };
+    }
+      @-webkit-keyframes clickflash2 {
+        0% {
+            transform: translateX(0px);
+          };
+          50% {
+            transform: translateX(-70px);
+          }
+          100% {
+            transform: translateX(-1.22em);
+          };
+        }
+          @-webkit-keyframes clickflash2 {
+            0% {
+                transform: translateX(0px);
+              };
+              50% {
+                transform: translateX(-70px);
+              }
+              100% {
+                transform: translateX(-1.22em);
+              };
+        }
+        @-webkit-keyframes clickflash3 {
+          0% {
+              transform: translateX(-1.22em);
+            };
+            50% {
+              transform: translateX(-70px);
+            }
+            100% {
+              transform: translateX(0px);
+            };
+      }
+}
+.click1 {
+    -webkit-animation: clickflash 0.8s 1 forwards;
+}
+
+.click2 {
+    -webkit-animation: clickflash1 0.8s 1 forwards;
+}
+.click2_1 {
+  -webkit-animation: clickflash1 0.3s 1 forwards;
+}
+
+.click3 {
+    -webkit-animation: clickflash2 0.8s 1 forwards;
+}
+
+.click4 {
+    -webkit-animation: clickflash3 0.8s 1 forwards;
+}
+.click4_1 {
+  -webkit-animation: clickflash3 0.3s 1 forwards;
+}
+
+.clickled1 {
+    -webkit-animation: clickled1 0.8s 1 forwards;
+}
+@-webkit-keyframes clickled1 {
+  0% {
+      box-shadow: 0px 0px 0px 0px #00B0B5;
+    };
+    50% {
+      box-shadow: 0px 0px 15px 8px #00B0B5;
+    }
+    100% {
+      box-shadow: 0px 0px 15px 8px #00B0B5;
+    };
+}
+@-webkit-keyframes clickled2 {
+    0% {
+        box-shadow: 0px 0px 15px 8px #00B0B5;
+      };
+      50% {
+        box-shadow: 0px 0px 15px 8px #00B0B5;
+      }
+      100% {
+        box-shadow: 0px 0px 0px 0px #00B0B5;
+      };
+}
+.clickled2 {
+    -webkit-animation: clickled2 0.8s 1 forwards;
+}
+.clickled3 {
+    -webkit-animation: clickled1 0.8s 1 forwards;
+}
+.clickled4 {
+    -webkit-animation: clickled2 0.9s 1 forwards;
+}
+@-webkit-keyframes borderled {
+  0% {
+      box-shadow: 0px 0px 15px 2px rgb(255, 255, 255);
+    };
+    50% {
+      box-shadow: 0px 0px 15px 2px rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    };
+}
+.borderled {
+  -webkit-animation: borderled 1s infinite alternate forwards;
+}
