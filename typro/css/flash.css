@@ -385,15 +385,6 @@
         box-shadow: 0px 0px 0px 0px #00B0B5;
       };
 }
-.clickled2 {
-    -webkit-animation: clickled2 0.8s 1 forwards;
-}
-.clickled3 {
-    -webkit-animation: clickled1 0.8s 1 forwards;
-}
-.clickled4 {
-    -webkit-animation: clickled2 0.9s 1 forwards;
-}
 @-webkit-keyframes borderled {
   0% {
       box-shadow: 0px 0px 15px 2px rgb(255, 255, 255);
@@ -405,6 +396,51 @@
       box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
     };
 }
+.clickled2 {
+    -webkit-animation: clickled2 0.8s 1 forwards;
+}
+.clickled3 {
+    -webkit-animation: clickled1 0.8s 1 forwards;
+}
+.clickled4 {
+    -webkit-animation: clickled2 0.9s 1 forwards;
+}
+
 .borderled {
   -webkit-animation: borderled 1s infinite alternate forwards;
+}
+@media (max-width: 576px) {
+  @-webkit-keyframes clickled1 {
+    0% {
+        box-shadow: 0px 0px 0px 0px #00B0B5;
+      };
+      50% {
+        box-shadow: 0px 0px 8px 5px #00B0B5;
+      }
+      100% {
+        box-shadow: 0px 0px 8px 5px #00B0B5;
+      };
+  }
+  @-webkit-keyframes clickled2 {
+      0% {
+          box-shadow: 0px 0px 8px 5px #00B0B5;
+        };
+        50% {
+          box-shadow: 0px 0px 8px 5px #00B0B5;
+        }
+        100% {
+          box-shadow: 0px 0px 0px 0px #00B0B5;
+        };
+  }
+  @-webkit-keyframes borderled {
+    0% {
+        box-shadow: 0px 0px 7px 2px rgb(255, 255, 255);
+      };
+      50% {
+        box-shadow: 0px 0px 7px 2px rgb(255, 255, 255);
+      }
+      100% {
+        box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+      };
+  }
 }
