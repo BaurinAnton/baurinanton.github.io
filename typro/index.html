@@ -227,24 +227,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-5">
-                    <div class="colborder justify-content-center align-items-center">
-                        <div id="green"></div>
-                    </div>
-                    <div class="colborder justify-content-center align-items-center text-center">
-                        <button class="btn buttoncollapse" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ПК,
-                            ноутбук</button></div></div>
-                            <div class="col-5">
-                    <div class="justify-content-end align-items-center"><img
-                            src="./img/main/флешка.png" alt="flash"></div>
-                    <div class="colborder col-6 col-lg-4 d-flex justify-content-center align-items-center text-center">
-                        <div class= "rightflash"><button class="btn buttoncollapse" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Смартфон,
-                                планшет</button></div>
-                        <div id="lumen"></div>
-                    </div>
-                    </div> -->
                 </div>
             </div>
             <div class="accordion" id="accordionExample">
@@ -426,22 +408,31 @@
 
                         </p>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-5">
+                    <div class="col-11 col-sm-6 col-lg-5">
                         <!-- Swiper -->
-                        <div class="swiper-container">
+                        <div class="swiper-container reviewsswiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(./img/Reviews/2.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./img/Reviews/1.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./img/Reviews/3.jpg)"></div>
-                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-
+                                <div class="swiper-slide">
+                                  <div class="swiper-zoom-container">
+                                    <img src="img/Reviews/2.jpg">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-zoom-container">
+                                    <img src="img/Reviews/3.jpg">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-zoom-container">
+                                    <img src="img/Reviews/1.jpg">
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                          </div>
                         <!-- Swiper JS -->
                         <script src="./js/swiper.min.js"></script>
-
                         <!-- Initialize Swiper -->
                         <script src="./js/swiperreviews.js"></script>
                     </div>
@@ -540,7 +531,7 @@
                                     style="background-image: url(./img/Work/2.8.jpg); background-size: cover;"></div>
                             </div>
                             <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination-mobile"></div>
                         </div>
                     </div>
                     <script src="./js/swiperwork3.js"></script>
@@ -587,7 +578,6 @@
         </div>
     </footer>
     <script src="./js/wow.min.js"></script>
-    <script src="./js/swiper.min.js"></script>
     <script src="./js/wow.js"></script>
     <script src="./js/flash.js"></script>
 </body>

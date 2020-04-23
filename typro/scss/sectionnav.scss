@@ -12,7 +12,6 @@ $colorwhite: #ffffff;
   div:nth-child(2) {
     div:nth-child(2) {
       div:nth-child(1) {
-        
         margin-top: 0px;
       }
       div:nth-child(2) {
@@ -41,9 +40,7 @@ $colorwhite: #ffffff;
   }
   nav {
     div:nth-child(1) {
-      @media (max-width: 992px) {
         padding-left: 0px;
-      }
       #logo {
         color: $colorwhite;
         font-size: 1.75em;

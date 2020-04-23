@@ -3,7 +3,6 @@ var swiper = new Swiper('.work2', {
     slidesPerView: 2,
     autoHeight: true,
     loop: true,
-    speed: 1000,
     breakpoints: {
         300: {
             spaceBetween: 20,
@@ -12,10 +11,7 @@ var swiper = new Swiper('.work2', {
             spaceBetween: 30,
         }
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    speed: 1000,
     autoplay: {
         delay: 2000,
         disableOnInteraction: true,

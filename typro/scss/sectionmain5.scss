@@ -61,9 +61,10 @@ main {
       @media (max-width: 1200px) {
         font-size: 10px;
       }
-      #swiperphone > div > div.swiper-pagination.swiper-pagination-progressbar > span {
+      #swiperphone > div > div.swiper-pagination-mobile.swiper-pagination-progressbar > span {
         background-color: $backcolor;
-        height: 7px;
+        height: 8px;
+        z-index: 1;
       }
       #swiperphone {
         padding: 0px;

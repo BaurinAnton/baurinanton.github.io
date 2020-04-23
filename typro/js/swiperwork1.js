@@ -15,7 +15,7 @@ var swiper = new Swiper('.work1', {
         }
       },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination1',
         clickable: true,
     },
     autoplay: {
