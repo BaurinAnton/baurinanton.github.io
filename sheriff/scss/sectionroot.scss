@@ -1,0 +1,115 @@
+@import "variables.scss";
+main {
+    section:nth-child(1) {
+        padding-top: 91px;
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+        @media (max-width: 767px) {
+            font-size: 11px;
+            padding-top: 64px;
+        }
+        @media (max-width: 575px) {
+            font-size: 9px;
+        }
+        @media (max-width: 500px) {
+            font-size: 7px;
+        }
+        @media (max-width: 370px) {
+            font-size: 6px;
+        }
+        .container {
+            .column:nth-child(1) {
+                height: 20px;
+                background-color: $rootcolor;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+            .column:nth-child(2) {
+                background-image: url(../img/main/1.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                @media (max-width: 992px) {
+                    background-attachment: scroll;
+                }
+                .wrapper {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 86vh;
+                    .button_title {
+                        @media (min-width: 768px) {
+                            display: none;
+                        }
+                        font-size: 3em;
+                            width: 75%;
+                            height: 10%;
+                            margin: 0 auto;
+                            border-radius: 0.9em;
+                            border: 0;
+                            background-color: $rootcolor;
+                            color: $backheader;
+                            line-height: 30px;
+                            min-height: 2.5em;
+                    }
+                    .row:nth-child(2) {
+                        .line_1 {
+                            width: 4.25em;
+                            margin-left: 5em;
+                        }
+                        .line_2 {
+                            margin-left: 47em;
+                            margin-top: -4em;
+                            width: 4.25em;
+                        }
+                        h1 {
+                            display: flex;
+                            align-items: center;
+                            text-transform: uppercase;
+                            font-size: 2em;
+                            flex-basis: 30%;
+                            margin-top: -1.5em;
+                            margin-left: 4em;
+                            span:nth-child(1) {
+                                color: $rootcolor;
+                                font-size: 3em;
+                            }
+                        }
+                    }
+                    .row:nth-child(3) { 
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 45em;
+                        @media (max-width: 500px) {
+                            width: 100%;
+                        }
+                        padding: 60px 50px 70px 80px;
+                        @media (max-width: 767px) {
+                            padding: 60px 50px 70px 55px;
+                        }
+                        @media (max-width: 575px) {
+                            padding: 30px 40px 40px 30px;
+                        }
+                        border-radius: 5px;
+                        p {
+                            font-size: 1.5em;
+                            line-height: 30px;
+                            @media (max-width: 500px) {
+                                font-size: 2em;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .column:nth-child(3) {
+                height: 20px;
+                background-color: $rootcolor;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
