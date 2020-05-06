@@ -106,9 +106,9 @@ main {
             .column:nth-child(3) {
                 height: 20px;
                 background-color: $rootcolor;
-                @media (max-width: 768px) {
-                    display: none;
-                }
+                // @media (max-width: 768px) {
+                //     display: none;
+                // }
             }
         }
     }

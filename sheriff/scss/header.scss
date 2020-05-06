@@ -10,6 +10,7 @@ header {
         display: flex;
         justify-content: space-between;
         position: fixed;
+        z-index: 1;
         @media (max-width: 767px) {
             height: 4rem;
         }
@@ -114,7 +115,7 @@ header {
                     align-self: center;
                     margin-right: 1rem;
                     @media (max-width: 350px) {
-                        font-size: 0.85rem;
+                        font-size: 0.8rem;
                     }
                     a {
                         color: $textcolor;
