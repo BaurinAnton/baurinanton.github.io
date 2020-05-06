@@ -99,6 +99,7 @@ section:nth-child(2) {
                             }
                             span:nth-child(1) {
                                 padding-right: 0.6em;
+                                font-weight: bold;
                                 @media (max-width: 767px) {
                                     font-size: 3.2em;
                                     line-height: 1.5em;
