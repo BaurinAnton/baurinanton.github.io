@@ -302,7 +302,7 @@ main section:nth-child(1) .container .column:nth-child(2) .wrapper {
   justify-content: space-evenly;
   height: 86vh;
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1080px) {
   main section:nth-child(1) .container .column:nth-child(2) .wrapper {
     height: 100%;
   }
@@ -403,7 +403,7 @@ section:nth-child(2) .container {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1080px) {
   section:nth-child(2) .container {
     height: 100%;
   }

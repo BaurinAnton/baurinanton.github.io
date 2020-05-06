@@ -42,7 +42,7 @@ main {
                     flex-direction: column;
                     justify-content: space-evenly;
                     height: 86vh;
-                    @media screen and (orientation:landscape) {
+                    @media screen and (orientation:landscape) and (max-width: 1080px) {
                         height: 100%;
                     }
                     .button_title {
