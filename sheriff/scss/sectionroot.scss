@@ -2,6 +2,9 @@
 main {
     section:nth-child(1) {
         padding-top: 91px;
+        @media (max-width: 1439px) {
+            font-size: 13px;
+        }
         @media (max-width: 991px) {
             font-size: 14px;
         }
@@ -39,12 +42,19 @@ main {
                     flex-direction: column;
                     justify-content: space-evenly;
                     height: 86vh;
+                    @media screen and (orientation:landscape) {
+                        height: 100%;
+                    }
                     .button_title {
                         @media (min-width: 768px) {
                             display: none;
                         }
                         font-size: 3em;
+                        @media (max-width: 500px) {
+                            font-size: 3.5em;
+                        }
                             width: 75%;
+                            max-width: 450px;
                             height: 10%;
                             margin: 0 auto;
                             border-radius: 0.9em;
@@ -55,6 +65,9 @@ main {
                             min-height: 2.5em;
                     }
                     .row:nth-child(2) {
+                        @media screen and (orientation:landscape) {
+                            margin-top: 3em;
+                        }
                         .line_1 {
                             width: 4.25em;
                             margin-left: 5em;
@@ -93,7 +106,7 @@ main {
                         }
                         border-radius: 5px;
                         p {
-                            font-size: 1.5em;
+                            font-size: 1.2em;
                             line-height: 30px;
                             @media (max-width: 500px) {
                                 font-size: 2em;
@@ -106,9 +119,6 @@ main {
             .column:nth-child(3) {
                 height: 20px;
                 background-color: $rootcolor;
-                // @media (max-width: 768px) {
-                //     display: none;
-                // }
             }
         }
     }
