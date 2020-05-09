@@ -1,5 +1,6 @@
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 4,
+    speed: 800,
     breakpoints: {
         300: {
             slidesPerView: 1,
