@@ -75,7 +75,7 @@ section:nth-child(2) {
             }
             .row {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 margin: 0 auto;
                 max-width: 95%;
                 @media (max-width: 767px) {
@@ -110,6 +110,12 @@ section:nth-child(2) {
                             @media (max-width: 767px) {
                                 span:nth-child(2) {
                                     font-size: 1.4em;
+                                    line-height: 1.5em;
+                                }
+                            }
+                            @media (max-width: 576px) {
+                                span:nth-child(2) {
+                                    font-size: 1.6em;
                                     line-height: 1.5em;
                                 }
                             }
