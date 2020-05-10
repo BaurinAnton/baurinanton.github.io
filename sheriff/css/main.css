@@ -1,60 +1,8 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "fontello";
-  src: url("../fonts/fontello.eot?66113737");
-  src: url("../fonts/fontello.eot?66113737#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?66113737") format("woff2"), url("../fonts/fontello.woff?66113737") format("woff"), url("../fonts/fontello.ttf?66113737") format("truetype"), url("../fonts/fontello.svg?66113737#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?66113737#fontello') format('svg');
-  }
-}
-*/
-[class^=icon-]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: 0.2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-instagram:before {
-  content: "";
-}
-
-/* '' */
-.icon-vkontakte:before {
-  content: "";
-}
-
-/* '' */
 /* Box sizing rules */
+main {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -220,7 +168,6 @@ header .container .row .column:nth-child(1) .items:nth-child(1) img {
   }
   header .container .row .column:nth-child(1) nav ul li {
     font-size: 20px;
-    padding: 11px 35px 11px 35px;
     margin: 8px 0 8px 0;
     text-align: center;
     background-color: #FFA900;
@@ -234,6 +181,8 @@ header .container .row .column:nth-child(1) .items:nth-child(1) img {
   header .container .row .column:nth-child(1) nav ul li a {
     text-decoration: none;
     color: #000000;
+    padding: 11px 35px 11px 35px;
+    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -1315,6 +1264,11 @@ footer .row:nth-child(2) p {
   text-transform: uppercase;
 }
 
+html, body {
+  max-width: 100%;
+  max-width: 100%;
+}
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -1353,6 +1307,7 @@ footer .row:nth-child(2) p {
 .fadeInLeftBig {
   animation-name: fadeInLeftBig;
 }
+
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;

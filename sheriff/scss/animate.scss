@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html, body {
+  max-width: 100%;
+  max-width: 100%;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -84,21 +88,6 @@
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
-
-@-webkit-keyframes fadeInRightBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
@@ -111,6 +100,19 @@
     opacity: 1;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
