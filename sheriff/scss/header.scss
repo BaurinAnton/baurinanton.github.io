@@ -24,11 +24,6 @@ header {
                     margin-top: -10px;
                     img {
                         max-width: 100%;
-                        &:hover {
-                            margin-bottom: 2%;
-                            border-bottom: 4px solid $rootcolor;
-                            transition-duration: 0.2s;
-                        }
                     }
                 }
                 nav {
@@ -50,9 +45,13 @@ header {
                                 a {
                                     text-decoration: none;
                                     color: $textcolor;
+                                    &:hover {
+                                        color: $rootcolor;
+                                        transition-duration: 0.2s;
+                                    }
                                 }
-                                &:hover {
-                                    margin-bottom: 2%;
+                                .nav_active {
+                                    padding-bottom: 3%;
                                     border-bottom: 4px solid $rootcolor;
                                     transition-duration: 0.2s;
                                 }
