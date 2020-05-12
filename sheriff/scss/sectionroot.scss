@@ -25,6 +25,9 @@ main {
             background-image: url(../img/main/1.jpg);
             background-size: cover;
             background-attachment: fixed;
+            @media (max-width: 768px) {
+                background-attachment: scroll;
+            }
             border-top: 1em solid $rootcolor;
             border-bottom: 1em solid $rootcolor;
             height: 89vh;
