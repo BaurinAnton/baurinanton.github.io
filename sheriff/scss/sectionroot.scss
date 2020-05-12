@@ -10,7 +10,7 @@ main {
         }
         @media (max-width: 767px) {
             font-size: 9px;
-            padding-top: 65px;
+            padding-top: 64px;
         }
         @media (max-width: 576px) {
             font-size: 8px;
@@ -22,7 +22,7 @@ main {
             font-size: 5px;
         }
         .container {
-            background-image: url(../img/main/1.jpg);
+            background-image: url(../img/main/background1.jpg);
             background-size: cover;
             background-attachment: fixed;
             @media (max-width: 768px) {
@@ -30,7 +30,7 @@ main {
             }
             border-top: 1em solid $rootcolor;
             border-bottom: 1em solid $rootcolor;
-            height: 87vh;
+            height: 89vh;
             @media screen and (orientation: landscape) and (max-width: 1080px) {
                 height: 100%;
             }
@@ -103,12 +103,8 @@ main {
                             @media (max-width: 500px) {
                                 font-size: 2.8em;
                             }
-                        }
-                        span {
-                            font-size: 2.5em;
-                            @media (max-width: 500px) {
-                                font-size: 2.9em;
-                            }
+                            display: flex;
+                            flex-direction: column;
                         }
                     }
                     .items:nth-child(3) {

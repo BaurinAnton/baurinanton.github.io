@@ -282,6 +282,9 @@ section:nth-child(3) {
             .column:nth-child(1) {
                 padding-right: 0.5em;
             }
+            .column:nth-child(2) {
+                align-self: center;
+            }
         }
         .row:nth-child(2) {
             padding: 0.7em 0 1.625em 0;
