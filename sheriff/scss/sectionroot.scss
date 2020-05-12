@@ -23,6 +23,9 @@ main {
         }
         .container {
             background-image: url(../img/main/background1.jpg);
+            @media (max-width: 767px) {
+                background-image: url(../img/main/background1mobile.jpg);
+            }
             background-size: cover;
             background-attachment: fixed;
             @media (max-width: 768px) {
