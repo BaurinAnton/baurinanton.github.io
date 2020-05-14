@@ -22,7 +22,9 @@ main {
             font-size: 5px;
         }
         .container {
-            background-image: url(../img/main/background1.jpg);
+            @media (min-width: 768px) {
+                background-image: url(../img/main/background1.jpg);
+            }
             @media (max-width: 767px) {
                 background-image: url(../img/main/background1mobile.jpg);
             }
