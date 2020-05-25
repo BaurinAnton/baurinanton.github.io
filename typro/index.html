@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="yandex-verification" content="70adf38267599713" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="Ремонт компьютеров, планшетов, смартфонов, ноутбуков. Установка, настройка, оптимизация, чистка устройств за приемлемую цену">
-    <meta name="keywords" content="тыжпрограммист, ноутбук, компьютер, ремонт, настройка, одностраничный сайт, программист, драйвера, программы, софт, смартфон, планшет">
+    <meta name="description"
+        content="Ремонт компьютеров, планшетов, смартфонов, ноутбуков. Установка, настройка, оптимизация, чистка устройств за приемлемую цену">
+    <meta name="keywords"
+        content="тыжпрограммист, ноутбук, компьютер, ремонт, настройка, одностраничный сайт, программист, драйвера, программы, софт, смартфон, планшет">
     <meta name="Author" content="Баурин Антон">
     <meta name="Copyright" content="#ТЫЖПРОГРАММИСТ">
     <meta property="og:locale" content="ru_RU">
@@ -20,6 +23,8 @@
     <meta property="twitter:title" content="#ТЫЖПРОГРАММИСТ">
     <meta property="twitter:description" content="Ремонт, настройка компьютеров, смарфонов, планшетов">
     <meta property="twitter:image" content="img/Logo/socialnetwork.jpg">
+    <meta name="msapplication-TileColor" content="#547c7a">
+    <meta name="msapplication-TileImage" content="img/Logo/socialnetwork.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -39,11 +44,13 @@
     <link rel="stylesheet" type="text/css" href="css/animationcube.css" />
     <link rel="stylesheet" type="text/css" href="css/flash.css" />
     <link rel="icon" href="img/Logo/logoheader.png">
+    <link rel="apple-touch-icon" href="img/Logo/logoheader.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>ТЫЖПРОГРАММИCТ</title>
 </head>
 
 <body data-spy="scroll">
-    <header class="container-fluid navpanel fixed-top d-lg-flex justify-content-between">
+    <header class="navpanel fixed-top d-lg-flex justify-content-between">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="col-auto">
                 <a id="logo" href="#">
@@ -77,52 +84,55 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-block d-lg-none">
-                    <div><a href="tel:8-905-682-02-37" class="phone">8-905-682-02-37</a></div>
-                    <div><a href="https://t.me/typrogrammist"><i class="icon-telegram"></i></a>
+                <div id="nonelg" class="d-block d-lg-none">
+                    <p><a href="tel:8-905-682-02-37" class="phone">8-905-682-02-37</a></p>
+                    <p><a href="https://t.me/typrogrammist"><i class="icon-telegram"></i></a>
                         <a href="https://wa.me/79056820237"><i class="icon-whatsapp"></i></a>
                         <a href="https://vk.com/baurinanton"><i class="icon-vkontakte"></i></a>
                         <a href="https://join.skype.com/invite/foFg1tc8SoJj"><i class="icon-skype"></i></a>
                         <a href="viber://add?number=9056820237"><i class="icon-call"></i></a>
-                    </div>
+                    </p>
                 </div>
             </div>
         </nav>
-        <div class="col-auto d-none d-lg-flex align-items-center">
+        <div class="col-auto d-none d-lg-flex align-items-center column">
             <div class="col-auto text-right">
-                Без выходных <br />
-                <i id="clock" class="icon-clock"></i>
-                9:00-22:00
+                <p>Без выходных</p>
+                <p><img src="./img/main/clock.svg" class="clock">
+                    9:00-21:00</p>
             </div>
-            <div class="col-auto text-right">
-                <div><a href="tel:8-905-682-02-37" class="phone">8-905-682-02-37</a></div>
-                <div><a href="https://t.me/typrogrammist"><i class="icon-telegram"></i></a>
+            <div class="col-auto text-right items_phone">
+                <p><a href="tel:8-905-682-02-37" class="phone">8-905-682-02-37</a></p>
+                <p><a href="https://t.me/typrogrammist"><i class="icon-telegram"></i></a>
                     <a href="https://wa.me/79056820237"><i class="icon-whatsapp"></i></a>
                     <a href="https://vk.com/baurinanton"><i class="icon-vkontakte"></i></a>
                     <a href="https://join.skype.com/invite/foFg1tc8SoJj"><i class="icon-skype"></i></a>
                     <a href="viber://add?number=9056820237"><i class="icon-call"></i></a>
-                </div>
+                </p>
             </div>
         </div>
     </header>
     <main>
         <section>
-            <div class="container-fluid fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
-                <h1>РЕМОНТ<br /> КОМПЬЮТЕРОВ</h1>
-                <h2>и не только</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="./img/main/Квадрат-original.png">
+                    <div class="wrapper">
+                        <div class="column">
+                            <h1>РЕМОНТ<br /> КОМПЬЮТЕРОВ</h1>
+                            <h2>и не только</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
             <div class="container-fluid" id="my">
                 <div class="row">
-                    <div class="col">
+                    <div class="column">
                         <h2>Почему я?</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-11">
-                        <img class="line1" src="./img/main/неон.png" alt="line">
-                        <div class="fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
+                        <img src="./img/main/неон.png">
+                        <p class="fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.1s">
                             Здравствуйте! Меня зовут Антон, студент университета
                             по специальности: «Компьютерная безопасность».
                             Ваш компьютер, ноутбук, смартфон
@@ -132,7 +142,7 @@
                             на протяжении 10-ти лет, живу недалеко от вас, подойду
                             в любое удобное для вас время. Делаю всю работу на месте,
                             качественно, дёшево
-                            (с душой, потому что для меня это – хобби😊).</div>
+                            (с душой, потому что для меня это – хобби😊).</p>
                     </div>
                 </div>
             </div>
@@ -208,7 +218,7 @@
                                     <div id="green1"></div>
                                 </div>
                                 <button class="col-8 col-lg-4 borderled" type="button" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col">
@@ -227,7 +237,7 @@
                                     <img src="./img/main/флешка.png" alt="flash">
                                 </div>
                                 <button class="col-10 col-lg-7 borderled" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="container-fluid">
                                         <div class="row justify-content-around">
                                             <div class="col-10">
@@ -429,24 +439,24 @@
                         <div class="swiper-container reviewsswiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/2.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/2.jpg" alt="reviews">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/3.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/3.jpg" alt="reviews">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/1.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/1.jpg" alt="reviews">
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
-                          </div>
+                        </div>
                         <!-- Swiper JS -->
                         <script src="./js/swiper.min.js"></script>
                         <!-- Initialize Swiper -->

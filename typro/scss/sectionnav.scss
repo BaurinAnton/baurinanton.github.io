@@ -2,107 +2,106 @@ $navcolor: #001c29;
 $colorlink: rgba(255, 255, 255, 0.6);
 $colorlink_hover: rgba(0, 255, 212, 0.6);
 $colorwhite: #ffffff;
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .navpanel {
+  font-size: calc(6px + (10 + 10 * 0.3) * ((100vw - 320px) / 1920));
+  @media (max-width: 991px) {
+  font-size: calc(9px + (12 + 12 * 0.1) * ((100vw - 320px) / 1920));
+  }
   background-color: $navcolor;
   color: $colorwhite;
-  .phone {
-    color: white;
-  }
-  padding: 0px;
-  div:nth-child(2) {
-    div:nth-child(2) {
-      div:nth-child(1) {
-        margin-top: 0px;
-      }
-      div:nth-child(2) {
-        margin-top: 3px; 
-      }
-      
+  align-items: center;
+  padding: .8em 2.5em;
+  .navbar {
+    padding: 0;
+    ul {
+      @media (max-width: 991px) {
+        padding: 2em 0;
+        }
     }
-    img {
+    div:nth-child(1) {
+      padding-right: 0.5em;
+      @media (max-width: 991px) {
+        padding: 0;
+        }
+      font-size: 2.19em;
+      #logo {
+        color: $colorwhite;
+        text-decoration: none;
+        &:hover {
+          color: rgba($color: #00ffd4, $alpha: 0.9);
+        }
+      }
+    }
+    .nav-link {
+      font-size: 1.25em;
+      @media (max-width: 991px) {
+        font-size: 2em;
+        }
+      margin-left: 0.5em;
+      &:hover {
+        color: rgba($color: #00ffd4, $alpha: 0.7);
+        margin-top: -0.1875em;
+        border-bottom: 3px solid rgba($color: #00ffd4, $alpha: 0.7);
+        transition-duration: 0.2s;
+      }
+    }
+    #nonelg {
+      p {
+        margin: 0;
+        a {
+          color: white;
+          font-size: 2.8em;
+          i {
+            &:before {
+              margin: 0 .55em 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .col-auto {
+    padding: 0;
+  }
+  .column {
+    font-size: 1.25em;
+    line-height: 1.8em;
+    p {
+      margin: 0;
+    }
+    p:nth-child(1) {
+      color: #00a48f;
+    }
+    .clock {
       width: 1.8em;
     }
     i {
-      font-size: 1.25em;
-      color: $colorwhite;
+      padding-top: 0.625em;
       &:before {
-        margin-right: -3px;
-        @media (min-width: 992px) and (max-width: 1440px) {
-          margin-right: -2px;
+        margin: 0;
+        font-size: 1.3em;
+      }
+      #clock {
+        &:before {
+          font-size: 2em;
         }
       }
     }
-    #clock {
-      font-size: 1.5em;
-      margin-right: 4px;
-    }
-    
-  }
-  nav {
-    div:nth-child(1) {
-        padding-left: 0px;
-      #logo {
-        color: $colorwhite;
-        font-size: 1.75em;
-        @media (max-width: 991px) {
-          font-size: 2.5em;
-        }
-        @media (max-width: 768px) {
-          font-size: 1.75em;
-        }
+    .items_phone {
+      padding-left: 2.19em;
+      a {
+        color: white;
         text-decoration: none;
-      }
-    }
-    div:nth-child(3) {
-      @media (max-width: 991px) {
-        padding: 1.5em 0em 0em 1em;
-      }
-      div:nth-child(1) {
-        margin: 1.3em 0em 0em -0.2em;
-        font-size: 29px;
-      }
-      div:nth-child(2) {
-        margin: 0.4em 0em 0em -0.46em;
-        font-size: 1.5em;
-      }
-        i {
-          margin-right: 26px;
-          @media (max-width: 768px) {
-            font-size: 1em;
-            margin-right: 11px;
-          }
-        }
-      li{
-        padding-left: 0.825em;
-        .nav-link {
-          font-size: 1em;
-          color: $colorlink;
-          @media (max-width: 991px) {
-            font-size: 1.5em;
-            padding-top: 1em;
-          }
-          &:hover {
-            color: $colorlink_hover;
-            transition: 0.2s;
-            margin-top: -3px;
-            border-bottom: 3px solid $colorlink_hover;
-          }
+        &:hover {
+          color: rgba($color: #00ffd4, $alpha: 0.7);
         }
       }
+      .phone {
+        margin-left: -0.625;
+      }
     }
-    @media (min-width: 992px) {
-      padding-right: 0px;
-    }
-  }
-  @media (min-width: 0px) {
-    font-size: 12.2px;
-  }
-  @media (min-width: 992px) {
-    font-size: 13.2px;
-    height: 68px;
-  }
-  @media (min-width: 1440px) {
-    font-size: 20px;
-    height: 98px;
   }
 }

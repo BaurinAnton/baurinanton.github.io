@@ -4,63 +4,60 @@ main {
     color: $colortext;
     background-size: cover;
     background-repeat: no-repeat;
-    @media (min-width: 3500px) {
-      font-size: 50px;
-    }
-    font-size: 30px;
-    @media (max-width: 1600px) {
-      font-size: 26px;
-    }
-    @media (max-width: 1300px) {
-      font-size: 20px;
-    }
-    @media (max-width: 992px) {
-      font-size: 15px;
-    }
-    @media (max-width: 767px) {
+    background-attachment: fixed;
+    height: 100vh;
+    @media (max-width: 1200px) {
       background-image: url(../img/main/3mobile.png);
     }
-    @media (min-width: 768px) {
-      background-image: url(../img/main/3.png);
-      @media (min-width: 3500px) {
-        height: 50em;
-      }
+    @media (min-width: 1201px) {
+      background-image: url(../img/main/1_body.jpg);
     }
+    display: flex;
+    align-items: center;
     .container-fluid {
-      @media (max-width: 767px) {
-        padding: 4.33em 1em 4.33em 1em;
-      }
-      @media (max-width: 575px) {
-        padding: 1.33em 1em 1.33em 1em;
-      }
-      @media (min-width: 768px) {
-        padding: 5em 0 5em 0;
-      }
-      @media (min-width: 1700px) {
-        padding: 8.83em 0 10em 0;
-      }
+      max-width: 85%;
+      margin: 0 auto;
+      padding: 0;
       .row {
-        margin-right: 0px;
-        .col-12 { 
-          padding-right: 0px;
-          div {
-            margin-top: -10px;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 1200px) {
+        justify-content: flex-start;
+        }
+        .column {
+          flex-basis: 55%;
+          @media (max-width: 1300px) {
+          flex-basis: 45%;
+          }
+          @media (max-width: 1200px) {
+            flex-basis: 65%;
+            line-height: 40px;
+            }
+            @media (max-width: 992px) {
+              flex-basis: 100%;
+              }
+            @media (max-width: 576px) {
+              flex-basis: 100%;
+              line-height: 25px;
+              }
+          img {
+            font-size: calc(30px + (38 + 38 * 0.3) * ((100vw - 320px) / 1920));
+            width: 7em;
+            margin: -4% 0 0 -.9em;
+            opacity: .5;
+            height: 1.5em;
+            @media (max-width: 1200px) {
+              opacity: .7;
+            }
+          }
+          h2 {
+            font-size: calc(35px + (35 + 35 * 0.3) * ((100vw - 320px) / 1920));
+          }
+          p {
+            font-size: calc(14px + (15 + 13 * 0.3) * ((100vw - 320px) / 1920));
+            margin-top: -1%;
           }
         }
-      }
-      @media (min-width: 768px) {
-        .row {
-          margin-left: 45%;
-        }
-      }
-      h2 {
-        font-size: 2.4em;
-      }
-      .line1 {
-        width: 15.13em;
-        height: 3.87em;
-        margin: -1.7em 0 0 -2em;
-        opacity: 0.4;
       }
     }
   }
