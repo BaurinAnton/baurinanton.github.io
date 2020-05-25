@@ -4,7 +4,9 @@ main {
     color: $colortext;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    @media (min-width: 992px) {
+      background-attachment: fixed;
+    }
     height: 100vh;
     transition-duration: 1s;
     @media (max-width: 1200px) {
