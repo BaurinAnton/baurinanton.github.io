@@ -1,0 +1,80 @@
+section:nth-of-type(3) {
+    background-image: url(../img/main/4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    @media (max-width: 1200px) {
+        height: 100vh;
+    }
+    .container {
+        max-width: 89%;
+        margin: 0 auto;
+        @media (max-width: 1200px) {
+            max-width: 95%;
+        }
+        .row:nth-of-type(1) {
+            display: flex;
+            color: white;
+            align-items: flex-end;
+            font-size: calc(12px + (13 + 13 * 0.3) * ((100vw - 320px) / 1920));
+            @media (max-width: 1200px) {
+                font-size: calc(13px + (18 + 18 * 0.3) * ((100vw - 320px) / 1920));
+            }
+            @media (max-width: 767px) {
+                font-size: calc(16px + (22 + 22 * 0.3) * ((100vw - 320px) / 1920));
+            }
+            justify-content: space-between;
+            @media (max-width: 1200px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @media (max-width: 767px) {
+                height: 100vh;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+            .column {
+                flex-basis: 15%;
+                @media (max-width: 1200px) {
+                    flex-basis: 50%;
+                    padding: 4em;
+                }
+                @media (max-width: 767px) {
+                    flex-basis: 100%;
+                    padding: 4em;
+                }
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+                &:nth-of-type(5) {
+                    padding: 2.3em;
+                    flex-basis: 20%;
+                    @media (max-width: 1200px) {
+                        flex-basis: 40%;
+                        padding: 3em;
+                        margin-bottom: 0;
+                    }
+                    @media (max-width: 767px) {
+                        flex-basis: 100%;
+                        padding: 2em;
+                    }
+                    margin-bottom: -54px;
+                }
+            }
+        }
+        .row:nth-of-type(2) {
+            margin-top: 3em;
+            height: .4em;
+            background-color: rgba(127, 176, 176, .5);
+            width: 76%;
+            box-shadow: 0 0 40px 50px rgba($color: #547C7A, $alpha: .3);
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+}
