@@ -4,6 +4,9 @@ section:nth-of-type(2) {
         background-image: url(../img/main/3mobile.png);
     }
     background-attachment: fixed;
+    @media(max-width: 992px) {
+        background-attachment: scroll;
+    }
     background-size: cover;
     background-repeat: no-repeat;
     .container {

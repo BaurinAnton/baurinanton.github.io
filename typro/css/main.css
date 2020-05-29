@@ -373,6 +373,11 @@ section:nth-of-type(1) {
   background-attachment: fixed;
   background-size: cover;
 }
+@media (max-width: 992px) {
+  section:nth-of-type(1) {
+    background-attachment: scroll;
+  }
+}
 section:nth-of-type(1) .container {
   margin: 0 100px;
   display: flex;
@@ -442,6 +447,11 @@ section:nth-of-type(2) {
     background-image: url(../img/main/3mobile.png);
   }
 }
+@media (max-width: 992px) {
+  section:nth-of-type(2) {
+    background-attachment: scroll;
+  }
+}
 section:nth-of-type(2) .container {
   height: 100vh;
   max-width: 95%;
@@ -493,6 +503,11 @@ section:nth-of-type(3) {
   display: flex;
   align-items: center;
   height: 50vh;
+}
+@media (max-width: 992px) {
+  section:nth-of-type(3) {
+    background-attachment: scroll;
+  }
 }
 @media (max-width: 1200px) {
   section:nth-of-type(3) {
@@ -723,7 +738,7 @@ section:nth-of-type(4) .container:nth-of-type(2) .table1, section:nth-of-type(4)
 .table tbody th, .table tbody td:nth-child(odd) {
   text-align: center;
   border: 0px;
-  padding: 0.5em;
+  padding: 0.7em 0.3em;
 }
 .table tbody td:nth-child(even) {
   padding-left: 1em;
