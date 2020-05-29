@@ -1,0 +1,45 @@
+// tablecolor
+$table_back_color:#1C181A;
+$table_font_color:#ffffff;
+$table_color:#547C7A;
+.table {
+    color: $table_font_color;
+    background-color: $table_back_color;
+    border-collapse: separate; 
+    border-spacing: .5em 0em;
+    border: 0px;
+    font-size: calc(14px + (20 + 20 * 0.3) * ((100vw - 320px) / 1920));
+    width: 100%;
+    border-radius: .5em;
+    .trhead {
+        height: 4em;
+        background-color: $table_back_color;
+        font-size: 1.3em;
+        text-align: left;
+        th {
+            border: 0px;
+            vertical-align: middle;
+        }
+    }
+    tbody {
+        font-size: .8em;
+        th, td:nth-child(odd) {
+            text-align: center;
+            border: 0px;
+            padding: .5em;
+        }
+        td:nth-child(even) {
+            padding-left: 1em;
+            border: 0px;
+        }
+        tr {
+         background-color: $table_color;
+         &:hover {
+               background-color: rgb(42, 209, 131);
+            }
+        }
+        th {
+                vertical-align: middle;
+        }
+    }
+}
