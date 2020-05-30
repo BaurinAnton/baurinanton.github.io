@@ -771,7 +771,7 @@ section:nth-of-type(5) .container:nth-of-type(1) {
 section:nth-of-type(5) .container:nth-of-type(2) {
   background-image: url(../img/main/backrewiews.jpg);
 }
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   section:nth-of-type(5) .container:nth-of-type(2) {
     background-attachment: fixed;
   }
@@ -789,7 +789,7 @@ section:nth-of-type(5) .container:nth-of-type(2) .wrapper {
     padding-bottom: 2em;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper {
     height: 100%;
     padding-bottom: 2em;
@@ -819,13 +819,13 @@ section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) {
   align-items: center;
   font-size: calc(8px + (13 + 13 * 0.1) * ((100vw - 320px) / 1920));
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) {
     flex-direction: column;
     overflow: hidden;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .column:nth-of-type(1) {
     padding-bottom: 4em;
     width: 100%;
@@ -835,16 +835,16 @@ section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .c
   width: 37.5em;
   height: 35em;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .column:nth-of-type(1) .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 70vh;
   }
 }
 section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .column:nth-of-type(1) .swiper-slide {
   overflow: hidden;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .column:nth-of-type(2) {
     width: 100%;
   }
@@ -854,7 +854,7 @@ section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .c
   max-width: 29em;
   height: 35em;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   section:nth-of-type(5) .container:nth-of-type(2) .wrapper .row:nth-of-type(2) .column:nth-of-type(2) .yandexreviews {
     width: 86%;
     max-width: none;

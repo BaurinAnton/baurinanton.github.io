@@ -7,9 +7,9 @@ var swiper = new Swiper('.reviewsswiper', {
             slidesPerView: 1.2,
           }, 
           768: {
-            slidesPerView: 1.6,
+            slidesPerView: 1.7,
           }, 
-          993: {
+          1025: {
             slidesPerView: 1.4,
           },
         },
