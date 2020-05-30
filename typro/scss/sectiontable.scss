@@ -6,9 +6,9 @@ $table_color:#547C7A;
     color: $table_font_color;
     background-color: $table_back_color;
     border-collapse: separate; 
-    border-spacing: .5em 0em;
+    border-spacing: .4em 0em;
     border: 0px;
-    font-size: calc(14px + (20 + 20 * 0.3) * ((100vw - 320px) / 1920));
+    font-size: calc(16px + (22 + 22 * 0.3) * ((100vw - 320px) / 1920));
     width: 100%;
     border-radius: .5em;
     .trhead {
@@ -26,6 +26,9 @@ $table_color:#547C7A;
         th, td:nth-child(odd) {
             text-align: center;
             border: 0px;
+            @media (max-width: 992px) {
+                padding: 1.5em 0.3em;
+            }
             padding: .7em 0.3em;
         }
         td:nth-child(even) {
