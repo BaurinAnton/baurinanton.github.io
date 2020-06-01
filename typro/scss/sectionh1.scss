@@ -31,9 +31,9 @@ section:nth-of-type(1) {
             .column:nth-of-type(2) {
                 position: absolute;
                 align-self: flex-end;
-                margin: -.55em 0 0 .45em;
+                margin-left: .45em;
                 @media(max-width: 1140px) {
-                    margin: -.65em 0 0 0.45em;
+                    margin-left: .45em;
                 }
                 @media(max-width: 576px) {
                     left: -.2em;
@@ -45,6 +45,7 @@ section:nth-of-type(1) {
                     font-weight: normal;
                     line-height: 1.2em;
                     text-transform: uppercase;
+                    margin-top: -3.6em;
                 }
                 h2 {
                     font-size: calc(33px + (60 + 60 * 0.3) * ((100vw - 320px) / 1920));
