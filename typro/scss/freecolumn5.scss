@@ -41,6 +41,10 @@ section:nth-of-type(3) {
             }
             .column {
                 flex-basis: 15%;
+                h3 {
+                    font-size: 1em;
+                    font-weight: normal;
+                }
                 @media (max-width: 1200px) {
                     flex-basis: 50%;
                     padding: 4em;
@@ -71,10 +75,10 @@ section:nth-of-type(3) {
         }
         .row:nth-of-type(2) {
             margin-top: 3em;
-            height: .4em;
-            background-color: rgba(127, 176, 176, .5);
+            height: 0.4em;
+            background-color: rgba(127, 176, 176, 0.5);
             width: 76%;
-            box-shadow: 0 0 40px 50px rgba($color: #547C7A, $alpha: .3);
+            box-shadow: 0 0 40px 50px rgba($color: #547c7a, $alpha: 0.3);
             @media (max-width: 1200px) {
                 display: none;
             }
