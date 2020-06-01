@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/flash.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>ТЫЖПРОГРАММИСТ</title>
@@ -24,11 +25,11 @@
                 <div class="items header_menu header_menu_active">
                     <nav>
                         <ul>
-                            <li><a href="#">Почему я?</a></li>
-                            <li><a href="#">Цены</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Примеры работ</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#why_me">Почему я?</a></li>
+                            <li><a href="#price">Цены</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#work">Примеры работ</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="items_body">
@@ -71,25 +72,25 @@
     </header>
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
                 <div class="column">
                     <img src="./img/main/square.png" alt="">
                 </div>
-                <div class="column">
+                <div class="column fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
                     <h1>ремонт <br />компьютеров</h1>
                     <h2>и не только</h2>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="why_me">
         <div class="container">
             <div class="row">
                 <div class="column">
                     <h2>Почему я?</h2>
-                    <img src="img/main/line.png" alt="">
+                    <span></span>
                 </div>
-                <div class="column">
+                <div class="column fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
                     <span>Здравствуйте! Меня зовут Антон, студент университета по специальности: «Компьютерная
                         безопасность».
                         Ваш компьютер, ноутбук, смартфон поломался, начал «тормозить»? Ваш гаджет забился пылью? Вам
@@ -106,247 +107,422 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="column">Бесплатная диагностика, которая производится на месте.</div>
-                <div class="column">Объявляю до работы список того, что нужно сделать с устройством.</div>
-                <div class="column">Объявляю цену работы сразу, до самой работы.</div>
-                <div class="column">Не делаю лишнюю работу, за которую вы переплатите.</div>
-                <div class="column bordershadov borderanimation">Делаю качественно, как для себя, потому что мне важны
-                    Ваши отзывы.</div>
+                <div class="column fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <p>Бесплатная диагностика,
+                        которая производится на месте.</p>
+                </div>
+                <div class="column fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <p>Объявляю до работы
+                        список того, что нужно сделать с устройством.</p>
+                </div>
+                <div class="column fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="1.0s">
+                    <p>Объявляю цену работы
+                        сразу, до самой работы.</p>
+                </div>
+                <div class="column fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                    <p>Не делаю лишнюю
+                        работу, за которую вы переплатите.</p>
+                </div>
+                <div class="column fadeInDown wow" data-wow-duration="0.5s" data-wow-delay="2.0s">
+                    <p class="bordershadov borderanimation">Делаю качественно, как для
+                        себя, потому что мне важны
+                        Ваши отзывы.</p>
+                </div>
             </div>
-            <div class="row row_line">
+            <div class="row row_line wow" data-wow-duration="2s" data-wow-delay="0s">
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <h2>Цены</h2>
-            </div>
-            <div class="row">
-                <div class="column" id="click1">
-                    <div class="items borderled">
-                        <span id="green1"></span>
+    <section id="price">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <h2>Цены</h2>
+                </div>
+                <div class="row fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                    <div class="column" id="click1">
+                        <div class="items borderled">
+                            <span id="green1"></span>
+                        </div>
+                        <div class="items borderled">
+                            <span>
+                                ПК, ноутбук
+                            </span>
+                        </div>
                     </div>
-                    <div class="items borderled">
-                        <span>
-                            ПК, ноутбук
-                        </span>
+                    <div class="column" id="click2">
+                        <img src="./img/main/флешка.png" alt="">
+                        <div class="items borderled">
+                            <span>
+                                Смартфон, планшет
+                            </span>
+                            <span id="green2">
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="column" id="click2">
-                    <img src="./img/main/флешка.png" alt="">
-                    <div class="items borderled">
-                        <span>
-                            Смартфон, планшет
-                        </span>
-                        <span id="green2">
-                        </span>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="row table1">
+                    <table class="table">
+                        <thead class="thead">
+                            <tr class="trhead">
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование работы</th>
+                                <th scope="col">Цена работы</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="trbody">
+                                <th scope="row">1</th>
+                                <td>Установка, восстановление операционной системы</td>
+                                <td>400 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">2</th>
+                                <td>Восстановление удаленных файлов</td>
+                                <td>от 600 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">3</th>
+                                <td>Установка операционной системы с сохранением данных</td>
+                                <td> 700 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">4</th>
+                                <td>Установка драйверов</td>
+                                <td> 200 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">5</th>
+                                <td>Установка программ (софт)</td>
+                                <td> 100 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">6</th>
+                                <td>Настройка сети и подключения к интернет</td>
+                                <td> 400 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">7</th>
+                                <td>Удаление вирусов</td>
+                                <td> 300 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">8</th>
+                                <td>Удаление баннера, смс-вирусов</td>
+                                <td> 700 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">9</th>
+                                <td>Устранение замедленной работы Windows</td>
+                                <td> 700 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">10</th>
+                                <td>Чистка ПК, ноутбука от пыли</td>
+                                <td>500 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">11</th>
+                                <td>Замена материнской платы</td>
+                                <td> 1000 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">12</th>
+                                <td>Замена внутренних модулей (ОЗУ (оперативная память),<br />
+                                    DVD (дисковод), видеокарта, HDD (жесткий диск),<br />
+                                    SSD ( твердотельный накопитель) и т.д.</td>
+                                <td> от 500 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">13</th>
+                                <td>Перепрошивка BIOS</td>
+                                <td> 600 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row table2">
+                    <table class="table">
+                        <thead>
+                            <tr class="trhead">
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование работы</th>
+                                <th scope="col">Цена работы</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="trbody">
+                                <th scope="row">1</th>
+                                <td>Сброс до заводских настроек с очисткой данных</td>
+                                <td>300 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">2</th>
+                                <td>Сброс до заводских настроек с сохранением данных</td>
+                                <td> 500 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">3</th>
+                                <td>Перепрошивка</td>
+                                <td> 200 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">4</th>
+                                <td>Устранение замедленной работы Android, чистка</td>
+                                <td> 400 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">5</th>
+                                <td>Настройка сети и подключения к интернет</td>
+                                <td> 400 руб за шт.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">6</th>
+                                <td>Удаление вирусов</td>
+                                <td> 300 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">7</th>
+                                <td>Замена дисплея</td>
+                                <td>700 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">8</th>
+                                <td>Замена динамика</td>
+                                <td> 400 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">9</th>
+                                <td>Замена микрофона</td>
+                                <td> от 400 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">10</th>
+                                <td>замена задней крышки (корпуса)</td>
+                                <td> 400 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">11</th>
+                                <td>Замена аккумулятора</td>
+                                <td> 500 руб.</td>
+                            </tr>
+                            <tr class="trbody">
+                                <th scope="row">12</th>
+                                <td>Замена камеры</td>
+                                <td> 500 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row table1">
-                <table class="table">
-                    <thead class="thead">
-                        <tr class="trhead">
-                            <th scope="col">#</th>
-                            <th scope="col">Наименование работы</th>
-                            <th scope="col">Цена работы</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="trbody">
-                            <th scope="row">1</th>
-                            <td>Установка, восстановление операционной системы</td>
-                            <td>400 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">2</th>
-                            <td>Восстановление удаленных файлов</td>
-                            <td>от 600 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">3</th>
-                            <td>Установка операционной системы с сохранением данных</td>
-                            <td> 700 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">4</th>
-                            <td>Установка драйверов</td>
-                            <td> 200 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">5</th>
-                            <td>Установка программ (софт)</td>
-                            <td> 100 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">6</th>
-                            <td>Настройка сети и подключения к интернет</td>
-                            <td> 400 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">7</th>
-                            <td>Удаление вирусов</td>
-                            <td> 300 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">8</th>
-                            <td>Удаление баннера, смс-вирусов</td>
-                            <td> 700 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">9</th>
-                            <td>Устранение замедленной работы Windows</td>
-                            <td> 700 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">10</th>
-                            <td>Чистка ПК, ноутбука от пыли</td>
-                            <td>500 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">11</th>
-                            <td>Замена материнской платы</td>
-                            <td> 1000 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">12</th>
-                            <td>Замена внутренних модулей (ОЗУ (оперативная память),<br />
-                                DVD (дисковод), видеокарта, HDD (жесткий диск),<br />
-                                SSD ( твердотельный накопитель) и т.д.</td>
-                            <td> от 500 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">13</th>
-                            <td>Перепрошивка BIOS</td>
-                            <td> 600 руб.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="row table2">
-                <table class="table">
-                    <thead>
-                        <tr class="trhead">
-                            <th scope="col">#</th>
-                            <th scope="col">Наименование работы</th>
-                            <th scope="col">Цена работы</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="trbody">
-                            <th scope="row">1</th>
-                            <td>Сброс до заводских настроек с очисткой данных</td>
-                            <td>300 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">2</th>
-                            <td>Сброс до заводских настроек с сохранением данных</td>
-                            <td> 500 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">3</th>
-                            <td>Перепрошивка</td>
-                            <td> 200 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">4</th>
-                            <td>Устранение замедленной работы Android, чистка</td>
-                            <td> 400 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">5</th>
-                            <td>Настройка сети и подключения к интернет</td>
-                            <td> 400 руб за шт.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">6</th>
-                            <td>Удаление вирусов</td>
-                            <td> 300 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">7</th>
-                            <td>Замена дисплея</td>
-                            <td>700 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">8</th>
-                            <td>Замена динамика</td>
-                            <td> 400 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">9</th>
-                            <td>Замена микрофона</td>
-                            <td> от 400 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">10</th>
-                            <td>замена задней крышки (корпуса)</td>
-                            <td> 400 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">11</th>
-                            <td>Замена аккумулятора</td>
-                            <td> 500 руб.</td>
-                        </tr>
-                        <tr class="trbody">
-                            <th scope="row">12</th>
-                            <td>Замена камеры</td>
-                            <td> 500 руб.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+        <div class="container_footer">
         </div>
     </section>
-    <section>
-        <div class="container">
-        </div>
+    <section id="reviews">
         <div class="container">
             <div class="wrapper">
                 <div class="row">
-                    <span>Отзывы</span>
+                    <h2>Отзывы</h2>
                     <span></span>
                 </div>
                 <div class="row">
                     <div class="column">
-                         <!-- Swiper -->
-                         <div class="swiper-container reviewsswiper">
+                        <!-- Swiper -->
+                        <div class="swiper-container reviewsswiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/2.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/2.jpg" alt="reviews">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/3.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/3.jpg" alt="reviews">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                  <div class="swiper-zoom-container">
-                                    <img src="img/Reviews/1.jpg" alt="reviews">
-                                  </div>
+                                    <div class="swiper-zoom-container">
+                                        <img src="img/Reviews/1.jpg" alt="reviews">
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
-                          </div>
+                        </div>
                         <!-- Swiper JS -->
                         <script src="./js/swiper.min.js"></script>
                         <!-- Initialize Swiper -->
                         <script src="./js/swiperreviews.js"></script>
                     </div>
                     <div class="column">
-                        <div class="yandexreviews"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/94670873045?comments"></iframe></div>
+                        <div class="yandexreviews"><iframe
+                                style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                                src="https://yandex.ru/maps-reviews-widget/94670873045?comments"></iframe></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <h2>Примеры работ</h2>
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrapper">
+                    <div class="column">
+                        <!-- Swiper -->
+                        <div class="swiper-container work1 d-none d-md-block">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.1.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.2.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.3.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.4.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.5.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.6.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.7.jpg); background-size: cover;"></div>
+                            </div>
+                            <script src="./js/swiperwork1.js"></script>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <!-- Swiper -->
+                        <div class="swiper-container work2 d-none d-md-block">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.1.jpg); background-size: cover;"
+                                    data-swiper-autoplay="3000"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.2.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.3.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.4.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.5.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.6.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.7.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.8.jpg); background-size: cover;"></div>
+                            </div>
+                            <script src="./js/swiperwork2.js"></script>
+                        </div>
+                    </div>
+                    <div class="row_mobile">
+                        <!-- Swiper -->
+                        <div class="swiper-container workphone">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.1.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.2.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.3.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.4.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.5.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.6.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/1.7.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.1.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.2.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.3.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.4.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.5.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.6.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.7.jpg); background-size: cover;"></div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(./img/Work/2.8.jpg); background-size: cover;"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination-mobile"></div>
+                        </div>
+                        <script src="./js/swiperwork3.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container"></div>
+        <div class="container">
+            <div class="row fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                <div class="column">
+                    <p>
+                        мои контакты:
+                    </p>
+                </div>
+                <div class="column">
+                    <a href="" class="phone_footer">8-905-682-02-37</a>
+                    <p>
+                        <a href="https://t.me/typrogrammist"><i class="icon-telegram"></i></a>
+                        <a href="https://wa.me/79056820237"><i class="icon-whatsapp"></i></a>
+                        <a href="https://vk.com/baurinanton"><i class="icon-vkontakte"></i></a>
+                        <a href="https://join.skype.com/invite/foFg1tc8SoJj"><i class="icon-skype"></i></a>
+                        <a href="viber://add?number=9056820237"><i class="icon-call"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row fadeInDown wow" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                <div class="column">
+                    <p>&#169; «#ТЫЖПРОГРАММИСТ», 2020</p>
+                    <p>Ремонт компьютеров и не только.</p>
+                    <p>Телефон для связи: 8-905-682-02-37</p>
+                </div>
+                <div class="column">
+                    <p>&#169; Создание сайта by BaurinAnton, 2020
+                        <a href="https://vk.com/baurinanton"><i class="icon-vkontakte"></i></a>
+                        <a href="https://www.instagram.com/baurin.anton"><i class="icon-instagram"></i></a>
+                    </p>
+                    <p>Копирование материалов сайта запрещено.</p>
+                </div>
+                <div class="column">
+                    <p>&#169; Оформление сайта, дизайн by
+                    </p>
+                    <p>
+                        ShineInDesign, 2020
+                        <a href="https://vk.com/mitross"><i class="icon-vkontakte"></i></a>
+                        <a href="https://www.instagram.com/d.shine_in/"><i class="icon-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/wow.js"></script>
     <script src="./js/flash.js"></script>
+    <script src="./js/scroll.js"></script>
+
 </body>
 
 </html>

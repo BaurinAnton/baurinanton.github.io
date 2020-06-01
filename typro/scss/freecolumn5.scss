@@ -1,8 +1,7 @@
 section:nth-of-type(3) {
-    background-image: url(../img/main/4.png);
-    background-attachment: fixed;
-    @media(max-width: 992px) {
-        background-attachment: scroll;
+    background-image: url(../img/main/4.jpg);
+    @media (min-width: 1025px) {
+        background-attachment: fixed;
     }
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,18 +53,19 @@ section:nth-of-type(3) {
                     padding: 0;
                 }
                 &:nth-of-type(5) {
-                    padding: 2.3em;
                     flex-basis: 20%;
                     @media (max-width: 1200px) {
                         flex-basis: 40%;
-                        padding: 3em;
+                        padding: 2.5em;
                         margin-bottom: 0;
                     }
                     @media (max-width: 767px) {
                         flex-basis: 100%;
-                        padding: 2em;
                     }
                     margin-bottom: -54px;
+                    .bordershadov {
+                        padding: 2em;
+                    }
                 }
             }
         }

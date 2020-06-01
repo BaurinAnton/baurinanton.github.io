@@ -87,7 +87,7 @@
     }
     @media (min-width: 1200px) {
       .row_line {
-          -webkit-animation: bounce4 6s 0s 1;
+          -webkit-animation: bounce4 3s 0s 1 ease-out;
           }   
   }
     
