@@ -55,12 +55,12 @@ section:nth-of-type(3) {
                 &:nth-of-type(5) {
                     flex-basis: 20%;
                     @media (max-width: 1200px) {
-                        flex-basis: 40%;
-                        padding: 2.5em;
+                        flex-basis: 60%;
                         margin-bottom: 0;
                     }
                     @media (max-width: 767px) {
                         flex-basis: 100%;
+                        margin-top: -2em;
                     }
                     margin-bottom: -54px;
                     .bordershadov {

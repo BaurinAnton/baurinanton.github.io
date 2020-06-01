@@ -10,8 +10,13 @@ var swiper = new Swiper('.work1', {
             spaceBetween: 20,
         },
         768: {
+            spaceBetween: 30,
+            slidesPerView: 4,
+        },
+        1025: {
             centeredSlides: true,
             spaceBetween: 30,
+            slidesPerView: 2,
         }
       },
     pagination: {

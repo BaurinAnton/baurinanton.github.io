@@ -1,12 +1,13 @@
 section:nth-of-type(7) {
     .container:nth-of-type(1) {
-        background-image: url(../img/main/4.jpg);
         height: 25vh;
-        @media (min-width: 576px) and (max-width: 1024px) {
-            height: 10em;
+        background-color: #1c181a;
+        @media (max-width: 1024px) {
+            height: 3em;
         }
         @media (min-width: 1025px) {
             background-attachment: fixed;
+            background-image: url(../img/main/4.jpg);
         }
     }
     .container:nth-of-type(2) {
