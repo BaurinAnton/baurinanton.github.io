@@ -55,8 +55,9 @@ section:nth-of-type(4) {
                     }
                     .items:nth-of-type(2) {
                         width: 2.2em;
-                        span {
+                        h3 {
                             font-size: 0.35em;
+                            font-weight: normal;
                         }
                     }
                 }
@@ -74,12 +75,13 @@ section:nth-of-type(4) {
                         width: 5em;
                         display: flex;
                         justify-content: space-around;
-                        span:nth-of-type(1) {
+                        h3 {
                             font-size: 0.35em;
                             flex-basis: 70%;
                             text-align: center;
+                            font-weight: normal;
                         }
-                        span:nth-of-type(2) {
+                        span {
                             background-color: #00b0b5;
                             border: 0px;
                             border-radius: 1.05em;

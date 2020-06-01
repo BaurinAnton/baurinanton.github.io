@@ -43,7 +43,7 @@ section:nth-of-type(2) {
                 }
             }
             .column:nth-of-type(2) {
-                span {
+                p {
                     font-size: calc(14px + (15 + 15 * 0.3) * ((100vw - 320px) / 1920));
                     @media (max-width: 1200px) {
                         line-height: 2em;
