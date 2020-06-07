@@ -38,6 +38,9 @@ main {
             height: 89vh;
             @media screen and (orientation: landscape) and (max-width: 1080px) {
                 height: 100%;
+                .row {
+                    padding: 3em 0;
+                }
             }
             display: flex;
             flex-direction: column;
@@ -86,6 +89,10 @@ main {
                     max-width: 95%;
                     margin: 0 auto;
                     display: flex;
+                    @media (max-width: 768px) {
+                        justify-content: center;
+                        font-size: calc(5.2px + (24 + 24 * 0.3) * ((100vw - 320px) / 1920));
+                    }
                     .items:nth-child(1) {
                         display: flex;
                         img {
