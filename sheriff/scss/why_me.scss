@@ -3,6 +3,7 @@ section:nth-child(2) {
     .container {
         color: white;
         background-image: url(../img/main/background2.png);
+        background-size: cover;
         height: 90vh;
         @media screen and (orientation: landscape) and (max-width: 1080px) {
             height: 100%;
@@ -11,9 +12,8 @@ section:nth-child(2) {
             height: 100%;
         }
         background-size: cover;
-        background-attachment: fixed;
-        @media (max-width: 768px) {
-            background-attachment: scroll;
+        @media (min-width: 1025px) {
+            background-attachment: fixed;
         }
         display: flex;
         flex-direction: column;

@@ -137,6 +137,9 @@ section:nth-child(3) {
                         h4 {
                             font-weight: 600;
                             font-size: 1.25em;
+                            @media (max-width: 767px) {
+                                font-size: 1.3em;
+                            }
                         }
                         &:nth-child(1) {
                             img {
