@@ -27,6 +27,7 @@ footer {
                 align-items: center;
             }
             a {
+                text-decoration: none;
                 color: white;
                 &:hover {
                     color: rgba($color: #00ffd4, $alpha: 0.7);
