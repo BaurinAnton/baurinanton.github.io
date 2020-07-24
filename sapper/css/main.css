@@ -8,10 +8,21 @@ body {
   background-size: cover;
   color: white;
 }
+@media (max-height: 850px) {
+  body {
+    height: 100%;
+  }
+}
 body header {
   max-width: 85%;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-height: 850px) {
+  body header {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
 }
 @media (max-width: 767px) {
   body header {
@@ -55,6 +66,12 @@ body footer {
   margin: 0 auto;
   text-align: center;
   font-size: 1.5em;
+}
+@media (max-height: 850px) {
+  body footer {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
 }
 @media (max-width: 767px) {
   body footer {
