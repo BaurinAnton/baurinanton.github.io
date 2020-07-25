@@ -4,10 +4,10 @@ var app = new Vue({
         isActive: '',
         distanceBimby: 0,
         buttonCoord: [
-            [{coordX: a = 0, coordY: a = 0, bomb: false, empty: '', number: a = 0 }, {coordX: a = 0, coordY: a = 1, bomb: true, empty: '', number: b = 0 }, {coordX: a = 0, coordY: a = 2, bomb: false, empty: '', number: c = 0 }, {coordX: a = 0, coordY: a = 3, bomb: true, empty: '', number: b = 0 }],
-            [{coordX: a = 1, coordY: a = 0, bomb: false, empty: '', number: d = 0 }, {coordX: a = 1, coordY: a = 1, bomb: false, empty: '', number: e = 0 }, {coordX: a = 1, coordY: a = 2, bomb: false, empty: '', number: f = 0 }, {coordX:a =  1, coordY: a = 3, bomb: false, empty: '', number: f = 0 }],
-            [{coordX: a = 2, coordY: a = 0, bomb: false, empty: '', number: g = 0 }, {coordX: a = 2, coordY: a = 1, bomb: false, empty: '', number: h = 0 }, {coordX: a = 2, coordY: a = 2, bomb: true, empty: '', number: i = 0 }, {coordX: a = 2, coordY: a = 3, bomb: false, empty: '', number: j = 0 }],
-            [{coordX: a = 3, coordY: a = 0, bomb: false, empty: '', number: g = 0 }, {coordX: a = 3, coordY: a = 1, bomb: false, empty: '', number: h = 0 }, {coordX: a = 3, coordY: a = 2, bomb: false, empty: '', number: i = 0 }, {coordX: a = 3, coordY: a = 3, bomb: false, empty: '', number: j = 0 }]
+            [{ coordX: a = 0, coordY: a = 0, bomb: false, empty: '', number: a = 0 }, { coordX: a = 0, coordY: a = 1, bomb: false, empty: '', number: b = 0 }, { coordX: a = 0, coordY: a = 2, bomb: false, empty: '', number: c = 0 }, { coordX: a = 0, coordY: a = 3, bomb: false, empty: '', number: b = 0 }],
+            [{ coordX: a = 1, coordY: a = 0, bomb: false, empty: '', number: d = 0 }, { coordX: a = 1, coordY: a = 1, bomb: false, empty: '', number: e = 0 }, { coordX: a = 1, coordY: a = 2, bomb: false, empty: '', number: f = 0 }, { coordX: a = 1, coordY: a = 3, bomb: false, empty: '', number: f = 0 }],
+            [{ coordX: a = 2, coordY: a = 0, bomb: false, empty: '', number: g = 0 }, { coordX: a = 2, coordY: a = 1, bomb: false, empty: '', number: h = 0 }, { coordX: a = 2, coordY: a = 2, bomb: false, empty: '', number: i = 0 }, { coordX: a = 2, coordY: a = 3, bomb: false, empty: '', number: j = 0 }],
+            [{ coordX: a = 3, coordY: a = 0, bomb: false, empty: '', number: g = 0 }, { coordX: a = 3, coordY: a = 1, bomb: false, empty: '', number: h = 0 }, { coordX: a = 3, coordY: a = 2, bomb: false, empty: '', number: i = 0 }, { coordX: a = 3, coordY: a = 3, bomb: false, empty: '', number: j = 0 }]
         ],
     },
     methods: {
@@ -27,10 +27,10 @@ var app = new Vue({
         distanceToBimby: function () {
             for (let x = 0; x < 4; x++) {
                 for (let y = 0; y < 4; y++) {
-                    this.buttonCoord[x][y].number = this.radiusBomb(x, y)
                     if (this.buttonCoord[x][y].bomb) {
                         this.buttonCoord[x][y].number = ''
                     }
+                    this.buttonCoord[x][y].number = this.radiusBomb(x, y)
                 }
             }
         },
@@ -47,16 +47,32 @@ var app = new Vue({
             }
             return bombTrue++
         },
-        clicknumber: function (a,b) {
+        clicknumber: function (a, b) {
             if (!this.buttonCoord[a][b].bomb) {
                 this.buttonCoord[a][b].empty = this.buttonCoord[a][b].number
             }
             else {
-                alert ('Вы проиграли!')
+                alert('Вы проиграли!')
+            }
+        },
+        rndMine: function () {
+            let minimumQuantity = 0
+            for (let x = 0; x < 4; x++) {
+                for (let y = 0; y < 4; y++) {
+                    let rndBomb = Math.random() * 10
+                    if (rndBomb < 3) {
+                        this.buttonCoord[x][y].bomb = true
+                        minimumQuantity++
+                        if (minimumQuantity < 9) {
+                            break
+                        }
+                    }
+                }
             }
         }
     },
     mounted() {
+        this.rndMine()
         this.distanceToBimby()
     },
 })  
