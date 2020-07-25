@@ -69,6 +69,7 @@ var app = new Vue({
                     }
                 }
             }
+            this.buttonCoord[0][0].bomb = false
         }
     },
     mounted() {
