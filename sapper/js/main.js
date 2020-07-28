@@ -46,7 +46,6 @@ Vue.component('game-footer', {
 Vue.component('end-game-false', {
     data: function () {
         return {
-
         }
     },
     methods: {
@@ -150,7 +149,7 @@ var app = new Vue({
                 this.NotABomb++
             }
             else {
-                setTimeout(() => { this.runTheEnd = true }, 500)
+                setTimeout(() => { this.runTheEnd = true, this.NotABomb = 0}, 500)
             }
         },
         rndMine: function () {
