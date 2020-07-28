@@ -18,6 +18,7 @@ Vue.component('game-footer', {
     data: function () {
         return {
             rules: false,
+            show: false,
         }
     },
     methods: {
@@ -34,8 +35,10 @@ Vue.component('game-footer', {
         `<section>
     <h2 class= "hint">ПОДСКАЗКА!</h2>
     <h2 class= "hint"> Первая ячейка (левый верхний угол) не взорвётся!</h2>
-    <button v-on:click = "gameRules" class= "btn btn-warning"> Правила игры</button>
-    <p v-if= "rules" class = "hintwarning">В данном случае, есть 16 ячеек. В некоторых из них спрятаны бомбы. Нужно не подорваться на них! Открываем клеточку и видим цифру. Она означает, что в радиусе одной клетки данной клетки (вокруг неё) есть бобма,а количество их записано в клетке (та самая циферка).  И нужно открыть все клеточки, минуя бомбы. УДАЧИ!</p>
+    <button v-on:click = "gameRules, show = !show" class= "btn btn-warning"> Правила игры</button>
+    <transition name="slide-fade">
+    <p v-if= "rules, show" class = "hintwarning">
+    В данном случае, есть 16 ячеек. В некоторых из них спрятаны бомбы. Нужно не подорваться на них! Открываем клеточку и видим цифру. Она означает, что в радиусе одной клетки данной клетки (вокруг неё) есть бобма,а количество их записано в клетке (та самая циферка).  И нужно открыть все клеточки, минуя бомбы. УДАЧИ!</p></transition>
     </section>`
 })
 
@@ -158,7 +161,7 @@ var app = new Vue({
                     if (rndBomb < 2) {
                         this.buttonCoord[x][y].bomb = true
                         minimumQuantity++
-                        if (minimumQuantity < 10) {
+                        if (minimumQuantity < 4) {
                             break
                         }
                     }

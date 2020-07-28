@@ -86,10 +86,10 @@ body {
                         justify-content: center;
                         align-items: center;
                         @media (min-width: 1025px) {
-                            width: 65%;
+                            width: 65%
                         }
                         @media (max-width: 1024px) {
-                            width: 17em;
+                            width: 17em
                         }
                         padding: 1em;
                         border-radius: 1em;
@@ -140,6 +140,17 @@ body {
                     }
                 }
             }
+            .slide-fade-enter-active {
+                transition: all .3s ease;
+              }
+              .slide-fade-leave-active {
+                transition: all .3s ease;
+              }
+              .slide-fade-enter, .slide-fade-leave-to
+              /* .slide-fade-leave-active до версии 2.1.8 */ {
+                transform: translateX(0px 10px);
+                opacity: 0;
+              }
         }
         footer {
             margin-top: 1em;
