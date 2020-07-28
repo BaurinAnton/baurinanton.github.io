@@ -157,13 +157,16 @@ var app = new Vue({
             for (let x = 0; x < 4; x++) {
                 for (let y = 0; y < 4; y++) {
                     let rndBomb = Math.random() * 10
-                    if (rndBomb < 2) {
+                    if (rndBomb < 3) {
                         this.buttonCoord[x][y].bomb = true
                         minimumQuantity++
-                        if (minimumQuantity < 4) {
+                        if (minimumQuantity > 2) {
                             break
                         }
                     }
+                }
+                if (minimumQuantity > 2) {
+                    break
                 }
             }
             this.buttonCoord[0][0].bomb = false
