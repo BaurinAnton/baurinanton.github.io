@@ -156,7 +156,7 @@ var app = new Vue({
                     if (rndBomb < 2) {
                         this.buttonCoord[x][y].bomb = true
                         minimumQuantity++
-                        if (minimumQuantity < 9) {
+                        if (minimumQuantity < 10) {
                             break
                         }
                     }
@@ -192,8 +192,8 @@ var app = new Vue({
         }
     },
     mounted() {
-        // this.rndMine()
-        // this.distanceToBimby()
+        this.rndMine()
+        this.distanceToBimby()
         this.checkingYourWinnings()
     },
 })  
