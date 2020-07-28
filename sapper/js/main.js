@@ -50,6 +50,8 @@ Vue.component('end-game-false', {
         startOver: function () {
             app.showBeginningComponentOne = false
             app.runTheEnd = false
+            app.NotABomb = 0
+            app.numberofBombs = 0
             app.updatinFeatures()
         }
     },
