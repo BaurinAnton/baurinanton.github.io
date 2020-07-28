@@ -46,7 +46,7 @@ Vue.component('game-footer', {
 Vue.component('end-game-false', {
     data: function () {
         return {
-            
+
         }
     },
     methods: {
@@ -67,10 +67,10 @@ Vue.component('end-game-false', {
 })
 
 // Компонент: "Выигрыш"
-Vue.component('end-game-true',{
+Vue.component('end-game-true', {
     data: function () {
         return {
-            
+
         }
     },
     methods: {
@@ -82,8 +82,8 @@ Vue.component('end-game-true',{
             app.updatinFeatures()
         }
     },
-    template: 
-    `<div class= "end_game_false card text-white bg-success">
+    template:
+        `<div class= "end_game_false card text-white bg-success">
     <span>Ура! Вы выиграли!</span>
     <img src="./img/endgametrue.png" class= "end_game_false_img">
     <button class= "btn btn-warning btn_end_game" v-on:click= "startOverTrue">Начать заново</button>
@@ -179,7 +179,8 @@ var app = new Vue({
             }
             this.isActive = ''
             this.rndMine()
-            this.bombSearch()
+            this.distanceToBimby()
+            this.checkingYourWinnings()
         },
         checkingYourWinnings: function () {
             for (let x = 0; x < 4; x++) {
