@@ -150,7 +150,7 @@ var app = new Vue({
                 this.NotABomb++
             }
             else {
-                setTimeout(() => { this.runTheEnd = true }, 1500)
+                setTimeout(() => { this.runTheEnd = true }, 500)
             }
         },
         rndMine: function () {
