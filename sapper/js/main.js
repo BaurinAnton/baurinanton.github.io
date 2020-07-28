@@ -1,8 +1,100 @@
+// Компонент: "Главное меню"
+Vue.component('beginning-of-game', {
+    data: function () {
+        return {
+            trueGame: false
+        }
+    },
+    template: '<button v-on:click="showTheGame" class= "showTheGame btn btn-success"> Начать игру! </button>',
+    methods: {
+        showTheGame: function () {
+            app.showBeginningComponentOne = true
+        },
+    }
+})
+
+// Компонент: "подвал"
+Vue.component('game-footer', {
+    data: function () {
+        return {
+            rules: false,
+        }
+    },
+    methods: {
+        gameRules: function () {
+            if (!this.rules) {
+                this.rules = true
+            }
+            else {
+                this.rules = false
+            }
+        },
+    },
+    template:
+        `<section>
+    <h2 class= "hint">ПОДСКАЗКА!</h2>
+    <h2 class= "hint"> Первая ячейка (левый верхний угол) не взорвётся!</h2>
+    <button v-on:click = "gameRules" class= "btn btn-warning"> Правила игры</button>
+    <p v-if= "rules" class = "hintwarning">В данном случае, есть 16 ячеек. В некоторых из них спрятаны бомбы. Нужно не подорваться на них! Открываем клеточку и видим цифру. Она означает, что в радиусе одной клетки данной клетки (вокруг неё) есть бобма,а количество их записано в клетке (та самая циферка).  И нужно открыть все клеточки, минуя бомбы. УДАЧИ!</p>
+    </section>`
+})
+
+// Компонент: "Проигрыш"
+Vue.component('end-game-false', {
+    data: function () {
+        return {
+            
+        }
+    },
+    methods: {
+        startOver: function () {
+            app.showBeginningComponentOne = false
+            app.runTheEnd = false
+            app.updatinFeatures()
+        }
+    },
+    template:
+        `<div class= "end_game_false card text-white bg-danger" role="alert">
+    <span>Увы, но Вы проиграли.</span>
+    <img src="./img/endgamefalse.png" class= "end_game_false_img">
+    <button class= "btn btn-success btn_end_game" v-on:click= "startOver">Начать заново</button>
+    </div>`,
+})
+
+// Компонент: "Выигрыш"
+Vue.component('end-game-true',{
+    data: function () {
+        return {
+            
+        }
+    },
+    methods: {
+        startOverTrue: function () {
+            app.showBeginningComponentOne = false
+            app.runTheEndTrue = false
+            app.NotABomb = 0
+            app.numberofBombs = 0
+            app.updatinFeatures()
+        }
+    },
+    template: 
+    `<div class= "end_game_false card text-white bg-success">
+    <span>Ура! Вы выиграли!</span>
+    <img src="./img/endgametrue.png" class= "end_game_false_img">
+    <button class= "btn btn-warning btn_end_game" v-on:click= "startOverTrue">Начать заново</button>
+    </div>`,
+})
+
 var app = new Vue({
     el: '#app',
     data: {
         isActive: '',
         distanceBimby: 0,
+        showBeginningComponentOne: false,
+        runTheEnd: false,
+        NotABomb: 0,
+        numberofBombs: 0,
+        runTheEndTrue: false,
         buttonCoord: [
             [{ coordX: a = 0, coordY: a = 0, bomb: false, empty: '', number: a = 0 }, { coordX: a = 0, coordY: a = 1, bomb: false, empty: '', number: b = 0 }, { coordX: a = 0, coordY: a = 2, bomb: false, empty: '', number: c = 0 }, { coordX: a = 0, coordY: a = 3, bomb: false, empty: '', number: b = 0 }],
             [{ coordX: a = 1, coordY: a = 0, bomb: false, empty: '', number: d = 0 }, { coordX: a = 1, coordY: a = 1, bomb: false, empty: '', number: e = 0 }, { coordX: a = 1, coordY: a = 2, bomb: false, empty: '', number: f = 0 }, { coordX: a = 1, coordY: a = 3, bomb: false, empty: '', number: f = 0 }],
@@ -50,9 +142,10 @@ var app = new Vue({
         clicknumber: function (a, b) {
             if (!this.buttonCoord[a][b].bomb) {
                 this.buttonCoord[a][b].empty = this.buttonCoord[a][b].number
+                this.NotABomb++
             }
             else {
-                alert('Вы проиграли!')
+                setTimeout(() => { this.runTheEnd = true }, 1500)
             }
         },
         rndMine: function () {
@@ -60,7 +153,7 @@ var app = new Vue({
             for (let x = 0; x < 4; x++) {
                 for (let y = 0; y < 4; y++) {
                     let rndBomb = Math.random() * 10
-                    if (rndBomb < 3) {
+                    if (rndBomb < 2) {
                         this.buttonCoord[x][y].bomb = true
                         minimumQuantity++
                         if (minimumQuantity < 9) {
@@ -70,10 +163,37 @@ var app = new Vue({
                 }
             }
             this.buttonCoord[0][0].bomb = false
+        },
+        updatinFeatures: function () {
+            for (let x = 0; x < 4; x++) {
+                for (let y = 0; y < 4; y++) {
+                    this.buttonCoord[x][y].bomb = false
+                    this.buttonCoord[x][y].empty = ''
+                    this.buttonCoord[x][y].number = 0
+                }
+            }
+            this.isActive = ''
+            this.rndMine()
+            this.bombSearch()
+        },
+        checkingYourWinnings: function () {
+            for (let x = 0; x < 4; x++) {
+                for (let y = 0; y < 4; y++) {
+                    if (this.buttonCoord[x][y].bomb) {
+                        this.numberofBombs++
+                    }
+                }
+            }
+        },
+        Winnertrue: function () {
+            if ((16 - this.NotABomb) === this.numberofBombs) {
+                this.runTheEndTrue = true
+            }
         }
     },
     mounted() {
-        this.rndMine()
-        this.distanceToBimby()
+        // this.rndMine()
+        // this.distanceToBimby()
+        this.checkingYourWinnings()
     },
 })  
