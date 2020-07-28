@@ -160,12 +160,12 @@ var app = new Vue({
                     if (rndBomb < 3) {
                         this.buttonCoord[x][y].bomb = true
                         minimumQuantity++
-                        if (minimumQuantity > 2) {
+                        if (minimumQuantity > 1) {
                             break
                         }
                     }
                 }
-                if (minimumQuantity > 2) {
+                if (minimumQuantity > 3) {
                     break
                 }
             }
