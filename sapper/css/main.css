@@ -187,4 +187,11 @@ body #app footer p {
 }
 body #app footer .footer_copyright {
   margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  body #app footer .footer_copyright {
+    flex-direction: column;
+  }
 }
