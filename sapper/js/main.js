@@ -32,14 +32,12 @@ Vue.component('game-footer', {
         },
     },
     template:
-        `<section>
-    <h2 class= "hint">ПОДСКАЗКА!</h2>
-    <h2 class= "hint"> Первая ячейка (левый верхний угол) не взорвётся!</h2>
+        `<div>
     <button v-on:click = "gameRules, show = !show" class= "btn btn-warning"> Правила игры</button>
     <transition name="slide-fade">
     <p v-if= "rules, show" class = "hintwarning">
     В данном случае, есть 16 ячеек. В некоторых из них спрятаны бомбы. Нужно не подорваться на них! Открываем клеточку и видим цифру. Она означает, что в радиусе одной клетки данной клетки (вокруг неё) есть бобма,а количество их записано в клетке (та самая циферка).  И нужно открыть все клеточки, минуя бомбы. УДАЧИ!</p></transition>
-    </section>`
+    </div>`
 })
 
 // Компонент: "Проигрыш"
@@ -112,12 +110,7 @@ var app = new Vue({
                 this.isActive = true
             }
             else {
-                app.distanceToBimby()
-            }
-        },
-        btnsolider: function (active) {
-            if (active === true) {
-                this.isActivebtn = true
+                this.distanceToBimby()
             }
         },
         distanceToBimby: function () {

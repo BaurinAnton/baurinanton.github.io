@@ -159,6 +159,7 @@ body #app main section:nth-of-type(2) button {
 body #app main section:nth-of-type(2) .hintwarning {
   margin-top: 1em;
   font-size: 0.55em;
+  font-weight: 400;
 }
 @media (max-width: 1024px) {
   body #app main section:nth-of-type(2) .hintwarning {

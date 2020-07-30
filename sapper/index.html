@@ -21,98 +21,104 @@
         <main>
             <section>
                 <beginning-of-game v-if="!showBeginningComponentOne"></beginning-of-game>
-                    <div class="solider" v-if="showBeginningComponentOne && !runTheEnd && !runTheEndTrue">
-                        <div class="row">
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[0][0].coordX, buttonCoord[0][0].coordY), bombSearch(buttonCoord[0][0].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[0][0].bomb}" class="btn">
-                                {{
+                <div class="solider" v-if="showBeginningComponentOne && !runTheEnd && !runTheEndTrue">
+                    <div class="row">
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[0][0].coordX, buttonCoord[0][0].coordY), bombSearch(buttonCoord[0][0].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[0][0].bomb}" class="btn">
+                            {{
                     buttonCoord[0][0].empty
                 }}
-                            </button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[1][0].coordX, buttonCoord[1][0].coordY), bombSearch(buttonCoord[1][0].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[1][0].bomb}" class="btn">
-                                {{
+                        </button>
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[1][0].coordX, buttonCoord[1][0].coordY), bombSearch(buttonCoord[1][0].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[1][0].bomb}" class="btn">
+                            {{
                     buttonCoord[1][0].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[2][0].coordX, buttonCoord[2][0].coordY), bombSearch(buttonCoord[2][0].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[2][0].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[2][0].coordX, buttonCoord[2][0].coordY), bombSearch(buttonCoord[2][0].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[2][0].bomb}" class="btn">{{
                     buttonCoord[2][0].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[3][0].coordX, buttonCoord[3][0].coordY), bombSearch(buttonCoord[3][0].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[3][0].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[3][0].coordX, buttonCoord[3][0].coordY), bombSearch(buttonCoord[3][0].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[3][0].bomb}" class="btn">{{
                     buttonCoord[3][0].empty
                 }}</button></div>
-                        <div class="row"><button
-                                v-on:click.once="clicknumber(buttonCoord[0][1].coordX, buttonCoord[0][1].coordY), bombSearch(buttonCoord[0][1].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[0][1].bomb}" class="btn">{{
+                    <div class="row"><button
+                            v-on:click.once="clicknumber(buttonCoord[0][1].coordX, buttonCoord[0][1].coordY), bombSearch(buttonCoord[0][1].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[0][1].bomb}" class="btn">{{
                     buttonCoord[0][1].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[1][1].coordX, buttonCoord[1][1].coordY), bombSearch(buttonCoord[1][1].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[1][1].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[1][1].coordX, buttonCoord[1][1].coordY), bombSearch(buttonCoord[1][1].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[1][1].bomb}" class="btn">{{
                     buttonCoord[1][1].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[2][1].coordX, buttonCoord[2][1].coordY), bombSearch(buttonCoord[2][1].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[2][1].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[2][1].coordX, buttonCoord[2][1].coordY), bombSearch(buttonCoord[2][1].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[2][1].bomb}" class="btn">{{
                     buttonCoord[2][1].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[3][1].coordX, buttonCoord[3][1].coordY), bombSearch(buttonCoord[3][1].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[3][1].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[3][1].coordX, buttonCoord[3][1].coordY), bombSearch(buttonCoord[3][1].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[3][1].bomb}" class="btn">{{
                     buttonCoord[3][1].empty
                 }}</button></div>
-                        <div class="row"> <button
-                                v-on:click.once="clicknumber(buttonCoord[0][2].coordX, buttonCoord[0][2].coordY), bombSearch(buttonCoord[0][2].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[0][2].bomb}" class="btn">{{
+                    <div class="row"> <button
+                            v-on:click.once="clicknumber(buttonCoord[0][2].coordX, buttonCoord[0][2].coordY), bombSearch(buttonCoord[0][2].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[0][2].bomb}" class="btn">{{
                     buttonCoord[0][2].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[1][2].coordX, buttonCoord[1][2].coordY), bombSearch(buttonCoord[1][2].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[1][2].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[1][2].coordX, buttonCoord[1][2].coordY), bombSearch(buttonCoord[1][2].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[1][2].bomb}" class="btn">{{
                     buttonCoord[1][2].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[2][2].coordX, buttonCoord[2][2].coordY), bombSearch(buttonCoord[2][2].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[2][2].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[2][2].coordX, buttonCoord[2][2].coordY), bombSearch(buttonCoord[2][2].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[2][2].bomb}" class="btn">{{
                     buttonCoord[2][2].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[3][2].coordX, buttonCoord[3][2].coordY), bombSearch(buttonCoord[3][2].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[3][2].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[3][2].coordX, buttonCoord[3][2].coordY), bombSearch(buttonCoord[3][2].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[3][2].bomb}" class="btn">{{
                     buttonCoord[3][2].empty
                 }}</button></div>
-                        <div class="row"> <button
-                                v-on:click.once="clicknumber(buttonCoord[0][3].coordX, buttonCoord[0][3].coordY), bombSearch(buttonCoord[0][3].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[0][3].bomb}" class="btn">{{
+                    <div class="row"> <button
+                            v-on:click.once="clicknumber(buttonCoord[0][3].coordX, buttonCoord[0][3].coordY), bombSearch(buttonCoord[0][3].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[0][3].bomb}" class="btn">{{
                     buttonCoord[0][3].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[1][3].coordX, buttonCoord[1][3].coordY), bombSearch(buttonCoord[1][3].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[1][3].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[1][3].coordX, buttonCoord[1][3].coordY), bombSearch(buttonCoord[1][3].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[1][3].bomb}" class="btn">{{
                     buttonCoord[1][3].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[2][3].coordX, buttonCoord[2][3].coordY), bombSearch(buttonCoord[2][3].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[2][3].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[2][3].coordX, buttonCoord[2][3].coordY), bombSearch(buttonCoord[2][3].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[2][3].bomb}" class="btn">{{
                     buttonCoord[2][3].empty
                 }}</button>
-                            <button
-                                v-on:click.once="clicknumber(buttonCoord[3][3].coordX, buttonCoord[3][3].coordY), bombSearch(buttonCoord[3][3].bomb), Winnertrue()"
-                                v-bind:class="{activebomb: isActive === buttonCoord[3][3].bomb}" class="btn">{{
+                        <button
+                            v-on:click.once="clicknumber(buttonCoord[3][3].coordX, buttonCoord[3][3].coordY), bombSearch(buttonCoord[3][3].bomb), Winnertrue()"
+                            v-bind:class="{activebomb: isActive === buttonCoord[3][3].bomb}" class="btn">{{
                     buttonCoord[3][3].empty
                 }}
-                            </button>
-                        </div>
+                        </button>
                     </div>
-                    <end-game-false v-if="runTheEnd"></end-game-false>
-                    <end-game-true v-if="runTheEndTrue"></end-game-true>
+                </div>
+                <end-game-false v-if="runTheEnd"></end-game-false>
+                <end-game-true v-if="runTheEndTrue"></end-game-true>
             </section>
-            <game-footer></game-footer>
+            <section>
+                <h2 class="hint">ПОДСКАЗКА!</h2>
+                <h2 class="hint"> Первая ячейка (левый верхний угол) не взорвётся!</h2>
+                <h2 class="hint" v-if= "showBeginningComponentOne"> В этом раунде: {{numberofBombs}} бомб.</h2>
+                    <game-footer></game-footer>
+            </section>
+
         </main>
         <footer>
             <div>
