@@ -133,11 +133,8 @@ body {
                     }
                     .hintwarning {
                         margin-top: 1em;
-                        font-size: 0.55em;
+                        font-size: 0.65em;
                         font-weight: 400;
-                        @media (max-width: 1024px) {
-                            color: white;
-                        }
                     }
                 }
             }
@@ -163,6 +160,9 @@ body {
                 font-size: 0.6em;
                 margin: 0;
                 color: white;
+            }
+            .footer_copyright {
+                margin-top: 1em;
             }
         }
     }
