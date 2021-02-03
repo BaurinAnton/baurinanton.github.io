@@ -1,0 +1,16 @@
+@import "../header.scss";
+header {
+    .row {
+        .column:nth-of-type(2) {
+            display: none !important;
+        }
+        .column:nth-of-type(3) {
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import "variables.scss";
+body {
+    font-family: 'Montserrat', sans-serif;
+    header {
+        background-image: url(../img/svg/vyazanka.svg);
+        background-color: $mainСolor;
+        position: fixed;
+        @media (max-width: 768px) {
+            bottom: 0px;
+        }
+        width: 100%;
+        z-index: 2;
+        .row {
+            max-width: 95%;
+            margin: 0 auto;
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: $headerLogo;
+            .column:nth-of-type(1) {
+                display: flex;
+                align-items: center;
+                img:nth-of-type(1) {
+                    width: 4em;
+                }
+                img:nth-of-type(2) {
+                    height: 2em;
+                }
+            }
+            .column:nth-of-type(2) {
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+                .items:nth-of-type(1) {
+                    text-decoration: none;
+                    color: $headerLogo;
+                }
+                .items:nth-of-type(2) {
+                    // Относительно 24px
+                    display: flex;
+                    align-items: center;
+                    margin-left: 1.83em;
+                    width: 8.92em;
+                    height: 2.09em;
+                    border: 1px solid $headerLogo;
+                    border-radius: 1em;
+                    justify-content: space-evenly;
+                    text-decoration: none;
+                    @media (max-width: 767px) {
+                        width: 5em;
+                        margin-left: 1em;
+                    }
+                    .items_number {
+                        width: 1.5em;
+                        height: 1.5em;
+                        background-color: $headerLogo;
+                        border-radius: 100%;
+                        color: $mainСolor;
+                        text-align: center;
+                    }
+                    .items_text {
+                        color: $headerLogo;
+                        @media (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    .items_trash {
+                        width: 1.5em;
+                    }
+                }
+            }
+        }
+    }    
+}

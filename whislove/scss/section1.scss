@@ -1,0 +1,90 @@
+@import "variables.scss";
+body {
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+    @media (max-width: 500px) {
+        font-size: 12px;
+    }
+    @media (max-width: 400px) {
+        font-size: 10px;
+    }
+    main {
+        padding-top: 8vh;
+        @media (max-width: 768px) {
+            padding: 0 0 5.625em 0
+        }
+        section {
+            background-image: url(../img/svg/vyazanka.svg);
+        }
+        background-color: $mainСolor;
+        section:nth-of-type(1) {
+            border-top: 0.4375em solid $borderMain;
+            border-bottom: 0.4375em solid $borderMain;
+            background-image: url(../img/svg/vyazanka.svg);
+            .row:nth-of-type(1), .row:nth-of-type(3) {
+                height: 8vh;
+                display: flex;
+                align-items: center;
+                .swiper-container, .swiper-container1 {
+                    overflow: hidden;
+                }
+                .swiper-wrapper {
+                    .swiper-slide {
+                        font-size: 3em;
+                        font-weight: 500;
+                        color: $swiperTextColor;
+                        // Размер каждого слайда
+                        &:nth-of-type(1) {
+                            width: 4.2em !important;
+                        }
+                        &:nth-of-type(5) {
+                            width: 4.2em !important;
+                        }
+                        &:nth-of-type(9) {
+                            width: 4.2em !important;
+                        }
+                        &:nth-of-type(2) {
+                            width: 5.5em !important;
+                        }
+                        &:nth-of-type(6) {
+                            width: 5.5em !important;
+                        }
+                        &:nth-of-type(10) {
+                            width: 5.5em !important;
+                        }
+                        &:nth-of-type(3) {
+                            width: 4.5em !important;
+                        }
+                        &:nth-of-type(3) {
+                            width: 4.5em !important;
+                        }
+                        &:nth-of-type(7) {
+                            width: 4.5em !important;
+                        }
+                        &:nth-of-type(11) {
+                            width: 4.5em !important;
+                        }
+                        &:nth-of-type(4) {
+                            width: 3.9em !important;
+                        }
+                        &:nth-of-type(8) {
+                            width: 3.9em !important;
+                        }
+                        &:nth-of-type(12) {
+                            width: 3.9em !important;
+                        }
+                    }
+                }
+            }
+            .row:nth-of-type(2) {
+                // background-attachment: fixed;
+                height: 74.5vh;
+                background-image: url(../img/87c3a4fb7131925.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+            }
+        }
+    }
+}

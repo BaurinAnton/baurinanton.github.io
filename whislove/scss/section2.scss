@@ -1,0 +1,189 @@
+@import "variables.scss";
+main {
+    .activeButton {
+        background-color: $activeButton !important;
+        color: white !important;
+    }
+    section:nth-of-type(2) {
+        background-color: $mainСolor;
+        padding: 3.125em 0 18.75em 0;
+        .container {
+            max-width: 95%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 2.875em;
+            padding-bottom: 6.25em;
+            .box_container {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 3.75em 0 0 0;
+                .row:nth-of-type(1) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (max-width: 1440px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .column:nth-of-type(1) {
+                        @media (max-width: 767px) {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-row-gap: 1em;
+                        }
+                        button {
+                            font-size: 1.5em;
+                            margin-right: 2.08em;
+                            border-radius: 0.83em;
+                            border: 0;
+                            padding: 0.42em 0.83em;
+                            background-color: $noActiveButton;
+                            @media (max-width: 1600px) {
+                                margin-right: 1em;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            &:hover {
+                                background-color: $swiperTextColor;
+                            }
+                        }
+                    }
+                    .column:nth-of-type(2) {
+                        display: flex;
+                        align-items: center;
+                        @media (max-width: 1440px) {
+                            margin-top: 2em;
+                        }
+                        span:nth-of-type(1) {
+                            margin: 0 1em 0 0.1875em;
+                            font-size: 1.5em;
+                            font-weight: 500;
+                        }
+                        button {
+                            color: $activeButton;
+                            font-size: 1.5em;
+                            font-weight: 300;
+                            border: 0;
+                            background-color: white;
+                            border-bottom: 2px dotted $activeButton;
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+                .row:nth-of-type(2) {
+                    display: flex;
+                    justify-content: space-between;
+                    @media (max-width: 1440px) {
+                        justify-content: flex-start;  
+                    }
+                    .column:nth-of-type(1) {
+                        padding-top: 8em;
+                        @media (max-width: 1440px) {
+                            padding-top: 8.5em; 
+                        }
+                        h2 {
+                            font-size: 2.25em;
+                            font-weight: bold;
+                        }
+                    }
+                    .column:nth-of-type(2) {
+                        @media (max-width: 1440px) {
+                            margin: .5em 0 0 2.5em; 
+                            width: 12.375em;
+                        }
+                        @media (max-width: 500px) {
+                            margin-left: 3em; 
+                        }
+                        @media (min-width: 1441px) {
+                            margin: .5em 0 0 2.5em; 
+                            width: 12em;
+                        }
+                        width: 12.375em;
+                        height: 10.625em;
+                        background-color: rgba(1, 158, 177, 0.13);
+                        border-radius: 1em;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        span {
+                            font-size: 1.15em;
+                            padding: 0.4em 1.25em;
+                            color: $activeButton;
+                            &:hover {
+                                background-color: $noActiveButton;
+                            }
+                        }
+                    }
+                }
+                .row:nth-of-type(3) {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    @media (max-width: 1780px) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media (max-width: 1300px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media (max-width: 767px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    gap: 7.3125em 7em;
+                    margin-top: 3.75em;
+                    .row_elements {
+                        display: grid;
+                        grid-template-rows: 78fr 12fr 12fr;
+                        h3 {
+                            font-size: 1.4em;
+                            font-weight: 600;
+                            text-align: center;
+                        }
+                        .shmotka {
+                            justify-self: center;
+                            width: 16em;
+                        }
+                        .row_elements_meta {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            span {
+                                font-size: 1.4em;
+                                font-weight: 800;
+                            }
+                            .buttonTrash {
+                                width: 11em;
+                                height: 2.8em;
+                                border: 1px solid $mainСolor;
+                                border-radius: 1.125em;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                &:hover {
+                                    background-color: $swiperTextColor;
+                                }
+                                span {
+                                    color: $activeButton;
+                                    font-weight: 600;
+                                    font-size: 1.1em;
+                                }
+                                .sneginkaNumber {
+                                    background-image: url(../img/svg/sneginka.svg);
+                                    background-size: cover;
+                                    width: 1.6875em;
+                                    height: 1.9375em;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 1.06em;
+                                    color: $headerLogo;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
