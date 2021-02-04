@@ -135,6 +135,10 @@ main {
                     .row_elements {
                         display: grid;
                         grid-template-rows: 78fr 12fr 12fr;
+                        &:hover {
+                            transform: scale(1.05);
+                            transition-duration: 0.15s;
+                        }
                         h3 {
                             font-size: 1.4em;
                             font-weight: 600;

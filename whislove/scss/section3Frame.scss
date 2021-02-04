@@ -1,0 +1,193 @@
+@import "variables.scss";
+main {
+    section:nth-of-type(3) {
+        display: none;
+        position: fixed;
+        top: 0;
+        background-color: rgba(87, 185, 197, 0.8);
+        z-index: 2;
+        padding: 1.2em;
+        width: 100%;
+        height: 100%;
+        // display: grid;
+        justify-items: center;
+        align-items: center;
+        @media (max-width: 1640px) {
+            font-size: 14px;
+        }
+        @media (max-width: 1440px) {
+            font-size: 12px;
+        }
+        @media (max-width: 767px) {
+            font-size: 10px;
+        }
+        @media (max-width: 400px) {
+            font-size: 8px;
+        }
+        .wrapper {
+            background-color: white;
+            width: 36em;
+            @media (min-width: 1024px) {
+                width: 40em;
+            }
+            border-radius: 2em;
+            .wrapper_row {
+                max-width: 90%;
+                margin: 0 auto;
+                padding-bottom: 2em;
+                .row:nth-of-type(1) {
+                    display: flex;
+                    justify-content: flex-end;
+                    img {
+                        width: 2em;
+                        padding-top: 1em;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .row:nth-of-type(2) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 3em;
+                    .column:nth-of-type(1) {
+                        img {
+                            width: 15em;
+                        }
+                    }
+                    .column:nth-of-type(2) {
+                        h3 {
+                            font-size: 1.7em;
+                            font-weight: 600;
+                            margin-bottom: .6em;
+                        }
+                        p:nth-of-type(1) {
+                            font-size: 1.2em;
+                            color: $frameNoActiveText;
+                            margin-bottom: .2em;
+                        }
+                        p:nth-of-type(2), p:nth-of-type(3) {
+                            color: $frameNoActiveText;    
+                        }
+                        p:nth-of-type(4) {
+                            margin-top: 1em;
+                            span:nth-of-type(1) {
+                                font-size: 1.3em;
+                                color: $frameText;
+                                font-weight: 500;
+                                margin-right: .8em;
+                            }
+                            span:nth-of-type(2) {
+                                font-size: 1.6em;
+                                color: $frameText;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .row:nth-of-type(3) {
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        text-decoration: none;
+                        background-color: yellow;
+                        padding: .9em 1.4em;
+                        border-radius: 1.5em;
+                        font-size: 1.3em;
+                        color: black;
+                        background-color: $frameButtonBackgroundNoActive;
+                    }
+                    a:nth-of-type(3) {
+                        color: white;
+                        background-color: $activeButton;
+                    }
+                    margin-bottom: 3em;
+                }
+                .row:nth-of-type(4) {
+                    grid-template-columns: 1fr 1fr;
+                    display: grid;
+                    grid-row-gap: 2em;
+                    align-items: center;
+                    .frameActiveButton {
+                        background-color: $activeButton;
+                        color: white;
+                    }
+                    .frameNoActiveButton {
+                        background-color: $frameButtonBackgroundNoActive;
+                        color: $frameText;
+                    }
+                    .column:nth-of-type(1) {
+                        display: flex;
+                        img {
+                            align-self: flex-start;
+                            margin-top: -.7em;
+                            margin-left: -1.5em;
+                            width: 2em;
+                        }
+                        a {
+                            text-decoration: none;
+                            border-radius: 1.5em;
+                            font-size: 1.3em;
+                            padding: 1em 3em;
+                        }
+                    }
+                    .column:nth-of-type(2), .column:nth-of-type(4) {
+                        justify-self: end;
+                        span:nth-of-type(1) {
+                            font-size: 1.3em;
+                            color: $frameText;
+                            font-weight: 500;
+                            margin-right: .8em;
+                        }
+                        span:nth-of-type(2) {
+                            font-size: 1.6em;
+                            color: $frameText;
+                            font-weight: 700;
+                        }
+                    }
+                    .column:nth-of-type(3) {
+                        display: flex;
+                        img {
+                            align-self: flex-start;
+                            margin-top: -.7em;
+                            margin-left: -1.5em;
+                            width: 2em;
+                        }
+                        a {
+                            text-decoration: none;
+                            border-radius: 1.5em;
+                            font-size: 1.3em;
+                            padding: 1em 1.6em;
+                        }
+                    }
+                    margin-bottom: 2em;
+                }
+                .explanationOfTheQuestion {
+                    display: flex;
+                    background-color: $frameButtonBackgroundNoActive;
+                    border-radius: 1em;
+                    padding: 1em;
+                    .column:nth-of-type(1) {
+                        img {
+                            width: 5em;
+                        } 
+                        margin-right: 1em;
+                    }
+                    .column:nth-of-type(2) {
+                        color: $activeButton;
+                        margin-top: -.3em;
+                        h4 {
+                            font-size: 1.5em;   
+                            font-weight: 500;
+                            margin-bottom: .2em;
+                        }
+                        p {
+                            font-size: .9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

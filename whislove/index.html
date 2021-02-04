@@ -43,7 +43,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">ШАПКИ</div>
-                        <div class="swiper-slide">ВАРЕШКИ</div>
+                        <div class="swiper-slide">ВАРЕЖКИ</div>
                         <div class="swiper-slide">ШАРФЫ</div>
                         <div class="swiper-slide">НОСКИ</div>
                     </div>
@@ -94,7 +94,7 @@
                             <h3>Шапка "Вулкан"</h3>
                             <div class="row_elements_meta">
                                 <span>от 1500 ₽</span>
-                                <div class="buttonTrash">
+                                <div class="buttonTrash" id="buttonFrameShow">
                                     <img src="img/svg/plus.svg" alt="">
                                     <span>Добавить</span>
                                     <div class="sneginkaNumber">0</div>
@@ -270,10 +270,68 @@
                 </div>
             </div>
         </section>
+        <!-- section3 -->
+        <section id="sectionShow">
+            <div class="wrapper">
+                <div class="wrapper_row">
+                    <div class="row">
+                        <img src="./img/svg/krestickTrash.svg" alt="" id="sectionHide">
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="./img/shapka.png" alt="">
+                        </div>
+                        <div class="column">
+                            <h3>Шапка "Вулкан"</h3>
+                            <p>Состав:</p>
+                            <p>Шерсть....................................90%</p>
+                            <p>Акрил........................................10%</p>
+                            <p>
+                                <span>Цена:</span>
+                                <span>1250Р</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="#">56-58</a>
+                        <a href="#">58-60</a>
+                        <a href="#">60-62</a>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="#" class="frameNoActiveButton">Понпончик</a>
+                            <img src="./img/svg/frameWopros.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <span>Цена:</span>
+                            <span> 250 Р</span>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="frameActiveButton">Термоподкладка</a>
+                            <img src="./img/svg/frameWopros.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <span>Цена:</span>
+                            <span>250 Р</span>
+                        </div>
+                    </div>
+                    <div class="row explanationOfTheQuestion">
+                        <div class="column">
+                            <img src="./img/svg/frameWopros.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <h4>Термоподкладка</h4>
+                            <p>Это специальный термоинтерфейс из силикона, применяемый для охлаждения деталей ПК с высоким температурным режимом работы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="js/swipermain.js"></script>
     <script src="js/hideshowmenu.js"></script>
     <script src="js/activeButtonNav.js"></script>
+    <script src="js/frameshow.js"></script>
 </body>
 
 </html>
