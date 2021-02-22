@@ -157,6 +157,8 @@ body {
                                 font-size: 1.25em;
                                 color: $colorTextTerminal;
                                 outline: none;
+                                padding: 0 2em;
+                                box-sizing: border-box;
                             }
                         }
                     }
