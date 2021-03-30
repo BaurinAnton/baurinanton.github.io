@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/avtogruz/static/css/main.e381e901.chunk.css",
-    "main.js": "/avtogruz/static/js/main.00138f9c.chunk.js",
-    "main.js.map": "/avtogruz/static/js/main.00138f9c.chunk.js.map",
+    "main.js": "/avtogruz/static/js/main.dbc01c7b.chunk.js",
+    "main.js.map": "/avtogruz/static/js/main.dbc01c7b.chunk.js.map",
     "runtime-main.js": "/avtogruz/static/js/runtime-main.e3a37cae.js",
     "runtime-main.js.map": "/avtogruz/static/js/runtime-main.e3a37cae.js.map",
     "static/css/2.e28fbac3.chunk.css": "/avtogruz/static/css/2.e28fbac3.chunk.css",
-    "static/js/2.c1a2cc19.chunk.js": "/avtogruz/static/js/2.c1a2cc19.chunk.js",
-    "static/js/2.c1a2cc19.chunk.js.map": "/avtogruz/static/js/2.c1a2cc19.chunk.js.map",
+    "static/js/2.fed432bb.chunk.js": "/avtogruz/static/js/2.fed432bb.chunk.js",
+    "static/js/2.fed432bb.chunk.js.map": "/avtogruz/static/js/2.fed432bb.chunk.js.map",
     "index.html": "/avtogruz/index.html",
     "static/css/2.e28fbac3.chunk.css.map": "/avtogruz/static/css/2.e28fbac3.chunk.css.map",
     "static/css/main.e381e901.chunk.css.map": "/avtogruz/static/css/main.e381e901.chunk.css.map",
-    "static/js/2.c1a2cc19.chunk.js.LICENSE.txt": "/avtogruz/static/js/2.c1a2cc19.chunk.js.LICENSE.txt",
+    "static/js/2.fed432bb.chunk.js.LICENSE.txt": "/avtogruz/static/js/2.fed432bb.chunk.js.LICENSE.txt",
     "static/media/1.6091e17f.svg": "/avtogruz/static/media/1.6091e17f.svg",
     "static/media/2.4701b964.svg": "/avtogruz/static/media/2.4701b964.svg",
     "static/media/3.4f38679c.svg": "/avtogruz/static/media/3.4f38679c.svg",
@@ -50,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.e3a37cae.js",
     "static/css/2.e28fbac3.chunk.css",
-    "static/js/2.c1a2cc19.chunk.js",
+    "static/js/2.fed432bb.chunk.js",
     "static/css/main.e381e901.chunk.css",
-    "static/js/main.00138f9c.chunk.js"
+    "static/js/main.dbc01c7b.chunk.js"
   ]
 }
