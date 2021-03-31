@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/avtogruz/static/css/main.3779a289.chunk.css",
-    "main.js": "/avtogruz/static/js/main.d2082cd4.chunk.js",
-    "main.js.map": "/avtogruz/static/js/main.d2082cd4.chunk.js.map",
+    "main.js": "/avtogruz/static/js/main.c528e0b8.chunk.js",
+    "main.js.map": "/avtogruz/static/js/main.c528e0b8.chunk.js.map",
     "runtime-main.js": "/avtogruz/static/js/runtime-main.e3a37cae.js",
     "runtime-main.js.map": "/avtogruz/static/js/runtime-main.e3a37cae.js.map",
     "static/css/2.e28fbac3.chunk.css": "/avtogruz/static/css/2.e28fbac3.chunk.css",
@@ -53,6 +53,6 @@
     "static/css/2.e28fbac3.chunk.css",
     "static/js/2.fed432bb.chunk.js",
     "static/css/main.3779a289.chunk.css",
-    "static/js/main.d2082cd4.chunk.js"
+    "static/js/main.c528e0b8.chunk.js"
   ]
 }
