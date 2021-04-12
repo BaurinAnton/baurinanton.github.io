@@ -25,7 +25,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1.625em 0;
+            padding: 1em 0;
             .column {
                 &:nth-child(1) {
                     display: flex;
@@ -86,7 +86,7 @@ body {
                         overflow: hidden;
                         @media (max-width: 992px) {
                             left: 0;
-                            top: 6.2em;
+                            top: 5em;
                         }
                         .wrapper {
                             padding: 1em 0.5em;
@@ -254,7 +254,7 @@ body {
                 position: fixed;
                 overflow: hidden;
                 right: 0;
-                top: 6em;
+                top: 5em;
                 background-color: $mainColorRed;
                 border-radius: 0.5em;
                 .wrapper {
@@ -317,7 +317,7 @@ body {
             #header_menu {
                 position: fixed;
                 right: 0;
-                top: 6em;
+                top: 5em;
                 background-color: $mainColorRed;
                 border-radius: 0.5em;
                 .wrapper {

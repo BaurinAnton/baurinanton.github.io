@@ -1,6 +1,8 @@
 $mainColorRed: #610000;
 $mainColorSeconday: #faedde;
 $mainColorWhite: #ffffff;
+$swiperMainColorFooter: #EDD1B0;
+$productSection: #FFFAF5;
 
 @mixin maxWidth {
     @media (min-width: 1481px) {
@@ -12,7 +14,13 @@ $mainColorWhite: #ffffff;
         padding-right: 1.5em;
     }
 }
-
+@mixin maxWidhtSecondary {
+    @media (max-width: 992px) {
+        max-width: 95%;
+        margin: 0 auto;
+        padding-top: 10em;
+    }
+}
 @font-face {
     font-family: "Blago";
     src: url("../../fonts/BLAGO_NK.ttf") format("truetype");
