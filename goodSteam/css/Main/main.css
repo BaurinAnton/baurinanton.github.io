@@ -149,7 +149,7 @@ body header .container .column:nth-child(2) .row:nth-of-type(2) {
   background-color: #610000;
   position: fixed;
   border-radius: 0.5em;
-  top: 7.5em;
+  top: 6.5em;
   overflow: hidden;
 }
 @media (max-width: 992px) {
