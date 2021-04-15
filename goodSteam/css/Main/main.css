@@ -117,6 +117,9 @@ body header .container .column:nth-child(1) span {
   color: #faedde;
   font-family: "Blago";
 }
+body header .container .column:nth-child(2) {
+  display: none;
+}
 body header .container .column:nth-child(2) .row:nth-of-type(1) {
   display: flex;
   height: 100%;
@@ -666,6 +669,7 @@ main section:nth-of-type(1) .wrapper .wrapper_container .container .row .column:
 main section:nth-of-type(2) {
   background-color: #faedde;
   border-top: 0.5625em solid #610000;
+  display: none;
 }
 main section:nth-of-type(2) .wrapper_line {
   width: 100%;
@@ -879,7 +883,14 @@ main section:nth-of-type(3) .container .row:nth-of-type(2) .column:nth-of-type(1
   margin-left: 2.0625em;
   width: 5.8125em;
 }
-main section:nth-of-type(3) .container .row:nth-of-type(2) .column:nth-of-type(1) h3 {
+main section:nth-of-type(3) .container .row:nth-of-type(2) .column:nth-of-type(1) a {
+  text-decoration: none;
+  color: black;
+}
+main section:nth-of-type(3) .container .row:nth-of-type(2) .column:nth-of-type(1) a:hover {
+  text-decoration: underline;
+}
+main section:nth-of-type(3) .container .row:nth-of-type(2) .column:nth-of-type(1) a h3 {
   margin-top: 1em;
   font-size: 1.5em;
   font-weight: 700;
@@ -1623,7 +1634,7 @@ main section:nth-of-type(6) .container .wrapper .row:nth-of-type(3) .row-wrapper
 }
 main section:nth-of-type(6) .container .wrapper .row:nth-of-type(3) .row-wrapper .row-wrapper-border .column:nth-of-type(2) {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-basis: 50%;
   align-items: center;
 }

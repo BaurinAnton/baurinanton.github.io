@@ -54,11 +54,18 @@ main {
                                     width: 5.8125em;
                                 }
                             }
-                            h3 {
-                                margin-top: 1em;
-                                font-size: 1.5em;
-                                font-weight: 700;
-                                font-family: "Montserrat", sans-serif;
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                &:hover {
+                                    text-decoration:underline;
+                                }
+                                h3 {
+                                    margin-top: 1em;
+                                    font-size: 1.5em;
+                                    font-weight: 700;
+                                    font-family: "Montserrat", sans-serif;
+                                }
                             }
                             .box {
                                 &:nth-of-type(2) {
