@@ -36,11 +36,13 @@ main {
                 font-size: 8px;
             }
             @media (max-width: 460px) {
-                grid-template-columns: 1fr;
-                font-size: 13px;
+                font-size: 7px;
             }
-            @media (max-width: 380px) {
-                font-size: 10px;
+            @media (max-width: 400px) {
+                font-size: 6px;
+            }
+            @media (max-width: 350px) {
+                font-size: 5px;
             }
             .column {
                 @media (min-width: 993px) {
