@@ -1,0 +1,200 @@
+main {
+    section:nth-of-type(2) {
+        background-color: $mainColorSeconday;
+        background-image: url(../../../img/Catalog/lineSectionTo.svg);
+        background-repeat: no-repeat;
+        background-position-y: 0.5em;
+        .wrapper {
+            @include maxWidth;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            padding: 9.375em 0;
+            grid-row-gap: 4.375em;
+            grid-column-gap: 6.25em;
+            @media (max-width: 1480px) {
+                font-size: 14px;
+            }
+            @media (max-width: 1280px) {
+                font-size: 12px;
+            }
+            @media (max-width: 1050px) {
+                font-size: 10px;
+            }
+            @media (max-width: 992px) {
+                font-size: 14px;
+            }
+            @media (max-width: 800px) {
+                font-size: 12px;
+            }
+            @media (max-width: 690px) {
+                font-size: 10px;
+            }
+            @media (max-width: 576px) {
+                font-size: 8px;
+            }
+            @media (max-width: 460px) {
+                grid-template-columns: 1fr;
+                font-size: 14px;
+            }
+            @media (max-width: 400px) {
+                font-size: 10px;
+            }
+            .column {
+                @media (min-width: 993px) {
+                    &:nth-of-type(3n) {
+                        justify-self: self-end;
+                    }
+                    &:nth-of-type(2) {
+                        justify-self: center;
+                    }
+                    &:nth-of-type(5) {
+                        justify-self: center;
+                    }
+                    &:nth-of-type(8) {
+                        justify-self: center;
+                    }
+                }
+                @media (max-width: 992px) {
+                    &:nth-of-type(2n) {
+                        justify-self: self-end;
+                    }
+                }
+                @media (max-width: 460px) {
+                    &:nth-of-type(n) {
+                        justify-self: center;
+                    }
+                }
+                .column-row {
+                    .box {
+                        flex-basis: 11.8em;
+                    }
+                }
+                &:nth-of-type(1) {
+                    .column-row-image {
+                        background-color: #00000078;
+                        background-image: url(../img/zaryad1.jpg);
+                        background-position-y: 25%;
+                    }
+                }
+                &:nth-of-type(2) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad2.jpg);
+                        @media (max-width: 768px) {
+                            background-position-y: 0%;
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad3.jpg);
+                        background-position-x: 34%;
+                    }
+                }
+                &:nth-of-type(4) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad4.jpg);
+                    }
+                }
+                &:nth-of-type(5) {
+                    .column-row-image {
+                        background-color: $mainColorRed;
+                    }
+                }
+                &:nth-of-type(6) {
+                    .column-row-image {
+                        background-color: $mainColorRed;
+                    }
+                }
+                &:nth-of-type(7) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad5.jpg);
+                    }
+                }
+                &:nth-of-type(8) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad6.jpg);
+                    }
+                }
+                &:nth-of-type(9) {
+                    .column-row-image {
+                        background-image: url(../img/zaryad7.jpg);
+                    }
+                }
+                .column-row-image {
+                    width: 24em;
+                    height: 28em;
+                    // @media (max-width: 992px) {
+                    //     width: 30em;
+                    //     height: 40em;
+                    // }
+                    border-radius: 0.611em;
+                    text-transform: uppercase;
+                    color: #ffffff00;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 3.125em;
+                    @media (max-width: 768px) {
+                        background-position-y: 50%;
+                    }
+                    h4 {
+                        font-size: 1.5em;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 600;
+                        line-height: 1.2em;
+                        margin-bottom: 1.08em;
+                    }
+                    p {
+                        line-height: 1.3em;
+                        font-size: 1em;
+                        font-weight: 300;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                    &:hover {
+                        color: #ffffff;
+                        background: linear-gradient(360deg, #202020 0.32%, #656565 100%);
+                        transition-duration: 500ms;
+                    }
+                }
+                .column-row {
+                    margin-top: 4.6875em;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-family: "Montserrat", sans-serif;
+                    .box {
+                        p {
+                            line-height: 1.2em;
+                            &:nth-of-type(1) {
+                                font-size: 1.875em;
+                                color: $catalogPriceColor;
+                                font-weight: 600;
+                            }
+                            &:nth-of-type(2) {
+                                font-size: 1.5em;
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+                        }
+                    }
+                    button {
+                        background-color: $mainColorRed;
+                        font-size: 1.875em;
+                        font-weight: 700;
+                        color: $mainColorWhite;
+                        border: 0;
+                        padding: 0.4em 0.9em;
+                        border-radius: 0.267em;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #a50000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

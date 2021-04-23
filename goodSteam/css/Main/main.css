@@ -1974,7 +1974,7 @@ footer .container:nth-of-type(2) .row {
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2.292em;
+  padding: 2.292em 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
 }
@@ -2097,7 +2097,6 @@ dd {
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
