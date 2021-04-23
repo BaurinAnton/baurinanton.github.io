@@ -652,12 +652,12 @@ main section:nth-of-type(2) .wrapper {
 @media (max-width: 460px) {
   main section:nth-of-type(2) .wrapper {
     grid-template-columns: 1fr;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 380px) {
   main section:nth-of-type(2) .wrapper {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (min-width: 993px) {
