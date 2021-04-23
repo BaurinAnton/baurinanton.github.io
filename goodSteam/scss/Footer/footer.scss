@@ -8,17 +8,14 @@ footer {
     }
     @media (max-width: 992px) {
         font-size: 12px;
-        border-top: 0.5625em solid #faedde;
     }
     @media (max-width: 768px) {
-        border-top: 1.92em solid #faedde;
     }
     @media (max-width: 576px) {
         font-size: 10px;
     }
     @media (max-width: 430px) {
         font-size: 8px;
-        border-top: 1.92em solid #faedde;
     }
     background-color: $mainColorRed;
     .container:nth-of-type(1) {
