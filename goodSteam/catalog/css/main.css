@@ -614,6 +614,11 @@ main section:nth-of-type(2) .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 460px) {
+  main section:nth-of-type(2) .wrapper {
+    grid-column-gap: 3.25em;
+  }
+}
 @media (max-width: 1480px) {
   main section:nth-of-type(2) .wrapper {
     font-size: 14px;
@@ -654,12 +659,12 @@ main section:nth-of-type(2) .wrapper {
     font-size: 7px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   main section:nth-of-type(2) .wrapper {
     font-size: 6px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 330px) {
   main section:nth-of-type(2) .wrapper {
     font-size: 5px;
   }
