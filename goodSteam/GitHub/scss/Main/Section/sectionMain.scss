@@ -1,0 +1,118 @@
+@import "../variables.scss";
+main {
+    section:nth-of-type(1) {
+        background-image: url(../../img/Main/SectionMain/mainFoto.jpg);
+        @media (max-width: 768px) {
+            background-image: url(../../img/Main/SectionMain/mainFotoMobile.jpg);
+        }
+        background-size: cover;
+        margin-top: 6.6em;
+        @media (max-width: 992px) {
+            margin-top: 5.25em;
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            height: 90vh;
+        }
+        @media (max-width: 767px) {
+            padding-top: 5em;
+            padding-bottom: 10em;
+        }
+        .wrapper {
+            background: linear-gradient(90deg, #610000 43.77%, rgba(0, 0, 0, 0) 124.33%);
+            width: 100%;
+            padding: 1em 0;
+            .wrapper_container {
+                border-top: 0.5625em solid $mainColorSeconday;
+                border-bottom: 0.5625em solid $mainColorSeconday;
+                @media (max-width: 767px) {
+                    padding-bottom: 15em;
+                }
+                .container {
+                    @include maxWidth;
+                    .row {
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        .column {
+                            &:nth-of-type(1) {
+                                padding: 3.625em 0;
+                                display: flex;
+                                flex-direction: column;
+                                @media (max-width: 992px) {
+                                    flex-basis: 28em;
+                                }
+                                h1 {
+                                    font-size: 3em;
+                                    color: $mainColorSeconday;
+                                    font-family: "Blago";
+                                    font-weight: 500;
+                                }
+                                h2 {
+                                    font-size: 2.4375em;
+                                    color: $mainColorSeconday;
+                                    font-family: "Montserrat", sans-serif;
+                                    font-weight: 500;
+                                }
+                                a {
+                                    text-decoration: none;
+                                }
+                                .box_bell {
+                                    display: flex;
+                                    @media (min-width: 993px) {
+                                        align-self: center;
+                                    }
+                                    align-items: center;
+                                    margin-top: 4.375em;
+                                    span {
+                                        font-size: 2.25em;
+                                        font-family: "Blago";
+                                        font-weight: 500;
+                                        color: $mainColorSeconday;
+                                    }
+                                    img {
+                                        width: 5.5em;
+                                        margin-left: 2.5em;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                position: absolute;
+                                right: 0;
+                                top: -10em;
+                                @media (max-width: 1440px) {
+                                    top: -3em;
+                                }
+                                @media (max-width: 992px) {
+                                    top: -2em;
+                                }
+                                @media (max-width: 882px) {
+                                    top: 2em;
+                                }
+                                @media (max-width: 767px) {
+                                    padding-top: 26em;
+                                }
+                                img {
+                                    width: 40em;
+                                    @media (max-width: 1440px) {
+                                        width: 28em;
+                                    }
+                                    @media (max-width: 992px) {
+                                        width: 32em;
+                                    }
+                                    @media (max-width: 882px) {
+                                        width: 26em;
+                                    }
+                                    @media (max-width: 767px) {
+                                        width: 24em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

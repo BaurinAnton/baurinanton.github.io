@@ -1,0 +1,100 @@
+@import "../../../../scss/variables.scss";
+main {
+    section:nth-of-type(1) {
+        padding-top: 6.6em;
+        @media (max-width: 992px) {
+            padding-top: 5.4em;
+        }
+        @media (max-width: 992px) {
+            padding-top: 5.4em;
+        }
+        @media (max-width: 768px) {
+            padding-top: 5em;
+        }
+        .row {
+            &:nth-of-type(1) {
+                width: 100%;
+                height: 2.875em;
+                @media (min-width: 768px) {
+                    background-color: $catalogLineBack;
+                    background-image: url(../../img/Catalog/lineTop.svg);
+                    background-repeat: no-repeat;
+                    background-position-y: 50%;
+                }
+                @media (max-width: 767px) {
+                    background-color: $mainColorSeconday;
+                    height: 1.5em;
+                }
+            }
+            &:nth-of-type(2) {
+                height: 8em;
+                background-color: $mainColorRed;
+                display: flex;
+                align-items: center;
+                .swiper-container {
+                    @include maxWidth;
+                    width: 100%;
+                    height: 5em !important;
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        color: white;
+                        opacity: 0.5;
+                        top: 2.3em !important;
+                        @media (max-width: 1399px) {
+                            display: none;
+                        }
+                    }
+                    .swiper-wrapper {
+                        @media (min-width: 1400px) {
+                            display: flex;
+                            margin-left: 1em;
+                            justify-content: center;
+                        }
+                    }
+                    .swiper-slide {
+                        .slide-active {
+                            background-color: #8e0000;
+                        }
+                        @media (min-width: 1400px) {
+                            &:nth-of-type(1) {
+                                width: 12em !important;
+                            }
+                            &:nth-of-type(2) {
+                                width: 17em !important;
+                            }
+                            &:nth-of-type(3) {
+                                width: 12em !important;
+                            }
+                            &:nth-of-type(1) {
+                                width: 12em !important;
+                            }
+                            &:nth-of-type(5) {
+                                width: 15em !important;
+                            }
+                        }
+                        a {
+                            &:hover {
+                                background-color: #8e000073;
+                            }
+                            font-family: "Montserrat", sans-serif;
+                            text-align: center;
+                            font-size: 1.5em;
+                            color: $mainColorWhite;
+                            border: 0.0625em solid $mainColorWhite;
+                            line-height: 1.08em;
+                            border-radius: 0.42em;
+                            padding: 0.375em 0.79em;
+                            width: 100%;
+                            height: 2.91em;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+                            box-shadow: 0.29em 0.25em 0.33em 0em rgb(0 0 0 / 25%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
