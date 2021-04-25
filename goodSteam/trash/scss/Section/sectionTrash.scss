@@ -1,0 +1,320 @@
+@import "../../../scss/variables.scss";
+
+// body ::-webkit-scrollbar {
+//     width: 1em;
+//     /* ширина для вертикального скролла */
+//     height: 0;
+//     background-color: #c4c4c4;
+//     border-radius: 9em;
+// }
+// body ::-webkit-scrollbar-thumb {
+//     background-color: #7a2222;
+//     border-radius: 9em;
+//     width: 0.6em;
+// }
+main {
+    section {
+        padding-top: 10em;
+        background-color: $mainColorSeconday;
+        padding-bottom: 9.375em;
+        @media (max-width: 1440px) {
+            font-size: 14px;
+        }
+        @media (max-width: 1280px) {
+            font-size: 12px;
+        }
+        @media (max-width: 850px) {
+            font-size: 10px;
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+        @media (max-width: 630px) {
+            font-size: 12px;
+        }
+        @media (max-width: 530px) {
+            font-size: 10px;
+        }
+        @media (max-width: 440px) {
+            font-size: 8px;
+        }
+        @media (max-width: 350px) {
+            font-size: 6px;
+        }
+        .wrapper {
+            @include maxWidth;
+            .container {
+                &:nth-of-type(1) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .column {
+                        &:nth-of-type(1) {
+                            display: flex;
+                            align-items: center;
+                            h2 {
+                                font-family: "Blago";
+                                font-size: 3.4375em;
+                                font-weight: 500;
+                                color: $mainColorRed;
+                                margin-right: 0.62em;
+                            }
+                            img {
+                                width: 4.125em;
+                            }
+                        }
+                        &:nth-child(2) {
+                            border: 0;
+                            background-color: $mainColorSeconday;
+                            cursor: pointer;
+                            &:hover {
+                                transform: scale(1.02);
+                            }
+                            span {
+                                font-size: 1.125em;
+                                color: $mainColorRed;
+                                font-family: "Montserrat", sans-serif;
+                            }
+                            img {
+                                width: 0.7em;
+                                height: 100%;
+                                margin-left: 0.625em;
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    height: 40.5em;
+                    @media (max-width: 767px) {
+                        height: 50em;
+                        border: 0em;
+                    }
+                    background-image: url(../../../img/Main/Contacts/backgroundContactsImage.svg);
+                    background-color: $mainColorWhite;
+                    border-radius: 2.375em;
+                    margin-top: 1em;
+                    border: 0.1875em solid $mainColorRed;
+                    padding: 5em 9.125em;
+                    @media (max-width: 1080px) {
+                        padding: 4em 2em;
+                    }
+                    .row {
+                        &:nth-of-type(1) {
+                            display: flex;
+                            margin-bottom: 0em;
+                            @media (max-width: 767px) {
+                                margin-bottom: 0.5em;
+                            }
+                            h4 {
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 0.85em;
+                                &:nth-of-type(1) {
+                                    margin-left: 10.1em;
+                                    @media (max-width: 767px) {
+                                        margin-left: 3.9em;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    margin-left: 20.55em;
+                                    @media (max-width: 767px) {
+                                        margin-left: 11em;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    margin-left: 2.5em;
+                                    @media (max-width: 767px) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            height: 17em;
+                            @media (max-width: 767px) {
+                                height: 26em;
+                            }
+                            overflow-y: scroll;
+                            &::-webkit-scrollbar {
+                                width: 1em;
+                                /* ширина для вертикального скролла */
+                                height: 0;
+                                background-color: #c4c4c4;
+                                border-radius: 9em;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: #7a2222;
+                                border-radius: 9em;
+                                width: 0.6em;
+                            }
+                            .row_box {
+                                display: flex;
+                                align-items: center;
+                                @media (max-width: 767px) {
+                                    border: 0.125em solid $mainColorRed;
+                                    border-radius: 1em;
+                                    padding: 1em;
+                                    padding-bottom: 0;
+                                    width: 34.3em;
+                                }
+                                @media (max-width: 767px) {
+                                    display: grid;
+                                    grid-template-columns: 1fr 10fr;
+                                }
+                                font-family: "Montserrat", sans-serif;
+                                margin-bottom: 1em;
+                                @media (max-width: 767px) {
+                                    margin-bottom: 2em;
+                                }
+                                &:nth-last-of-type(1) {
+                                    margin: 0;
+                                }
+                                .logo {
+                                    width: 5em;
+                                    height: 100%;
+                                    margin-right: 3.625em;
+                                    @media (max-width: 767px) {
+                                        display: none;
+                                    }
+                                }
+                                .logo_zaryad {
+                                    opacity: 0.7;
+                                }
+                                .column {
+                                    &:nth-of-type(1) {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        border: 0.125em solid $mainColorRed;
+                                        width: 26em;
+                                        @media (max-width: 767px) {
+                                            width: 20em;
+                                        }
+                                        padding: 0.6em 2em;
+                                        h5 {
+                                            font-size: 1.7em;
+                                            font-weight: 700;
+                                            line-height: 1em;
+                                            margin-left: -0.05em;
+                                            color: $catalogPriceColor;
+                                        }
+                                        h6 {
+                                            font-size: 0.8em;
+                                            @media (max-width: 767px) {
+                                                font-size: 1.2em;
+                                            }
+                                            font-weight: 400;
+                                            line-height: 0.8em;
+                                            color: rgba(0, 0, 0, 0.822);
+                                        }
+                                    }
+                                    &:nth-of-type(2) {
+                                        width: 6.25em;
+                                        border: 0.125em solid $mainColorRed;
+                                        display: flex;
+                                        padding: 0.08em 0.375em;
+                                        margin-left: 0.875em;
+                                        justify-content: space-between;
+                                        span {
+                                            font-size: 2.25em;
+                                            font-weight: 700;
+                                        }
+                                        img {
+                                            width: 0.8em;
+                                        }
+                                    }
+                                    &:nth-of-type(3) {
+                                        width: 17.125em;
+                                        border: 0.125em solid $mainColorRed;
+                                        margin-left: 0.875em;
+                                        @media (max-width: 767px) {
+                                            margin: 0;
+                                            border: 0;
+                                            padding: 0.08em 2em;
+                                        }
+                                        padding: 0.08em 0.375em;
+                                        span {
+                                            font-size: 2.25em;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            margin-top: 2.75em;
+                            margin-left: 21.3em;
+                            @media (max-width: 767px) {
+                                margin-left: 0;
+                            }
+                            display: flex;
+                            .box {
+                                &:nth-of-type(1) {
+                                    display: flex;
+                                    align-items: center;
+                                    #product_quantity {
+                                        font-size: 2em;
+                                    }
+                                    span {
+                                        font-size: 1.6em;
+                                        font-weight: 700;
+                                        font-family: "Montserrat", sans-serif;
+                                        &:nth-of-type(1) {
+                                            margin-left: 1.2em;
+                                            @media (max-width: 767px) {
+                                                margin-left: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    width: 17.125em;
+                                    @media (max-width: 767px) {
+                                        width: 15em;
+                                    }
+                                    border: 0.125em solid $mainColorRed;
+                                    margin-left: 2em;
+                                    span {
+                                        padding: 0.6em 0.15em;
+                                        @media (max-width: 767px) {
+                                            padding: 0.6em 0.3em;
+                                        }
+                                        font-size: 2.25em;
+                                        font-weight: 700;
+                                        font-family: "Montserrat", sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            margin-right: 11.6em;
+                            margin-top: 2.5em;
+                            margin-left: 42.5em;
+                            @media (max-width: 767px) {
+                                margin-left: 0;
+                            }
+                            button {
+                                font-size: 1.5em;
+                                padding: 0.5em 3.65em;
+                                border: 0;
+                                background-color: $mainColorRed;
+                                font-family: "Montserrat", sans-serif;
+                                color: $mainColorWhite;
+                                cursor: pointer;
+                                margin-bottom: 0.6em;
+                                &:hover {
+                                    background-color: #900000;
+                                }
+                            }
+                            p {
+                                font-size: 1.28em;
+                                font-family: "Montserrat", sans-serif;
+                                font-weight: 700;
+                                width: 14em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

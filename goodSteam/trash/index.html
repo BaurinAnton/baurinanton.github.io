@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Товар отсутствует | Добрый пар</title>
+    <title>Корзина | Добрый пар</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -55,7 +51,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="/goodSteam/">Главная
+                            <a href="/goodSteam/#main">Главная
                             </a>
                         </li>
                         <li>
@@ -89,7 +85,7 @@
             </div>
             <div class="column_menu">
                 <div class="box">
-                    <a href="/trash">
+                    <a href="/goodSteam/trash">
                         <img class="trash" src="../img/Header/trash.svg" alt="">
                         <span>1</span>
                 </div>
@@ -121,86 +117,130 @@
     </header>
     <main>
         <section>
-            <div class="row"></div>
-            <div class="row">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="/goodSteam/charges">Заряды</a></div>
-                        <div class="swiper-slide"><a href="/goodSteam/noProduct">Художественное <br /> литье</a></div>
-                        <div class="swiper-slide"><a href="/goodSteam/noProduct">Задвижки <br />и дверцы</a></div>
-                        <div class="swiper-slide"><a href="/goodSteam/noProduct">Изложницы <br /> и плиты</a>
-                        </div>
-                        <div class="swiper-slide"><a href="/goodSteam/noProduct">Колосники</a></div>
-                    </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </section>
-        <section>
             <div class="wrapper">
                 <div class="container">
-                    <img src="./img/thashMain.svg" alt="">
-                    <h1>ТОВАР ОТСУТСТВУЕТ НА СКЛАДЕ</h1>
-                    <a href="#contacts">Уточнить поступление товара</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row_line">
-            </div>
-            <div class="wrapper">
-                <div class="container">
-                    <div class="container_wrapper">
-                        <h2>Товар отсутствует</h2>
-                        <div class="container_row_wrapper">
-                            <div class="row">
-                                <h2>ОПИСАНИЕ ТОВАРА ОТСУТСТВУЕТ</h2>
-                            </div>
-                            <div class="row">
-                                <img src="../charges/img/Description/zaryad.svg" alt="">
-                            </div>
-                        </div>
+                    <div class="column">
+                        <h2>Корзина</h2>
+                        <img src="../img/Main/AboutTheCompany/logoAboutCompany.svg" alt="">
                     </div>
+                    <button class="column">
+                        <span>Очистить корзину</span>
+                        <img src="./img/cross.svg" alt="">
+                    </button>
                 </div>
-            </div>
-            <div class="row_line">
-                <!-- <img src="./img/Description/backgroundLine.svg" alt=""> -->
-            </div>
-        </section>
-        <section id="contacts">
-            <div class="container">
-                <div class="wrapper">
+                <div class="container">
                     <div class="row">
-                        <div class="row-wrapper">
+                        <h4>Наименование товара</h4>
+                        <h4>Количество</h4>
+                        <h4>Цена</h4>
+                    </div>
+                    <div class="row">
+                        <div class="row_box">
+                            <img src="./img/zaryad.svg" class="logo" alt="">
                             <div class="column">
-                                <h2>Контакты</h2>
-                                <img src="../img/Main/AboutTheCompany/logoAboutCompany.svg" alt="">
+                                <h5>К-46</h5>
+                                <h6>заряды</h6>
                             </div>
                             <div class="column">
-                                <div class="box">
-                                    <p>
-                                        Оставьте свой номер телефона или <b>e-mail</b>
-                                        и мы обязательно свяжемся с Вами
-                                    </p>
-                                </div>
-                                <div class="box">
-                                    <form action="#">
-                                        <div class="wrapper-input">
-                                            <div class="row-input">
-                                                <input type="tel" placeholder="+7_(____)__-__-__">
-                                                <input type="text" placeholder="Имя">
-                                            </div>
-                                            <div class="row-input">
-                                                <input type="email" placeholder="e-mail">
-                                                <input type="submit" value="">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                <img src="./img/strelaLeft.svg" alt="" id="button_quantity_one">
+                                <span id="quantity_one">1</span>
+                                <img src="./img/strelaRight.svg" alt="" id="button_quantity_to">
+                            </div>
+                            <div class="column">
+                                <span id="price_one">18600</span>
+                                <span>₽</span>
                             </div>
                         </div>
+                        <div class="row_box">
+                            <img src="./img/covka.svg" class="logo logo_zaryad" alt="">
+                            <div class="column">
+                                <h5>Мега ковка забора</h5>
+                                <h6>художественная ковка</h6>
+                            </div>
+                            <div class="column">
+                                <img src="./img/strelaLeft.svg" alt="">
+                                <span id="quantity">1</span>
+                                <img src="./img/strelaRight.svg" alt="">
+                            </div>
+                            <div class="column">
+                                <span id="price">28 600 ₽</span>
+                            </div>
+                        </div>
+                        <div class="row_box">
+                            <img src="./img/zaryad.svg" class="logo" alt="">
+                            <div class="column">
+                                <h5>К-46</h5>
+                                <h6>заряды</h6>
+                            </div>
+                            <div class="column">
+                                <img src="./img/strelaLeft.svg" alt="">
+                                <span id="quantity">1</span>
+                                <img src="./img/strelaRight.svg" alt="">
+                            </div>
+                            <div class="column">
+                                <span id="price">18 600 ₽</span>
+                            </div>
+                        </div>
+                        <div class="row_box">
+                            <img src="./img/zaryad.svg" class="logo" alt="">
+                            <div class="column">
+                                <h5>К-46</h5>
+                                <h6>заряды</h6>
+                            </div>
+                            <div class="column">
+                                <img src="./img/strelaLeft.svg" alt="">
+                                <span id="quantity">1</span>
+                                <img src="./img/strelaRight.svg" alt="">
+                            </div>
+                            <div class="column">
+                                <span id="price">18 600 ₽</span>
+                            </div>
+                        </div>
+                        <div class="row_box">
+                            <img src="./img/zaryad.svg" class="logo" alt="">
+                            <div class="column">
+                                <h5>К-46</h5>
+                                <h6>заряды</h6>
+                            </div>
+                            <div class="column">
+                                <img src="./img/strelaLeft.svg" alt="">
+                                <span id="quantity">1</span>
+                                <img src="./img/strelaRight.svg" alt="">
+                            </div>
+                            <div class="column">
+                                <span id="price">18 600 ₽</span>
+                            </div>
+                        </div>
+                        <div class="row_box">
+                            <img src="./img/zaryad.svg" class="logo" alt="">
+                            <div class="column">
+                                <h5>К-46</h5>
+                                <h6>заряды</h6>
+                            </div>
+                            <div class="column">
+                                <img src="./img/strelaLeft.svg" alt="">
+                                <span id="quantity">1</span>
+                                <img src="./img/strelaRight.svg" alt="">
+                            </div>
+                            <div class="column">
+                                <span id="price">18 600 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box">
+                            <span>Количество товара:&#160;</span>
+                            <span id="product_quantity">5</span>
+                        </div>
+                        <div class="box">
+                            <span id="full_price">47 200 ₽</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button>
+                            Заказать
+                        </button>
+                        <p>Доставка в течении 2 дней</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +271,7 @@
             <div class="column">
                 <h3>НАВИГАЦИЯ ПО САЙТУ</h3>
                 <ul>
-                    <li><a href="/goodSteam/">Главная</a> </li>
+                    <li><a href="/goodSteam/#main">Главная</a> </li>
                     <li><a href="/goodSteam/#aboutTheCompany">О компании</a></li>
                     <li><a href="/goodSteam/#whereToBuy">Где купить</a></li>
                     <li><a href="/goodSteam/#contacts">Контакты</a> </li>
@@ -268,7 +308,8 @@
             </div>
         </div>
     </footer>
-    <script src="../charges/js/swiper.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/trash.js"></script>
 </body>
+
 </html>
