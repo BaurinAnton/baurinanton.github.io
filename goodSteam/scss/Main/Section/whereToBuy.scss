@@ -91,12 +91,13 @@ main {
                                     display: none;
                                 }
                             }
-                            p {
+                            a {
                                 font-size: 1.35em;
                                 font-family: "Montserrat", sans-serif;
                                 color: $mainColorSeconday;
                                 font-weight: 700;
                                 border-bottom: 0.1875em solid $mainColorSeconday;
+                                text-decoration: none;
                                 @media (max-width: 992px) {
                                     color: $mainColorRed;
                                     border: 0;

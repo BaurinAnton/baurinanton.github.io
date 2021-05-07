@@ -55,25 +55,32 @@ main {
                                     font-family: "Montserrat", sans-serif;
                                     font-weight: 500;
                                 }
-                                a {
-                                    text-decoration: none;
-                                }
-                                .box_bell {
+                                #bell_order {
                                     display: flex;
-                                    @media (min-width: 993px) {
-                                        align-self: center;
+                                    justify-content: center;
+                                    @media (max-width: 992px) {
+                                        justify-content: flex-start;
                                     }
-                                    align-items: center;
-                                    margin-top: 4.375em;
-                                    span {
-                                        font-size: 2.25em;
-                                        font-family: "Blago";
-                                        font-weight: 500;
-                                        color: $mainColorSeconday;
+                                    a {
+                                        text-decoration: none;
                                     }
-                                    img {
-                                        width: 5.5em;
-                                        margin-left: 2.5em;
+                                    .box_bell {
+                                        display: flex;
+                                        @media (min-width: 993px) {
+                                            align-self: center;
+                                        }
+                                        align-items: center;
+                                        margin-top: 4.375em;
+                                        span {
+                                            font-size: 2.25em;
+                                            font-family: "Blago";
+                                            font-weight: 500;
+                                            color: $mainColorSeconday;
+                                        }
+                                        img {
+                                            width: 5.5em;
+                                            margin-left: 2.5em;
+                                        }
                                     }
                                 }
                             }

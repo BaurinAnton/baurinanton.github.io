@@ -82,11 +82,12 @@ footer {
                         margin-top: 1.3em;
                         display: flex;
                         align-items: center;
-                        span {
+                        span, a {
                             font-size: 1.5em;
                             color: $mainColorWhite;
                             font-family: "Montserrat", sans-serif;
                             margin-left: 1em;
+                            text-decoration: none;
                         }
                     }
                 }
@@ -215,6 +216,10 @@ footer {
             font-size: 1.2em;
             .column {
                 width: 11em;
+                a {
+                    text-decoration: none;
+                    color: $mainColorWhite;
+                }
                 @media (max-width: 768px) {
                     width: 15em;
                 }

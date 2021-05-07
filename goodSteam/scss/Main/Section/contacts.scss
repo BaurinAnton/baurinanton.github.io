@@ -212,6 +212,9 @@ main {
                                         flex-basis: 50%;
                                         align-items: center;
                                         a {
+                                            &:nth-of-type(2) {
+                                                display: none;
+                                            }
                                             img {
                                                 width: 5.875em;
                                                 height: 100%;

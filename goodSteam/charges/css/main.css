@@ -97,6 +97,7 @@ body header .container {
 body header .container .column:nth-child(1) {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   body header .container .column:nth-child(1) {
@@ -228,15 +229,22 @@ body header .container .column:nth-child(3) nav ul a:nth-last-child(1) .trashBox
   position: relative;
 }
 body header .container .column:nth-child(3) nav ul a:nth-last-child(1) .trashBox img {
-  width: 2.1em;
+  width: 2.5em;
 }
 body header .container .column:nth-child(3) nav ul a:nth-last-child(1) .trashBox span {
   font-size: 1em;
   position: absolute;
-  right: 0.33em;
-  bottom: -0.28em;
+  right: 0em;
+  bottom: -0.18em;
   font-family: "Kanit", sans-serif;
   color: #ffffff;
+  background-image: url(../../img/Header/EllipseTrash.svg);
+  background-size: cover;
+  width: 1.22em;
+  height: 1.23em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body header .container .column:nth-child(3) .box {
   display: flex;
@@ -257,7 +265,7 @@ body header .container .column:nth-child(3) .box span {
   color: #faedde;
   font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   body header .container .column_menu {
     display: none;
   }
@@ -271,12 +279,19 @@ body header .container .column_menu .box:nth-of-type(1) img {
 body header .container .column_menu .box:nth-of-type(1) span {
   font-size: 1.3em;
   position: absolute;
-  right: 0.38em;
+  right: 0em;
   bottom: -0.2em;
   font-family: "Kanit", sans-serif;
   color: #ffffff;
+  background-image: url(../../img/Header/EllipseTrash.svg);
+  background-size: cover;
+  width: 1.22em;
+  height: 1.23em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   body header .container #burger {
     display: none;
   }
@@ -1361,11 +1376,12 @@ footer .container:nth-of-type(1) .column:nth-of-type(1) .row:nth-of-type(3) {
   display: flex;
   align-items: center;
 }
-footer .container:nth-of-type(1) .column:nth-of-type(1) .row:nth-of-type(3) span {
+footer .container:nth-of-type(1) .column:nth-of-type(1) .row:nth-of-type(3) span, footer .container:nth-of-type(1) .column:nth-of-type(1) .row:nth-of-type(3) a {
   font-size: 1.5em;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   margin-left: 1em;
+  text-decoration: none;
 }
 footer .container:nth-of-type(1) .column:nth-of-type(2) {
   display: flex;
@@ -1522,6 +1538,10 @@ footer .container:nth-of-type(2) .row {
 footer .container:nth-of-type(2) .row .column {
   width: 11em;
 }
+footer .container:nth-of-type(2) .row .column a {
+  text-decoration: none;
+  color: #ffffff;
+}
 @media (max-width: 768px) {
   footer .container:nth-of-type(2) .row .column {
     width: 15em;
@@ -1582,6 +1602,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul,
 ol,

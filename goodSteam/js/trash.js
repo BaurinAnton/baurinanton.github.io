@@ -1,20 +1,16 @@
-// let quantityOne = document.getElementById('quantity_one')
-// let priceOne = document.getElementById('price_one')
-// const buttonQuantityOne = document.getElementById('button_quantity_one')
-// const buttonQuantityTo = document.getElementById('button_quantity_to')
-// const changingTheAmountOfReduce = (quantityReduction, price) => {
-//     if (quantityReduction.innerHTML > 1) {
-//         +quantityReduction.innerHTML--; price.innerHTML = +price.innerHTML - 18600 
-//     }
-// }
-// const changingTheAmountOfIncrease = (quantityIncrease, price) => {
-//     +quantityIncrease.innerHTML++
-//     price.innerHTML = +price.innerHTML + 18600  
-// }
-// buttonQuantityOne.onclick = () => {
-//     changingTheAmountOfReduce(quantityOne, priceOne)
-// }
-// buttonQuantityTo.onclick = () => {
-//     changingTheAmountOfIncrease(quantityOne, priceOne)
-// }
+let elemTrashQuantityDesktop = document.getElementById('trash_charges_desktop')
+let elemTrashQuantityMobile = document.getElementById('trash_charges_mobile')
 
+// Вывод количество товаров в иконку корзины
+function setQuantityTrash() {
+    if (!JSON.parse(localStorage.getItem('trashTotal'))) {
+        elemTrashQuantityDesktop.innerText = 0
+        elemTrashQuantityMobile.innerText = 0
+    }
+    else {
+        elemTrashQuantityDesktop.innerText = JSON.parse(localStorage.getItem('trashTotal')).quantityOfProduct
+        elemTrashQuantityMobile.innerText = JSON.parse(localStorage.getItem('trashTotal')).quantityOfProduct
+    }
+}
+
+setQuantityTrash()
