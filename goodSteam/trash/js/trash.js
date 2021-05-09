@@ -140,8 +140,10 @@ function sendJSON() {
     xhr.setRequestHeader("Content-Type", "application/json");
     let data = JSON.stringify(localStorage)
     xhr.send(data);
-    productTrash.innerHTML = `<h1 id="empty_trash">Спасибо за покупку!</h1>`
-    setTimeout(() => (clearTrash()) , 1500)
+    if (JSON.parse(localStorage.getItem('trashTotal')) != null) {
+        productTrash.innerHTML = `<h1 id="empty_trash">Спасибо за покупку!</h1>`
+        setTimeout(() => (clearTrash()), 1500)
+    }
 }
 productGeneration()
 setProductQuantity()
