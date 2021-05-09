@@ -2,11 +2,13 @@ const productTotalQuantity = document.getElementById('product_quantity')
 let elemTrashQuantityDesktop = document.getElementById('trash_charges_desktop')
 let elemTrashQuantityMobile = document.getElementById('trash_charges_mobile')
 let buttonBackEnd = document.getElementById('buttonBackEnd')
+const productTrash = document.getElementById('row_product')
+const clearTrashProduction = document.getElementById('clear_trash')
 // Генерация товара в корзине
 function productGeneration() {
-    const productTrash = document.getElementById('row_product')
     if (JSON.parse(localStorage.getItem('trashTotal')) == null) {
         productTotalQuantity.innerText = '0'
+        productTrash.insertAdjacentHTML('beforeend', `<h1 id="empty_trash">В корзине пока ничего нет</h1>`)
     }
     else {
         productTotalQuantity.innerText = JSON.parse(localStorage.getItem('trashTotal')).quantityOfProduct
@@ -128,8 +130,8 @@ function setQuantityTrash() {
 }
 // Очистка корзины
 function clearTrash() {
-    const clearTrashProduction = document.getElementById('clear_trash')
-    clearTrashProduction.onclick = () => (localStorage.clear(), location.reload(true))
+    localStorage.clear()
+    location.reload(true)
 }
 function sendJSON() {
     let xhr = new XMLHttpRequest();
@@ -138,11 +140,13 @@ function sendJSON() {
     xhr.setRequestHeader("Content-Type", "application/json");
     let data = JSON.stringify(localStorage)
     xhr.send(data);
+    productTrash.innerHTML = `<h1 id="empty_trash">Спасибо за покупку!</h1>`
+    setTimeout(() => (clearTrash()) , 1500)
 }
 productGeneration()
 setProductQuantity()
 changeInformationToButton()
 setTotalPrice()
 setQuantityTrash()
-clearTrash()
+clearTrashProduction.onclick = () => (clearTrash())
 buttonBackEnd.onclick = () => (sendJSON())
