@@ -18,7 +18,7 @@ function productGeneration() {
             continue
         }
         else {
-            productTrash.insertAdjacentHTML('beforeend', `<div class="row_box">
+            productTrash.insertAdjacentHTML('beforeend', `<div class="row_box" id="row_box${i}">
             <img src="./img/zaryad.svg" class="logo" alt="logo">
             <div class="column">
                 <h5>${JSON.parse(localStorage.getItem(`Product${i}`)).nameProduct}</h5>
@@ -94,6 +94,26 @@ function setProductDescriptionDecrease(Product, quantityProductTrash) {
         productTotalQuantity.innerText = newItemStoreQuantityTrash
         setTotalPrice()
         setQuantityTrash()
+
+    }
+    else {
+        if (confirm('Вы действительно хотите удалить товар?')) {
+            console.log("Удален товар.")
+            localStorage.removeItem(Product)
+            const newItemStoreQuantityTrash = --curentStorageTrash.quantityOfProduct
+            const newItemStorePrice = curentStorage.totalPriceProduct - curentStorage.initialPriceProduct
+            curentStorageTrash.quantityOfProduct = newItemStoreQuantityTrash
+            curentStorage.totalPriceProduct = newItemStorePrice
+            localStorage.setItem('trashTotal', JSON.stringify(curentStorageTrash))
+            document.getElementById(`price_${quantityProductTrash}`).innerText = curentStorage.totalPriceProduct
+            productTotalQuantity.innerText = newItemStoreQuantityTrash
+            document.getElementById(`row_box${quantityProductTrash}`).remove()
+            setTotalPrice()
+            setQuantityTrash()
+            if (localStorage.length <= 1) {
+                clearTrash()
+            }
+        }
     }
 }
 
@@ -133,15 +153,29 @@ function clearTrash() {
     localStorage.clear()
     location.reload(true)
 }
-function sendJSON() {
-    let xhr = new XMLHttpRequest();
-    let url = " ";
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    let data = JSON.stringify(localStorage)
-    xhr.send(data);
+// Проверка валидности введенных данных (ФИО, номер телефона)
+function checkingCustomerInformation() {
+    let name, tel
+    name = prompt('Введите, пожалуйста, Ваше ФИО:', 'Иванов Иван Иванович')
+    name ? tel = prompt('Введите Ваш номер телефона:', 'X-XXX-XXX-XX-XX'): ''
+    tel ? sendJSON(name, tel): ''
+}
+// Отправка данных на Back-End
+function sendJSON(name, tel) {
     if (JSON.parse(localStorage.getItem('trashTotal')) != null) {
-        productTrash.innerHTML = `<h1 id="empty_trash">Спасибо за покупку!</h1>`
+        let curentStorage = JSON.parse(localStorage.getItem('clientInformation'))
+        if (!curentStorage) {
+            const newItemStore = { nameClient: name, telClient: tel }
+            curentStorage = newItemStore
+            localStorage.setItem('clientInformation', JSON.stringify(curentStorage))
+        }
+        let xhr = new XMLHttpRequest();
+        let url = " ";
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        let data = JSON.stringify(localStorage)
+        xhr.send(data);
+        productTrash.innerHTML = `<h1 id="empty_trash">Спасибо за покупку! <br/> Мы с Вами свяжемся</h1>`
         setTimeout(() => (clearTrash()), 1500)
     }
 }
@@ -151,4 +185,4 @@ changeInformationToButton()
 setTotalPrice()
 setQuantityTrash()
 clearTrashProduction.onclick = () => (clearTrash())
-buttonBackEnd.onclick = () => (sendJSON())
+buttonBackEnd.onclick = () => (checkingCustomerInformation())
