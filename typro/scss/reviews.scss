@@ -1,11 +1,19 @@
 section:nth-of-type(5) {
+    .wremennoe {
+        color: white;
+        font-size: 1.5em;
+        @media (min-width: 1025px) {
+            margin-left: 2em;
+            margin-right: 1em;
+        }
+    }
     .container:nth-of-type(1) {
         background-image: url(../img/main/backrewiews.jpg);
         @media (min-width: 1025px) {
             background-attachment: fixed;
         }
         .wrapper {
-            height: 100vh; 
+            height: 100vh;
             @media (max-height: 800px) {
                 height: 100%;
                 padding-bottom: 2em;
@@ -25,7 +33,7 @@ section:nth-of-type(5) {
                 h2 {
                     color: white;
                     font-size: calc(35px + (35 + 35 * 0.3) * ((100vw - 320px) / 1920));
-                    margin-left: -.07em;
+                    margin-left: -0.07em;
                 }
                 span {
                     display: block;
@@ -34,7 +42,7 @@ section:nth-of-type(5) {
                     box-shadow: 0 0 40px 50px rgba(84, 124, 122, 0.3);
                     font-size: calc(35px + (35 + 35 * 0.3) * ((100vw - 320px) / 1920));
                     width: 4em;
-                    height: .1em;
+                    height: 0.1em;
                 }
             }
             .row:nth-of-type(2) {
