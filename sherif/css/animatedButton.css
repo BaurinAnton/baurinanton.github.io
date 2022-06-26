@@ -1,0 +1,24 @@
+@-webkit-keyframes Button {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes ButtonTel {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+.animatedButton {
+    animation: Button infinite alternate 0.7s;
+}
+.animatedButtonTel {
+    animation: ButtonTel infinite alternate 0.7s;
+}
