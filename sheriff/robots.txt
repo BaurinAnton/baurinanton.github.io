@@ -1,3 +1,0 @@
-User-Agent: *
-Allow: *
-Host: xn--e1agxrat.xn--p1ai
